@@ -1,0 +1,21 @@
+Zookeeper to manage Kafka cluster:
+								./zookeeper-server-start.sh ../config/zookeeper.properties
+
+Run Kafka Broker:
+								./kafka-server-start.sh ../config/server.properties
+
+Creating Kafka topic:
+					 			./kafka-topics.sh --create --topic myTopic -zookeeper localhost:2181 --replication-factor 1 --partitions 1
+
+LINK: 
+								http://localhost:8080/kafka/produce?message=This is my message
+
+Creating Consumer: 
+								./kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic myTopic
+
+Check msgs: 
+								http://localhost:8080/kafka/messages
+
+Send msg :
+								http://localhost:8080/kafka/produce?message=Message sent by my App!
+
