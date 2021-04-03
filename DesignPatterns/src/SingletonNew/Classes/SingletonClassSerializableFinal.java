@@ -20,14 +20,16 @@ public class SingletonClassSerializableFinal implements Serializable {
         if (sSoleInstance == null) {
             // Thread safety
             synchronized (SingletonClassSerializableFinal.class) {
-                if (sSoleInstance == null) sSoleInstance = new SingletonClassSerializableFinal();
+                if (sSoleInstance == null) {
+                    sSoleInstance = new SingletonClassSerializableFinal();
+                }
             }
         }
         return sSoleInstance;
     }
 
     //Serialization safety
-    protected SingletonClassSerializableFinal readResolve() {
+    protected Object readResolve() {
         return getInstance();
     }
 }

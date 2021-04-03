@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Algorithmic_Toolbox/Algorithmic_Toolbox.iml" filepath="$PROJECT_DIR$/Algorithmic_Toolbox/Algorithmic_Toolbox.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmsOnGraphs/AlgorithmsOnGraphs.iml" filepath="$PROJECT_DIR$/AlgorithmsOnGraphs/AlgorithmsOnGraphs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmsOnStrings/AlgorithmsOnStrings.iml" filepath="$PROJECT_DIR$/AlgorithmsOnStrings/AlgorithmsOnStrings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DailyCodingProblems/DailyCodingProblems.iml" filepath="$PROJECT_DIR$/DailyCodingProblems/DailyCodingProblems.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DataStructures/DataStructures.iml" filepath="$PROJECT_DIR$/DataStructures/DataStructures.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" filepath="$PROJECT_DIR$/DesignPatterns/DesignPatterns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MOOCTextEditor/MOOCTextEditor.iml" filepath="$PROJECT_DIR$/MOOCTextEditor/MOOCTextEditor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ParkingLot/ParkingLot.iml" filepath="$PROJECT_DIR$/ParkingLot/ParkingLot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PracticeProject/PracticeProject.iml" filepath="$PROJECT_DIR$/PracticeProject/PracticeProject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" filepath="$PROJECT_DIR$/RemoteSystemsTempFiles/RemoteSystemsTempFiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spellchecking/Spellchecking.iml" filepath="$PROJECT_DIR$/Spellchecking/Spellchecking.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringMVC/SpringMVC.iml" filepath="$PROJECT_DIR$/SpringMVC/SpringMVC.iml" />
+      <module fileurl="file://$PROJECT_DIR$/UCSDUnfoldingMaps/UCSDUnfoldingMaps.iml" filepath="$PROJECT_DIR$/UCSDUnfoldingMaps/UCSDUnfoldingMaps.iml" />
+    </modules>
+  </component>
+</project>
