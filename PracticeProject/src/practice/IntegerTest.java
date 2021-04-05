@@ -1,6 +1,5 @@
 package practice;
 
-import javax.jnlp.IntegrationService;
 
 public class IntegerTest {
 

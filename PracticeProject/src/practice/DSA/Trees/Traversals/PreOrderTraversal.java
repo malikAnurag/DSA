@@ -28,12 +28,12 @@ public class PreOrderTraversal {
         root.right.right = new TreeNode(7); 
         root.right.left.right = new TreeNode(8); 
         root.right.right.right = new TreeNode(9); 
-        List<Integer> preOrderList = getPreOrder(root);
+        List<Integer> preOrderList = preOrderTraversal(root);
         for(int i : preOrderList)
         		System.out.print(i+" ");
 	}
 	
-	public static ArrayList<Integer> getPreOrder(TreeNode root) {
+	public static ArrayList<Integer> preOrderTraversal(TreeNode root) {
 
 		Stack<TreeNode> st = new Stack<>();
 		ArrayList<Integer> al = new ArrayList<>();

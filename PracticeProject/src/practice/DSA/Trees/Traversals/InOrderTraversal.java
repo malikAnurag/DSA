@@ -31,12 +31,12 @@ public class InOrderTraversal {
 		root.right.right = new TreeNode(7);
 		root.right.left.right = new TreeNode(8);
 		root.right.right.right = new TreeNode(9);
-		List<Integer> inorderList = printInOrder(root);
+		List<Integer> inorderList = inOrderTraversal(root);
 		for (int i : inorderList)
 			System.out.print(i + " ");
 	}
 
-	public static ArrayList<Integer> printInOrder(TreeNode root) {
+	public static ArrayList<Integer> inOrderTraversal(TreeNode root) {
 
 		if (root == null)
 			return null;
