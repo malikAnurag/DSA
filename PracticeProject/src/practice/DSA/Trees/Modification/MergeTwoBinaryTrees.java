@@ -1,4 +1,6 @@
-package practice.DSA.Trees;
+package practice.DSA.Trees.Modification;
+
+import practice.DSA.Trees.TreeNode;
 
 /**
  * Given two binary trees and imagine that when you put one of them to cover the other,

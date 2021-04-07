@@ -1,4 +1,6 @@
-package practice.DSA.Trees;
+package practice.DSA.Trees.Modification;
+
+import practice.DSA.Trees.TreeNode;
 
 import java.util.Stack;
 

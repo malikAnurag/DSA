@@ -8,6 +8,7 @@ package practice.DSA.Array;
  * Output: 3
  * 3 is an equilibrium index, because:
  * A[0] + A[1] + A[2] = A[4] + A[5] + A[6]
+ *
  * Input: A[] = {1, 2, 3}
  * Output: -1
  */
@@ -33,11 +34,8 @@ public class PivotIndex {
             if (lSum == sum) {
                 return i;
             }
-
             lSum += array[i];
         }
         return -1;
     }
-
-
 }
