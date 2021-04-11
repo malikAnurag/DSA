@@ -29,16 +29,15 @@ public class FlattenTreeToList {
         root.right.left.right = new TreeNode(8); 
         root.right.right.right = new TreeNode(9); 
         TreeNode head = flatten(root);
-        System.out.println(head.key);
-        System.out.println(head.right.key);
-        System.out.println(head.right.right.key);
-        System.out.println(head.right.right.right.key);
-        System.out.println(head.right.right.right.right.key);
-        System.out.println(head.right.right.right.right.right.key);
-        System.out.println(head.right.right.right.right.right.right.key);
-        System.out.println(head.right.right.right.right.right.right.right.key);
-        System.out.println(head.right.right.right.right.right.right.right.right.key);
-        
+        System.out.print(head.key + " ");
+        System.out.print(head.right.key + " ");
+        System.out.print(head.right.right.key + " ");
+        System.out.print(head.right.right.right.key + " ");
+        System.out.print(head.right.right.right.right.key + " ");
+        System.out.print(head.right.right.right.right.right.key + " ");
+        System.out.print(head.right.right.right.right.right.right.key + " ");
+        System.out.print(head.right.right.right.right.right.right.right.key + " ");
+        System.out.print(head.right.right.right.right.right.right.right.right.key + " ");
 	}
 	
 	public static TreeNode flatten(TreeNode node) {
@@ -53,8 +52,9 @@ public class FlattenTreeToList {
 			node.right = node.left;
 			node.left = null;
 
-			if (node.right == null && !st.empty())
+			if (node.right == null && !st.empty()) {
 				node.right = st.pop();
+			}
 			node = node.right;
 		}
 		return head;

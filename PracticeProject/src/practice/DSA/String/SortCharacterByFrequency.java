@@ -10,7 +10,7 @@ public class SortCharacterByFrequency {
 
     public static void main(String[] args) {
         System.out.println(sortByFrequency("tree"));
-        System.out.println(sortByFrequency("cccaaa"));
+        System.out.println(sortByFrequency("ccaaab"));
     }
 
     public static String sortByFrequency(String S) {
@@ -26,13 +26,7 @@ public class SortCharacterByFrequency {
 
         List<Map.Entry<Character, Integer>> al = new ArrayList<>(hm.entrySet());
 
-        Collections.sort(al, new Comparator<Map.Entry<Character, Integer>>() {
-            @Override
-            public int compare(Map.Entry<Character, Integer> o1, Map.Entry<Character, Integer> o2) {
-
-                return o2.getValue().compareTo(o1.getValue());
-            }
-        });
+        Collections.sort(al, (o1, o2) -> o2.getValue().compareTo(o1.getValue()));
 
         StringBuilder sb = new StringBuilder();
 
