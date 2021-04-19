@@ -29,10 +29,7 @@ public class MinimumOperationsToMakeArrayEqual {
     }
 
     public static int getMinimumOperations(int n) {
-
         int mid = n / 2;
-
         return mid * (mid + n % 2);
-
     }
 }

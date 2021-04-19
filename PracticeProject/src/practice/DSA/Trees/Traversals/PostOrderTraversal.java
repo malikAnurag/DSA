@@ -57,6 +57,6 @@ public class PostOrderTraversal {
         while (!st2.isEmpty()) {
             al.add(st2.pop().key);
         }
-        System.out.println(al.toString());
+        System.out.println(al);
     }
 }

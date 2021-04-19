@@ -14,10 +14,12 @@ import java.util.List;
  *
  * Input: digits = "23"
  * Output: ["ad","ae","af","bd","be","bf","cd","ce","cf"]
+ *
  * Example 2:
  *
- * Input: digits = ""
+ *  Input: digits = ""
  * Output: []
+ *
  * Example 3:
  *
  * Input: digits = "2"
@@ -43,7 +45,6 @@ public class LetterCombinationsOfPhoneNumber {
 
         dfs(0, digits, new StringBuilder());
         return result;
-
     }
 
     public static void dfs(int length, String digits, StringBuilder temp) {

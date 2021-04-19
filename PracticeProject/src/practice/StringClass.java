@@ -4,24 +4,16 @@ public class StringClass {
 
 	public static void main(String[] args) {
 
+		String str = new String("Anurag");
 
-		String str = new String("abc");
-		String str1 = new String("abc");
+		changeStr(str);
 
-		System.out.println(str.equals(str1));
+		System.out.println(str);
 
-
-		boolean flag = true;
-		String strg = null;
-		System.out.println(strg+flag);
-
-		StringBuilder strB = new StringBuilder("hjasbfabk");
-
-		strB.deleteCharAt(4);
-		System.out.println(strB);
-
-		System.out.println("192".compareTo("12"));
 	}
 
+	private static void changeStr(String str) {
+		str += "ABCD";
+	}
 
 }

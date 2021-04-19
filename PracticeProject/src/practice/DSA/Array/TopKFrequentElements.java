@@ -39,16 +39,12 @@ public class TopKFrequentElements {
         }
 
         List<Map.Entry<Integer, Integer>> al = new ArrayList();
+
         for (Map.Entry<Integer, Integer> entry : hm.entrySet()) {
             al.add(entry);
         }
 
-        Collections.sort(al, new Comparator<Map.Entry<Integer, Integer>>() {
-            @Override
-            public int compare(Map.Entry<Integer, Integer> e1, Map.Entry<Integer, Integer> e2) {
-                return e2.getValue().compareTo(e1.getValue());
-            }
-        });
+        Collections.sort(al, (e1, e2) -> e2.getValue().compareTo(e1.getValue()));
 
         int[] result = new int[k];
         int counter = 0;
