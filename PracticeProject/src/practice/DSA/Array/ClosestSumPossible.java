@@ -7,6 +7,7 @@ import java.util.Arrays;
  * */
 
 public class ClosestSumPossible {
+
     public static void main(String[] args) {
 
         int[] a1 = {-1, 3, 8, 2, 9, 5};
@@ -50,8 +51,10 @@ public class ClosestSumPossible {
     // It should return an array of two numbers as the result,
     // one from each array.
     public static int[] closestSumPair(int[] a1, int[] a2, int target) {
+
         int[] a1Sorted = Arrays.copyOf(a1, a1.length);
         Arrays.sort(a1Sorted);
+
         int[] a2Sorted = Arrays.copyOf(a2, a2.length);
         Arrays.sort(a2Sorted);
 
@@ -79,7 +82,6 @@ public class ClosestSumPossible {
                 j -= 1;
             }
         }
-
         return closestPair;
     }
 }

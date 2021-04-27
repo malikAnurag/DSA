@@ -9,23 +9,16 @@ public class PerfectSquareHexaDecimalSplits {
         String S = scanner.nextLine();
         System.out.println(getMin(S,0));
     }
-
-
     public static int getMin(String S, int index) {
-
         int min = getNumberOfSplits(S,index);
         if(min > 0 && min < S.length())
             return min;
         else
             return -1;
     }
-
-
     public static int getNumberOfSplits(String S, int index) {
-
         if(index ==  S.length())
             return 0;
-
         int result = Integer.MAX_VALUE;
         int num = 0 ;
 

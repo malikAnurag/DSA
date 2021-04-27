@@ -29,10 +29,10 @@ public class FirstMissingPositiveInt {
                 12, 990, 356, 277, 169, 70, 518, 282, 676, 137, 622, 616, 357, 913, 161, 3, 589, 327};
 
         Arrays.sort(A);
-        for(int i : A)
-            System.out.print(i+" ");
+//        for(int i : A)
+//            System.out.print(i+" ");
 
-        System.out.println("\nMissing Integer: " + getMissingPositive(A));
+//        System.out.println("\nMissing Integer: " + getMissingPositive(A));
 
         System.out.println("\nMissing Integer: " + getMissingPositive(new int[]{-2, -3, -5, 9}));
 
@@ -75,6 +75,5 @@ public class FirstMissingPositiveInt {
             return missing;
 
         return A[A.length - 1] + 1;
-
     }
 }

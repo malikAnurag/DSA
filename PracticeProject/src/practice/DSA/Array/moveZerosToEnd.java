@@ -22,6 +22,7 @@ public class moveZerosToEnd {
 				temp = A[i];
 				A[i] = A[counter];
 				A[counter] = temp;
+
 				counter++;
 			}
 		}

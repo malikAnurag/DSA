@@ -30,9 +30,6 @@ public class MaxDifference {
             if (arr[i] < min)
                 min = arr[i];
         }
-
         return maxD;
-
-
     }
 }

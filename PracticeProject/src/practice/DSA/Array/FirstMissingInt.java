@@ -1,6 +1,8 @@
 package practice.DSA.Array;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.TreeMap;
 
 /**
 * First missing integer from numbers 1 to n!!
@@ -9,7 +11,6 @@ import java.util.HashMap;
 public class FirstMissingInt {
 
     public static void main(String[] args) {
-
         int[] A = new int[]{1, 2, 3, 4, 5, 6, 7, 9};
         System.out.println("Missing integer: " + findFirst(A));
     }
@@ -17,31 +18,27 @@ public class FirstMissingInt {
 
     public static int findFirst(int[] arr) {
 
-        HashMap<Integer, Integer> hm = new HashMap<>();
+        Map<Integer, Integer> hm = new TreeMap();
 
-        for (int i : arr) {
-            if (!hm.containsKey(i)) {
-                hm.put(i, 1);
-            } else {
-                hm.put(i, hm.get(i) + 1);
-            }
+        for(int i : arr) {
+            hm.put(i, hm.getOrDefault(i, 0) + 1);
         }
-
         int index = 1, result = 0;
         boolean isMissing = false;
 
-        for (int j : hm.keySet()) {
-            if (index != j) {
+        System.out.println("Keyset ::" + hm.keySet());
+
+        for(int j : hm.keySet()) {
+            if(index != j) {
                 isMissing = true;
                 result = index;
                 break;
             }
             index++;
         }
-        if (isMissing)
+        if(isMissing)
             return result;
         else
             return index;
-
     }
 }

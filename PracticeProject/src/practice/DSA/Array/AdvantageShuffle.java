@@ -23,15 +23,14 @@ import java.util.*;
 public class AdvantageShuffle {
 
     public static void main(String[] args) {
-
         System.out.println(Arrays.toString(getAdvantageArray(new int[]{2, 7, 11, 15}, new int[]{1, 10, 4, 11})));
         System.out.println(Arrays.toString(getAdvantageArray(new int[]{12, 24, 8, 32}, new int[]{13, 25, 32, 11})));
-
     }
 
     public static int[] getAdvantageArray(int[] A, int[] B) {
 
         Map<Integer, Queue<Integer>> indexes = new HashMap<>();
+
         int n = A.length;
         int[] result = new int[n];
         Arrays.fill(result, -1);

@@ -1,9 +1,11 @@
 package practice.DSA.Array;
 
+import java.util.Collections;
 import java.util.PriorityQueue;
 
 /**
- * Given an array of size n and a number k. We must modify array K number of times. Here modify array means in each operation we can replace any array element arr[i] by -arr[i].
+ * Given an array of size n and a number k. We must modify array K number of times. Here modify array means in each operation we can replace any array element
+ * arr[i] by -arr[i].
  * We need to perform this operation in such a way that after K operations, sum of array must be maximum?
  *
  * Examples:
@@ -33,7 +35,6 @@ public class MaxSumKnegations {
 
         for (int i : arr)
             pq.add(i);
-
 
         while (k > 0) {
             int temp = pq.poll();

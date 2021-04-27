@@ -29,8 +29,10 @@ package practice.DSA.Array;
 public class IdealPermutation {
 
     public static void main(String[] args) {
+
         System.out.println(isIdeal(new int[]{1, 0, 2}));
         System.out.println(isIdeal(new int[]{1, 2, 0}));
+
     }
 
     public static boolean isIdeal(int[] arr) {

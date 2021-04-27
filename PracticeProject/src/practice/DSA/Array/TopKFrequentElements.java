@@ -31,11 +31,7 @@ public class TopKFrequentElements {
         Map<Integer, Integer> hm = new HashMap();
 
         for (int i : nums) {
-            if (!hm.containsKey(i)) {
-                hm.put(i, 1);
-            } else {
-                hm.put(i, hm.get(i) + 1);
-            }
+            hm.put(i, hm.getOrDefault(i, 0) + 1);
         }
 
         List<Map.Entry<Integer, Integer>> al = new ArrayList();
