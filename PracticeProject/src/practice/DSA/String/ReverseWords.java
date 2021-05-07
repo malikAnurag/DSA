@@ -9,11 +9,9 @@ public class ReverseWords {
 
 	
 	public static void main(String[] args) {
-
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
 		System.out.println(reverse(str));
-	
 	}
 	
 	public static String reverse(String str) {
@@ -27,7 +25,6 @@ public class ReverseWords {
 			sb1.reverse();
 			sb.append(sb1).append(" ");
 		}
-		
 		return sb.toString();
 	}
 	

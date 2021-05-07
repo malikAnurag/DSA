@@ -1,7 +1,7 @@
 package practice.Math;
 
 /**
- * Given an integer, write a function to determine if it is a power of two.
+ * Given an integer, write a function to determine if it is a power of two: n == 2^x
  *
  * Input: 1
  * Output: true
@@ -22,23 +22,25 @@ public class PowerOfTwo {
 
     public static boolean checkIfPowerOfTwo(int n) {
 
-        boolean isPow = true;
+        return (Math.log10(n)/Math.log10(2)) % 1 == 0;
 
-        if(n == 0 || n < 0)
-            return false;
-
-        while(n > 0) {
-
-            if(n == 1)
-                break;
-
-            if(n % 2 != 0) {
-                isPow = false;
-                break;
-            }
-
-            n /= 2;
-        }
-        return isPow;
+//        boolean isPow = true;
+//
+//        if(n == 0 || n < 0)
+//            return false;
+//
+//        while(n > 0) {
+//
+//            if(n == 1)
+//                break;
+//
+//            if(n % 2 != 0) {
+//                isPow = false;
+//                break;
+//            }
+//
+//            n /= 2;
+//        }
+//        return isPow;
     }
 }

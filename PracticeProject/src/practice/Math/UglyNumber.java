@@ -105,8 +105,6 @@ public class UglyNumber {
             else
                 return false;
         }
-
         return false;
     }
-
 }

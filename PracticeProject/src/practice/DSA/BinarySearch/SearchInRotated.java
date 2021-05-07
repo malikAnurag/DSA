@@ -13,23 +13,23 @@ public class SearchInRotated {
 
     public static int search(int[] arr, int left, int right, int key) {
 
-        if (left > right)
+        if(left > right)
             return -1;
 
         int mid = (left + right) / 2;
 
-        if (arr[mid] == key)
+        if(arr[mid] == key)
             return mid;
 
-        else if (arr[left] <= arr[mid]) {
+        else if(arr[left] <= arr[mid]) {
 
-            if (arr[left] <= key && key <= arr[mid])
+            if(arr[left] <= key && key <= arr[mid])
                 return search(arr, left, mid - 1, key);
 
             return search(arr, mid + 1, right, key);
         }
 
-        if (arr[mid] <= key && key <= arr[right])
+        if(arr[mid] <= key && key <= arr[right])
             return search(arr, mid + 1, right, key);
 
         return search(arr, left, mid - 1, key);

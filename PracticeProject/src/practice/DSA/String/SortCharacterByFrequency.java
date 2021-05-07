@@ -36,5 +36,4 @@ public class SortCharacterByFrequency {
         }
         return sb.toString();
     }
-
 }

@@ -36,7 +36,8 @@ public class MaximumSizeSubarrayOfSumK {
 
             if(sum == k) {
                 maxLen = i + 1;
-            } else if(hm.containsKey(sum - k)) {
+            }
+            else if(hm.containsKey(sum - k)) {
                 maxLen = Math.max(maxLen, i - hm.get(sum - k));
             }
 

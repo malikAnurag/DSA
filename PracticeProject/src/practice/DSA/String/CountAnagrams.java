@@ -10,15 +10,12 @@ import java.util.Arrays;
  * Input : forxxorfxdofr
  *         for
  * Output : 3
- * Explanation : Anagrams of the word for - for, orf,
- * ofr appear in the text and hence the count is 3.
+ * Explanation : Anagrams of the word for - for, orf, ofr appear in the text and hence the count is 3.
  *
  * Input : aabaabaa
  *         aaba
  * Output : 4
- * Explanation : Anagrams of the word aaba - aaba,
- * abaa each appear twice in the text and hence the
- * count is 4.
+ * Explanation : Anagrams of the word aaba - aaba, abaa each appear twice in the text and hence the count is 4.
  */
 public class CountAnagrams {
 

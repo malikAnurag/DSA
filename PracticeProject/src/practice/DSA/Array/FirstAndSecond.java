@@ -1,5 +1,4 @@
 package practice.DSA.Array;
-
 /**
  *
  * Find smallest and second smallest numbers in array!
@@ -11,7 +10,6 @@ public class FirstAndSecond {
         int[] arr = new int[]{22, 3, 4, 77, 12, 34, 56, 90, 7};
         print(arr);
     }
-
 
     public static void print(int[] arr) {
 

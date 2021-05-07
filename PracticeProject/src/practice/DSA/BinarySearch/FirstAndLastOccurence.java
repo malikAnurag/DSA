@@ -31,46 +31,46 @@ public class FirstAndLastOccurence {
         System.out.println("First Occurence : " + findFirst(arr1, 7));
         System.out.println("Last Occurence : " + findLast(arr1, 7));
 
+        int[] arr2 = new int[]{2, 2};
+
+        System.out.println("\n\nFirst Occurence : " + findFirst(arr2, 2));
+        System.out.println("\nLast Occurence : " + findLast(arr2, 2));
+
     }
 
     public static int findFirst(int[] arr, int k) {
-        int low = 0 ;
+        int low = 0;
         int high = arr.length - 1;
 
         while(low <= high) {
-            int mid = low + (high - low)/2;
+            int mid = low + (high - low) / 2;
 
-            if( (mid == 0 || arr[mid-1] < k) && arr[mid] == k) {
+            if(arr[mid] == k && (mid == 0 || arr[mid - 1] < k)) {
                 return mid;
-            }
-            else if(arr[mid] < k) {
+            } else if(arr[mid] < k) {
                 low = mid + 1;
-            }
-            else {
-                high = mid -1;
+            } else {
+                high = mid - 1;
             }
         }
         return -1;
     }
 
     public static int findLast(int[] arr, int k) {
-        int low = 0 ;
+        int low = 0;
         int high = arr.length - 1;
 
         while(low <= high) {
-            int mid = (low + high)/2;
+            int mid = (low + high) / 2;
 
-            if( (mid == arr.length - 1 || arr[mid+1] > k) && arr[mid] == k) {
+            if(arr[mid] == k && (mid == arr.length - 1 || arr[mid + 1] > k)) {
                 return mid;
-            }
-            else if(arr[mid] > k) {
-                high = mid -1;
-            }
-            else {
+            } else if(arr[mid] > k) {
+                high = mid - 1;
+            } else {
                 low = mid + 1;
             }
         }
         return -1;
     }
-
 }

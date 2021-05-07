@@ -14,7 +14,6 @@ import java.util.List;
  * Return a list of all universal words in A.  You can return the words in any order.
  *
  *
- *
  * Example 1:
  *
  * Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["e","o"]

@@ -14,9 +14,6 @@ public class FindDuplicates {
 
             int index = numRay[i] % 10;
             numRay[index] = numRay[index] + 10;
-
-            System.out.println("\nIndex :" + index);
-            System.out.println("Value: " + numRay[index]);
         }
 
         System.out.println("The repeating elements are : ");

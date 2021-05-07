@@ -2,6 +2,10 @@ package practice.Math;
 
 import java.util.Arrays;
 
+/**
+ * Goldbach's conjecture is one of the oldest and best-known unsolved problems in number theory and all of mathematics.
+ * It states that every even whole number greater than 2 is the sum of two prime numbers.
+ */
 public class GoldBachConjecture {
 
     public static void main(String[] args) {

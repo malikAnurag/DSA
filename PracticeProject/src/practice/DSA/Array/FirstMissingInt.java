@@ -15,7 +15,6 @@ public class FirstMissingInt {
         System.out.println("Missing integer: " + findFirst(A));
     }
 
-
     public static int findFirst(int[] arr) {
 
         Map<Integer, Integer> hm = new TreeMap();

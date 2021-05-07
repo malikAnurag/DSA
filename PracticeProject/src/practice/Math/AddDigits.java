@@ -22,7 +22,7 @@ public class AddDigits {
             int result = 0;
             StringBuilder sb = new StringBuilder(String.valueOf(num));
             for (char x : sb.toString().toCharArray()) {
-                result += Integer.valueOf(String.valueOf(x));
+                result += Integer.parseInt(String.valueOf(x));
             }
             num = result;
         }

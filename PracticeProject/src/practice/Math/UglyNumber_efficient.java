@@ -45,7 +45,7 @@ public class UglyNumber_efficient {
         int[] nums = {2, 3, 5};
 
         TreeSet<Long> set = new TreeSet<>();
-        Long result = Long.valueOf(1);
+        Long result = 1L;
         set.add(result);
 
         for (int i = 0; i < n; i++) {

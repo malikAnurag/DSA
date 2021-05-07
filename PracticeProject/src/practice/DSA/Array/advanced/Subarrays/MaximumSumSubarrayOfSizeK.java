@@ -1,8 +1,9 @@
 package practice.DSA.Array.advanced.Subarrays;
 
 /**
- * Given an array of n integers, find the sub-array of length k with maximum sum. For example,
+ * Given an array of n integers, find the sub-array of length k with maximum sum.
  *
+ * For example,
  * Input Array: {6, 4, 3, 5, 1, 9, 2}    k:3
  * Output: 15
  *

@@ -43,12 +43,6 @@ public class SmallerNumbersToRight {
             }
             al.add(num);
         }
-        int[] result = new int[al.size()];
-        int counter = 0;
-
-        for (int k : al) {
-            result[counter++] = k;
-        }
-        return result;
+        return al.stream().mapToInt(i -> i).toArray();
     }
 }

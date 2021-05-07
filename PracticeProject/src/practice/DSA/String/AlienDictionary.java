@@ -39,11 +39,9 @@ public class AlienDictionary {
 
         List<String> al = new ArrayList();
 
-        for(String s : words) {
-            al.add(s);
-        }
+        Collections.addAll(al, words);
 
-        Collections.sort(al, (s1, s2) -> {
+        al.sort((s1, s2) -> {
 
             char[] arr1 = s1.toCharArray();
             char[] arr2 = s2.toCharArray();

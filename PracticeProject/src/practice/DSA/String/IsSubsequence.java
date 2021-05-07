@@ -23,27 +23,26 @@ package practice.DSA.String;
 public class IsSubsequence {
 
     public static void main(String[] args) {
-
         System.out.println(isSubsequence("abc", "ahbgdc"));
         System.out.println(isSubsequence("axc", "ahbgdc"));
     }
 
     public static boolean isSubsequence(String sub, String txt) {
 
-        int s = 0;
-        int t = 0;
+        int sLen = 0;
+        int tLen = 0;
 
-        int m = sub.length();
-        int n = txt.length();
+        int subLength = sub.length();
+        int txtLength = txt.length();
         int counter = 0;
 
-        while(s < m && t < n) {
-            if(sub.charAt(s) == txt.charAt(t)) {
-                s++;
-                t++;
+        while(sLen < subLength && tLen < txtLength) {
+            if(sub.charAt(sLen) == txt.charAt(tLen)) {
+                sLen++;
+                tLen++;
                 counter++;
             } else {
-                t++;
+                tLen++;
             }
         }
         return counter == sub.length();

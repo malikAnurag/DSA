@@ -1,8 +1,6 @@
 package practice.DSA.Array.advanced;
-
 import java.util.ArrayList;
 import java.util.List;
-
 /**
  * Given a set of distinct integers, nums, return all possible subsets (the power set).
  *
@@ -38,21 +36,20 @@ public class Subsets$ {
 
     public static List<List<Integer>> subsets(int[] nums) {
 
-        List<List<Integer>> llist = new ArrayList<>();
-        llist.add(new ArrayList<>());
+        List<List<Integer>> result = new ArrayList<>();
+        result.add(new ArrayList<>());
 
         for(int i : nums) {
             List<List<Integer>> temp = new ArrayList<>();
 
-            for(List<Integer> list : llist) {
+            for(List<Integer> list : result) {
                 List<Integer> l = new ArrayList<>(list);
                 l.add(i);
                 temp.add(l);
             }
-            llist.addAll(temp);
-            System.out.println(llist);
+            result.addAll(temp);
+            System.out.println(result);
         }
-        return llist;
+        return result;
     }
-
 }

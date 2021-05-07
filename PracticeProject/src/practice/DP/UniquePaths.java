@@ -18,23 +18,22 @@ public class UniquePaths {
 
     public static int uniquePaths(int m, int n) {
 
-        int C = m;
-        int R = n;
+        int columns = m;
+        int rows = n;
 
-        int[][] dp = new int[R][C];
+        int[][] dp = new int[rows][columns];
 
-        for(int i = 0 ; i < R ; i++)
+        for(int i = 0 ; i < rows ; i++)
             dp[i][0] = 1;
 
-        for(int j = 0 ; j < C ; j++)
+        for(int j = 0 ; j < columns ; j++)
             dp[0][j] = 1;
 
-        for(int i = 1 ; i < R ; i++) {
-            for(int j = 1; j < C ; j++) {
+        for(int i = 1 ; i < rows ; i++) {
+            for(int j = 1; j < columns ; j++) {
                 dp[i][j] += dp[i-1][j] + dp[i][j-1];
             }
         }
-
-        return dp[R-1][C-1];
+        return dp[rows-1][columns-1];
     }
 }

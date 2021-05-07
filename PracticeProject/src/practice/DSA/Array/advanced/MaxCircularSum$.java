@@ -8,11 +8,9 @@ import java.util.Arrays;
 public class MaxCircularSum$ {
 
     public static void main(String[] args) {
-
         int A[] = {11, 10, -20, 5, -3, -5, 8, -13, 10};
         System.out.println("Maximum circular sum is " + maxCircularSum(A));
     }
-
 
     public static int maxCircularSum(int[] arr) {
 
