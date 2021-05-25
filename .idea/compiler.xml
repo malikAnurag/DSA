@@ -12,5 +12,20 @@
       <entry name="!?*.clj" />
       <entry name="!?*.aj!?*.png" />
     </wildcardResourcePatterns>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="miniproject_1" />
+        <module name="miniproject_0" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="demo" target="1.5" />
+      <module name="miniproject_0" target="1.8" />
+      <module name="miniproject_1" target="1.8" />
+      <module name="miniproject_1 (1) (edu.coursera.distributed)" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>

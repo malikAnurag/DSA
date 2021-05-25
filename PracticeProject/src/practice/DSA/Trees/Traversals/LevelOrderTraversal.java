@@ -39,6 +39,7 @@ public class LevelOrderTraversal {
 		q.add(root);
 
 		while (!q.isEmpty()) {
+
 			TreeNode node = q.poll();
 			System.out.print(node.key + " ");
 

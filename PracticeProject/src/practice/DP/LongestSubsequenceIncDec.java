@@ -20,9 +20,7 @@ public class LongestSubsequenceIncDec {
 
 	public static void main(String[] args) {
 		List<Integer> al = Arrays.asList(1, 11, 2, 10, 4, 5, 2, 1);
-
-		System.out.println("Length of longest subsequence that is first increasing and then decreasing: "
-				+ longestSubsequenceLength(al));
+		System.out.println("Length of longest subsequence that is first increasing and then decreasing: " + longestSubsequenceLength(al));
 	}
 
 	public static int longestSubsequenceLength(final List<Integer> A) {
@@ -56,6 +54,5 @@ public class LongestSubsequenceIncDec {
 			ans = Math.max(ans, l1[i] + l2[i] - 1);
 		}
 		return ans;
-
 	}
 }

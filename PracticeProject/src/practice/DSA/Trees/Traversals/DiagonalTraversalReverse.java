@@ -60,6 +60,7 @@ public class DiagonalTraversalReverse {
 		al.add(node.key);
 
 		hm.put(dist, al);
+
 		print(node.right, dist+1, hm);
 		print(node.left, dist, hm);
 	}

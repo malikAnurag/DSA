@@ -15,6 +15,7 @@ public class EvenOddMultiThreading {
 }
 
 class TaskEvenOdd implements Runnable {
+
     private int max;
     private Printer print;
     private boolean isEvenNumber;
@@ -27,7 +28,9 @@ class TaskEvenOdd implements Runnable {
 
     @Override
     public void run() {
+
         int number = isEvenNumber ? 2 : 1;
+
         while (number <= max) {
             if (isEvenNumber) {
                 print.printEven(number);
@@ -40,9 +43,11 @@ class TaskEvenOdd implements Runnable {
 }
 
 class Printer {
-    private volatile boolean isOdd;
+
+    private volatile boolean skipOdd;
+
     synchronized void printEven(int number) {
-        while (!isOdd) {
+        while (!skipOdd) {
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -50,12 +55,12 @@ class Printer {
             }
         }
         System.out.println(Thread.currentThread().getName() + ":" + number);
-        isOdd = false;
+        skipOdd = false;
         notify();
     }
 
     synchronized void printOdd(int number) {
-        while (isOdd) {
+        while (skipOdd) {
             try {
                 wait();
             } catch (InterruptedException e) {
@@ -63,7 +68,7 @@ class Printer {
             }
         }
         System.out.println(Thread.currentThread().getName() + ":" + number);
-        isOdd = true;
+        skipOdd = true;
         notify();
     }
 }

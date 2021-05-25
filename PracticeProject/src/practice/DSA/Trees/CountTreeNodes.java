@@ -42,7 +42,6 @@ public class CountTreeNodes {
         n.value += 1;
         count(root.right, n);
     }
-
 }
 
 class Node {

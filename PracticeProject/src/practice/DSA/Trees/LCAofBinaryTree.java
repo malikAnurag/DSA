@@ -41,22 +41,19 @@ public class LCAofBinaryTree {
 	}
 	
 	public static TreeNode LCA(TreeNode root, int n1, int n2) {
-		
-		if(root==null)
-			return null;
-		
-		if(root.key==n1 || root.key==n2)
-			return root;
-		
-		TreeNode tempL = LCA(root.left,n1,n2);
-		TreeNode tempR = LCA(root.right,n1,n2);
-		
-		if(tempL!=null && tempR!=null)
-			return root;
-		
-		return tempL!=null ? tempL : tempR;
-		
-	}
-	
-	
+
+        if(root == null)
+            return null;
+
+        if(root.key == n1 || root.key == n2)
+            return root;
+
+        TreeNode tempL = LCA(root.left, n1, n2);
+        TreeNode tempR = LCA(root.right, n1, n2);
+
+        if(tempL != null && tempR != null)
+            return root;
+
+        return tempL != null ? tempL : tempR;
+    }
 }

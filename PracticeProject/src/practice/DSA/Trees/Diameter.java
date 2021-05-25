@@ -59,7 +59,6 @@ public class Diameter {
         int diameterR = diameter(root.right);
 
         return Math.max(lh + rh + 1, Math.max(diameterL, diameterR));
-
     }
 
     public static int height(TreeNode root) {
@@ -73,6 +72,4 @@ public class Diameter {
         else
             return rh + 1;
     }
-
-
 }

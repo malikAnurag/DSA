@@ -30,7 +30,6 @@ public class DiagonalTraversal {
         root.right.left.right = new TreeNode(8);
         root.right.right.right = new TreeNode(9);
         printDiagonal(root);
-
     }
 
     public static void printDiagonal(TreeNode root) {
@@ -59,6 +58,7 @@ public class DiagonalTraversal {
         al.add(node.key);
 
         hm.put(dist, al);
+
         print(node.left, dist + 1, hm);
         print(node.right, dist, hm);
     }

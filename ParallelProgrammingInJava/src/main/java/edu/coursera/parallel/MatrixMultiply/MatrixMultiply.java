@@ -20,8 +20,7 @@ public final class MatrixMultiply {
      * @param C The output matrix
      * @param N Size of each dimension of the input matrices
      */
-    public static void seqMatrixMultiply(final double[][] A, final double[][] B,
-            final double[][] C, final int N) {
+    public static void seqMatrixMultiply(final double[][] A, final double[][] B, final double[][] C, final int N) {
         forseq2d(0, N - 1, 0, N - 1, (i, j) -> {
             C[i][j] = 0.0;
             for (int k = 0; k < N; k++) {
@@ -50,6 +49,5 @@ public final class MatrixMultiply {
                 C[i][j] += A[i][k] * B[k][j];
             }
         });
-
     }
 }

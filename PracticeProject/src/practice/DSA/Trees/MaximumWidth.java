@@ -20,7 +20,6 @@ package practice.DSA.Trees;
  * So the maximum width of the tree is 3.
  */
 public class MaximumWidth {
-
     /*
 		   1
          /   \
@@ -44,12 +43,9 @@ public class MaximumWidth {
     public static int widthOfBinaryTree(TreeNode root) {
 
         int[] count = new int[10];
-
         int h = height(root);
 
-        int level = 0;
-
-        maxWidth(count, level, root);
+        maxWidth(count, 0, root);
 
         return getMax(count, h);
     }
@@ -70,10 +66,8 @@ public class MaximumWidth {
             if (count[i] > max)
                 max = count[i];
         }
-
         return max;
     }
-
 
     public static int height(TreeNode root) {
 

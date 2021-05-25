@@ -27,6 +27,7 @@ class DaemonThread extends Thread {
 }
 
 public class ThreadsInJava {
+
     public static void main(String[] args) {
         DaemonThread daemon = new DaemonThread();   //Creating the DaemonThread
 

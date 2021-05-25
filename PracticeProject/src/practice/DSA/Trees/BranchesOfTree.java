@@ -53,6 +53,7 @@ public class BranchesOfTree {
             System.out.println(root.key);
             return;
         }
+        
         al.add(root.key);
 
         if(root.left != null)

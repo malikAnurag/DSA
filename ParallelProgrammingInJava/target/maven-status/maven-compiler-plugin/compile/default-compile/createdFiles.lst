@@ -1,0 +1,10 @@
+edu/coursera/parallel/ReciprocalArraySum/ReciprocalArraySum1.class
+edu/coursera/parallel/StudentAnalytics/StudentAnalytics.class
+phaser/practice/PhaserTestClass.class
+phaser/practice/LongRunningAction.class
+edu/coursera/parallel/OneDimAveragingPhaser/OneDimAveragingPhaser.class
+edu/coursera/parallel/StudentAnalytics/Student.class
+edu/coursera/parallel/ReciprocalArraySum/ReciprocalArraySum1$ReciprocalArraySumTask.class
+edu/coursera/parallel/MatrixMultiply/MatrixMultiply.class
+edu/coursera/parallel/ReciprocalArraySum/ReciprocalArraySum$ReciprocalArraySumTask.class
+edu/coursera/parallel/ReciprocalArraySum/ReciprocalArraySum.class

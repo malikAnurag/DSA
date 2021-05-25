@@ -5,11 +5,13 @@ import java.util.Map;
 
 /**
  * Given a binary array, find the maximum length of a contiguous sub-array with equal number of 0s and 1s.
+ * {1, 1, 0, 1, 1, 0, 1}
+ * 4
  */
 public class ContiguousSubarrayWithZeroAndOne {
 
     public static void main(String[] args) {
-        System.out.println(findMaxLength(new int[]{1, 1, 0, 1, 1, 0, 1}));
+        System.out.println(findMaxLength(new int[]{1, 0, 0, 1, 1, 0, 1}));
     }
 
     public static int findMaxLength(int[] nums) {

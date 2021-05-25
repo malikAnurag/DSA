@@ -8,7 +8,7 @@ public class VolatileExample {
 
         new Thread(() -> {
 
-            for(int i = 0 ; i < 2000 ; i++)
+            for(int i = 0 ; i < 200 ; i++)
                 System.out.println("Value of i is :" + i);
 
             flag = true;

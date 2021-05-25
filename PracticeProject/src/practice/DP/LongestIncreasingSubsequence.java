@@ -23,11 +23,10 @@ public class LongestIncreasingSubsequence {
 
 		for (int i = 1; i < n; i++) {
 			for (int j = 0; j < i; j++) {
-				if (arr[i] > arr[j] && lis[i] < lis[j] + 1)
+				if (arr[j] < arr[i] && lis[j] + 1 > lis[i])
 					lis[i] = lis[j] + 1;
 			}
 		}
 		return lis[n - 1];
 	}
-
 }

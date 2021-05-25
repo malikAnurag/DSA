@@ -47,7 +47,7 @@ public final class StudentAnalytics {
 
         return Arrays.stream(studentArray)
                                   .parallel()
-                                  .filter(student -> student.checkIsCurrent())
+                                  .filter(Student::checkIsCurrent)
                                   .mapToDouble(Student::getAge)
                                   .average()
                                   .getAsDouble();

@@ -3,6 +3,7 @@ package practice.DP;
 import java.util.Scanner;
 
 public class EditDistanceClass {
+
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);

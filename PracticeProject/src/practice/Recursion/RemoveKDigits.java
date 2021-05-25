@@ -36,7 +36,7 @@ public class RemoveKDigits {
             return;
 
         else if (n == 0) {
-            sb.append(num);
+            sb.append(num); // 1432219
             return;
         }
 

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="ParallelProgrammingInJava">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/ParallelProgrammingInJava/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ParallelProgrammingInJava/pcdp-core-0.0.4-SNAPSHOT.jar!/" />
+      <root url="jar://$PROJECT_DIR$/ParallelProgrammingInJava/junit-4.12.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../edu/rice/pcdp/pcdp-core/0.0.4-SNAPSHOT/pcdp-core-0.0.4-20171025.051007-2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../../edu/rice/pcdp/pcdp-core/0.0.4-SNAPSHOT/pcdp-core-0.0.4-SNAPSHOT.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -19,17 +19,14 @@ package practice.DSA.LinkedList;
  */
 public class CloneListWithRandomPointer {
 
-    public static void main(String[] args) {
-
-    }
-
-
     public ListNode copyRandomList(ListNode head) {
 
-        if (head == null) return null;
+        if (head == null)
+            return null;
 
         ListNode temp1 = head;
 
+        // making copies of all nodes next to them
         while (temp1 != null) {
             ListNode node = new ListNode(temp1.val);
             node.next = temp1.next;
@@ -48,6 +45,7 @@ public class CloneListWithRandomPointer {
         temp1 = head;
         ListNode res = head.next;
         ListNode ans = res;
+
         while (temp1 != null) {
             temp1.next = temp1.next != null ? temp1.next.next : null;
             temp1 = temp1.next;
@@ -55,8 +53,6 @@ public class CloneListWithRandomPointer {
             res.next = res.next != null ? res.next.next : null;
             res = res.next;
         }
-
         return ans;
     }
-
 }

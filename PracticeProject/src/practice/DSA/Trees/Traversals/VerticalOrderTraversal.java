@@ -64,8 +64,6 @@ public class VerticalOrderTraversal {
 
 		print(node.left, dist - 1, hm);
 		print(node.right, dist + 1, hm);
-
 	}
-	
 }
 

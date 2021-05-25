@@ -50,8 +50,8 @@ public class TopView {
 		if (!hm.containsKey(dist)) {
 			hm.put(dist, root.key);
 		}
+
 		populateMap(root.left, hm, dist - 1);
 		populateMap(root.right, hm, dist + 1);
 	}
-
 }

@@ -35,6 +35,7 @@ public class Runnables {
         // make sure that the task is finished at this point.
         // If we use callable, we can make use of get() method which is blocking and give us the correct computed result at this point.
         // Also, here we have to make use of callables as they return a future object whose get method can be used!
+//        Thread.sleep(15000); Can use this to check the result computed in the given time , 15 sec here
         int res = sum;
 
         System.out.println("Calculated sum :: " + res);

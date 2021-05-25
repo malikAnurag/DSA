@@ -15,7 +15,6 @@ public class ArraySum {
     static int[] res = new int[arr.length];
 
     public static void main(String[] args) {
-
         getSum(0, 0);
         System.out.println(Arrays.toString(res));
     }

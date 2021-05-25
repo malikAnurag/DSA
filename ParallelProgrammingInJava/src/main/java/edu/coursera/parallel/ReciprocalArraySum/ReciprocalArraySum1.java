@@ -157,16 +157,14 @@ public final class ReciprocalArraySum1 {
         if(range <= input.length/SEQ_FACTOR) {
             left.compute();  //Compute left part recursively further subdivide the array until size reaches threshold
             right.compute(); //Compute right part recursively further subdivide the array until size reaches threshold
-            sum = left.value + right.value;
         }
         else {
-
             left.fork();
             right.compute();
             // The join() method triggers the execution
             left.join();
-            sum = left.value + right.value;
         }
+        sum = left.value + right.value;
         return sum;
     }
 

@@ -30,7 +30,6 @@ public final class ReciprocalArraySum {
         for (int i = 0; i < input.length; i++) {
             sum += 1 / input[i];
         }
-
         return sum;
     }
 

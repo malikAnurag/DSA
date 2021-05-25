@@ -46,6 +46,7 @@ public class Top45DegViewRight {
 
 		if (root == null)
 			return;
+
 		if (!hm.containsKey(dist)) {
 			hm.put(dist, root.key);
 		}

@@ -1,6 +1,7 @@
 package practice.Threads;
 
 class Shared {
+
     synchronized void waitMethod() {
         Thread t = Thread.currentThread();
         System.out.println(t.getName() + " is releasing the lock and going to wait");
@@ -11,6 +12,7 @@ class Shared {
         }
         System.out.println(t.getName() + " has been notified and acquired the lock back");
     }
+
     synchronized void notifyOneThread() {
         Thread t = Thread.currentThread();
         notify();
@@ -19,6 +21,7 @@ class Shared {
 }
 
 public class notifyThreads {
+
     public static void main(String[] args) {
 
         final Shared s = new Shared();
@@ -34,6 +37,7 @@ public class notifyThreads {
         //Thread t3 will be waiting for lock of object 's'
         Thread t3 = new Thread(s::waitMethod);
         t3.start();
+
         try {
             Thread.sleep(1000);
         } catch (InterruptedException e) {

@@ -1,5 +1,4 @@
 package practice.Recursion;
-
 /**
  * The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence, such that each number is the sum of the two preceding ones,
  * starting from 0 and 1. That is,
@@ -18,7 +17,7 @@ package practice.Recursion;
  * Output: 2
  * Explanation: F(3) = F(2) + F(1) = 1 + 1 = 2.
  *
- *  Example 3:
+ * Example 3:
  * Input: n = 4
  * Output: 3
  * Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
@@ -32,9 +31,9 @@ public class FibonacciNumber {
     }
 
     public static int fibo(int n) {
-        if(n <= 1) {
+        if(n <= 1)
             return n;
-        }
+
         return fibo(n - 1) + fibo(n - 2);
     }
 }

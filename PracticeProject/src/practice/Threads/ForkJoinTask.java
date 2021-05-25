@@ -22,16 +22,21 @@ public class ForkJoinTask extends RecursiveAction {
         if(data.size() <= THRESHOLD_VALUE) {
             long sum = computeDirectly();
             total += sum;
-            System.out.println("Calculating the sum of " + data.toString() + " as : " + sum);
+            System.out.println("Calculating the sum of " + data + " as : " + sum);
         }
         else {
             int mid = data.size()/2;
             ForkJoinTask firstTask = new ForkJoinTask(data.subList(0, mid));
             ForkJoinTask secondTask = new ForkJoinTask(data.subList(mid, data.size()));
 
-            firstTask.fork(); // queuing the first task ; forking it; asynchronous
-            secondTask.compute(); // compute the second task ; highest priority ; synchronously
-            firstTask.join(); // waiting for the first task to finish
+//            firstTask.invoke();
+//            secondTask.invoke();
+
+//            firstTask.fork(); // queuing the first task ; forking it; asynchronous
+//            secondTask.compute(); // compute the second task ; highest priority ; synchronously
+//            firstTask.join(); // waiting for the first task to finish
+
+            ForkJoinTask.invokeAll(firstTask, secondTask);
         }
     }
 
@@ -44,12 +49,11 @@ public class ForkJoinTask extends RecursiveAction {
     }
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         List<Long> data = LongStream.rangeClosed(0, 5000).boxed().collect(Collectors.toList());
 
         ForkJoinTask task = new ForkJoinTask(data);
-
         ForkJoinPool pool = new ForkJoinPool();
 
         System.out.println("Parallelism is :: " + pool.getParallelism());
@@ -57,9 +61,7 @@ public class ForkJoinTask extends RecursiveAction {
         pool.invoke(task);
 
         System.out.println("Total sum calculated is : " + total + ", and original sum is: " + LongStream.rangeClosed(0, 5000).sum());
-
     }
-
 }
 
 

@@ -7,7 +7,7 @@ import java.util.Stack;
  * Please check whether the other array is a corresponding sequence popped from the stack.
  * For example, if the pushing sequence is {1, 2, 3, 4, 5}, the sequence {4, 5, 3, 2, 1} is a corresponding popping sequence, but
  * {4, 3, 5, 1, 2} is not.
- * <p>
+ *
  * Action              Stack
  * None                []
  * Push 1,2,3,4    [1,2,3,4]
@@ -15,7 +15,6 @@ import java.util.Stack;
  * Push 5             [1,2,3,5]
  * Pop 5,3,2,1      []
  */
-
 
 public class ValidPopSequence {
 
@@ -27,16 +26,16 @@ public class ValidPopSequence {
         System.out.println(checkSequence(arr1, arr2));
     }
 
-    public static boolean checkSequence(int[] arr1, int[] arr2) {
+    public static boolean checkSequence(int[] pushed, int[] popped) {
 
         Stack<Integer> st = new Stack<>();
-        int size = arr1.length;
+        int size = pushed.length;
         int counter = 0;
 
         for (int i = 0; i < size; i++) {
-            st.push(arr1[i]);
+            st.push(pushed[i]);
 
-            while (!st.isEmpty() && counter < size && arr2[counter] == st.peek()) {
+            while (!st.isEmpty() && counter < size && popped[counter] == st.peek()) {
                 st.pop();
                 counter++;
             }

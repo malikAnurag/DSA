@@ -21,6 +21,7 @@ import java.util.LinkedList;
  *
  * Output: 4
  * Explanation: The maximum width existing in the third level with the length 4 (5,3,null,9).
+ *
  * Example 2:
  *
  * Input:
@@ -33,6 +34,7 @@ import java.util.LinkedList;
  *
  * Output: 2
  * Explanation: The maximum width existing in the third level with the length 2 (5,3).
+ *
  * Example 3:
  *
  * Input:
@@ -45,6 +47,7 @@ import java.util.LinkedList;
  *
  * Output: 2
  * Explanation: The maximum width existing in the second level with the length 2 (3,2).
+ *
  * Example 4:
  *
  * Input:
@@ -112,7 +115,6 @@ public class MaximumWidthWithNull {
         return max;
     }
 }
-
 
 class Holder {
     TreeNode node;
