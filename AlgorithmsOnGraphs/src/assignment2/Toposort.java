@@ -1,23 +1,23 @@
 package assignment2;
 
 import java.util.ArrayList;
-import java.util.Collections;
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
  * Compute a topological ordering of a given directed acyclic graph (DAG) with 𝑛 vertices and 𝑚 edges.
  * */
 public class Toposort {
+
     private static ArrayList<Integer> toposort(ArrayList<Integer>[] adj) {
 
         int used[] = new int[adj.length];
-        ArrayList<Integer> order = new ArrayList<Integer>();
+        ArrayList<Integer> order = new ArrayList<>();
 
         for (int i = 0; i < adj.length; i++) {
             if (used[i] == 0)
                 dfs(adj, used, order, i);
         }
-
         return order;
     }
 
@@ -46,6 +46,9 @@ public class Toposort {
             y = scanner.nextInt();
             adj[x - 1].add(y - 1);
         }
+        System.out.println("ADJ: ");
+        Arrays.stream(adj).forEach(list -> System.out.println(list.toString()));
+
         ArrayList<Integer> order = toposort(adj);
         for (int x : order) {
             System.out.print((x + 1) + " ");

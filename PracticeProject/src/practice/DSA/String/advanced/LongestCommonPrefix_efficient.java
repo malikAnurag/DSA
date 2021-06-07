@@ -15,7 +15,7 @@ package practice.DSA.String.advanced;
 public class LongestCommonPrefix_efficient {
 
     public static void main(String[] args) {
-        System.out.println(longestCommonPrefix(new String[] {"flower","flow","flight"}));
+        System.out.println(longestCommonPrefix(new String[] {"flow","flower","flight"}));
         System.out.println(longestCommonPrefix(new String[] {"dog","racecar","car"}));
     }
 

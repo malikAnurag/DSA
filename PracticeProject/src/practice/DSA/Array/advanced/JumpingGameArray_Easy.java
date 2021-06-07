@@ -21,7 +21,7 @@ public class JumpingGameArray_Easy {
 
     public static void main(String[] args) {
         System.out.println("Minimum number of jumps : " + getJumps(new int[]{2, 3, 1, 1, 4}));
-        System.out.println("Minimum number of jumps : " + getJumps(new int[]{2, 3, 0, 1, 4}));
+        System.out.println("Minimum number of jumps : " + getJumps(new int[]{2,0}));
     }
 
     public static int getJumps(int[] arr) {

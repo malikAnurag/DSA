@@ -28,8 +28,9 @@ package practice.DP;
 public class UniquePathsII {
 
     public static void main(String[] args) {
+        System.out.println(3 << 2);
         System.out.println("Unique Paths : " + getUniquePaths(new int[][]{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}));
-        System.out.println("Unique Paths : " + getUniquePaths(new int[][]{{0, 1}, {0, 0}}));
+        System.out.println("Unique Paths : " + getUniquePaths(new int[][]{{0, 1}}));
     }
 
     public static int getUniquePaths(int[][] grid) {

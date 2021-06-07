@@ -10,7 +10,7 @@ public class Trie {
     TrieNode root;
 
     public Trie() {
-        root = new TrieNode();
+        root = new TrieNode(' ');
     }
 
     public void insert(String word) {
@@ -21,15 +21,12 @@ public class Trie {
             char c = word.charAt(i);
             int index = c - 'a';
 
-            if (p.arr[index] == null) {
-                TrieNode node = new TrieNode();
-                p.arr[index] = node;
-                p = p.arr[index];
-            } else {
-                p = p.arr[index];
+            if (p.children[index] == null) {
+                p.children[index] = new TrieNode(c);
             }
+            p = p.children[index];
         }
-        p.isEnd = true;
+        p.isWord = true;
     }
 
     public boolean search(String word) {
@@ -39,7 +36,7 @@ public class Trie {
         if (p == null)
             return false;
 
-        else if (p.isEnd)
+        else if (p.isWord)
             return true;
 
         return false;
@@ -53,7 +50,6 @@ public class Trie {
             return true;
         } else
             return false;
-
     }
 
     public TrieNode searchNode(String word) {
@@ -64,8 +60,8 @@ public class Trie {
             char c = word.charAt(i);
             int index = c - 'a';
 
-            if (p.arr[index] != null) {
-                p = p.arr[index];
+            if (p.children[index] != null) {
+                p = p.children[index];
             } else {
                 return null;
             }

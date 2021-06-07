@@ -18,8 +18,9 @@ import java.util.Scanner;
  * */
 
 public class Acyclicity {
+
     private static int acyclic(ArrayList<Integer>[] adj) {
-        //write your code here
+
         int[] visited = new int[adj.length];
         int[] recStack = new int[adj.length];
 

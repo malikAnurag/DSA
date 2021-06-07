@@ -31,7 +31,6 @@ public class LongestCommonPrefix {
         }
 
         int counter = 0;
-
         StringBuilder sb = new StringBuilder();
 
         while(counter < minLen) {

@@ -1,5 +1,7 @@
 package practice.Testing;
 
+import java.util.Arrays;
+
 public class StringTest
 {
 
@@ -10,6 +12,14 @@ public class StringTest
 		System.out.println("New String: " + s);
 
 		System.out.println("leetcodeILove".indexOf("e"));
+
+		String[] products = {"AnuMalik", "Anura", "Anush","asdad"};
+		Arrays.sort(products);
+
+		int k = Arrays.binarySearch(products, "Anu");
+//		k = ~k;
+
+		System.out.println("k = " + k);
 
 	}
 

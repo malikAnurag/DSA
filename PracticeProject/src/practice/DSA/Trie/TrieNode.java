@@ -2,11 +2,12 @@ package practice.DSA.Trie;
 
 public class TrieNode {
 
-    TrieNode[] arr;
-    boolean isEnd;
+    char c;
+    TrieNode[] children;
+    boolean isWord;
 
-    public TrieNode() {
-        this.arr = new TrieNode[26];
+    public TrieNode(char c) {
+        this.c = c;
+        this.children = new TrieNode[26];
     }
-
 }

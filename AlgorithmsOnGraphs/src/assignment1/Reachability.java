@@ -2,15 +2,12 @@ package assignment1;
 
 import java.util.ArrayList;
 import java.util.Scanner;
-
-
 /**
- *      Given an undirected graph and two distinct vertices 𝑢 and 𝑣, check if there is a path between 𝑢 and 𝑣.
+ * Given an undirected graph and two distinct vertices 𝑢 and 𝑣, check if there is a path between 𝑢 and 𝑣.
  */
 public class Reachability {
 
     private static int reach(ArrayList<Integer>[] adj, int x, int y) {
-        //write your code here
 
         int[] visited = new int[adj.length];
 
