@@ -24,7 +24,7 @@ import java.util.Set;
  * The number of nodes in the given tree will be in the range [1, 1000].
  * Every node has value 0.
  */
-public class BinaryTreeCameras {
+public class BinaryTreeCameras$ {
 
     static int cameras;
     static Set<TreeNode> covered;

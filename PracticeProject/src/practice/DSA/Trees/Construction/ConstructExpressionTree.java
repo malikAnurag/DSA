@@ -9,7 +9,6 @@ import java.util.Stack;
 public class ConstructExpressionTree {
 
     public static void main(String[] args) {
-
         String postFix = "ab+ef*g*-";
         CharTreeNode root = constructExpressionTree(postFix);
         inOrderTraversal(root);
@@ -28,7 +27,6 @@ public class ConstructExpressionTree {
                 CharTreeNode node = new CharTreeNode(c);
                 node.right = st.pop();
                 node.left = st.pop();
-
                 st.push(node);
             }
         }
