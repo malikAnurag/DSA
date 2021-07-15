@@ -31,7 +31,6 @@ public class Callables {
         ExecutorService executorService = Executors.newFixedThreadPool(2);
         List<Callable<Integer>> taskList = Arrays.asList(callable1, callable2);
         List<Future<Integer>> futures = executorService.invokeAll(taskList);
-
         int result = 0;
 
         for(Future<Integer> future : futures) {

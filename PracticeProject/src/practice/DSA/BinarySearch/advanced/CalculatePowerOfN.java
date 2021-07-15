@@ -25,13 +25,17 @@ public class CalculatePowerOfN {
     }
 
     public static double getPower(double x, int n) {
+
         double result = calculatePower(x, n);
+
         if(n < 0)
             return 1/result;
+
         return result;
     }
 
     public static double calculatePower(double x, int n) {
+
         if(n == 0)
             return 1;
         if(n == 1)
@@ -41,6 +45,7 @@ public class CalculatePowerOfN {
 
         if(n % 2 == 0)
             return half * half;
+
         return half * half * x;
     }
 }

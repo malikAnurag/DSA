@@ -26,6 +26,17 @@ public class MapTest {
         hs.add(ac);
 
         System.out.println(hs.isEmpty());
+
+        Map<String, String> hm = new HashMap<>();
+        populateHashMap(hm);
+        System.out.println(hm);
+    }
+
+    private static void populateHashMap(Map<String, String> hm) {
+
+        Map<String, String> hmCopy = hm;
+
+        hmCopy.put("name", "Anurag Malik");
     }
 
     public static void populateMap(Map<Integer, Account> hm) {

@@ -27,17 +27,18 @@ public class MinimumDepth {
         System.out.println("Minimum depth: "+computeDepth(root));
         System.out.println("Height: "+TreeHeight.height(root));
 	}
-	
+
 	public static int computeDepth(TreeNode root) {
-		
-		return depth(root,0);
+		return depth(root, 0);
 	}
-	
-	public static int depth(TreeNode root,int level) {
-		if(root==null)
+
+	public static int depth(TreeNode root, int level) {
+
+		if(root == null)
 			return level;
+
 		level++;
-		
-		return Math.min(depth(root.left,level), depth(root.right,level));
+
+		return Math.min(depth(root.left, level), depth(root.right, level));
 	}
 }

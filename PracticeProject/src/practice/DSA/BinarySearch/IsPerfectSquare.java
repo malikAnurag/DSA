@@ -16,6 +16,7 @@ public class IsPerfectSquare {
 
         if(num == 0)
             return true;
+
         if(num < 0)
             return false;
 

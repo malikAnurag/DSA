@@ -72,9 +72,10 @@ public class WordSearch {
             char hold = board[i][j];
             board[i][j] = '&';
             boolean b = search(board, chars, pos + 1, len, i + 1, j) ||
-                    search(board, chars, pos + 1, len, i - 1, j) ||
-                    search(board, chars, pos + 1, len, i, j + 1) ||
-                    search(board, chars, pos + 1, len, i, j - 1);
+                        search(board, chars, pos + 1, len, i - 1, j) ||
+                        search(board, chars, pos + 1, len, i, j + 1) ||
+                        search(board, chars, pos + 1, len, i, j - 1);
+
             board[i][j] = hold;
             return b;
         }
