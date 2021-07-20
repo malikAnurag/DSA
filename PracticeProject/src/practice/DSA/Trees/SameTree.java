@@ -61,5 +61,4 @@ public class SameTree {
 
         return isSameTree(p.left, q.left) && isSameTree(p.right, q.right) && p.key == q.key;
     }
-
 }

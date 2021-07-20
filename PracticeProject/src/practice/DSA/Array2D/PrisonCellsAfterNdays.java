@@ -15,10 +15,7 @@ import java.util.Arrays;
  *
  * Given the initial state of the prison, return the state of the prison after N days (and N such changes described above.)
  *
- *
- *
  * Example 1:
- *
  * Input: cells = [0,1,0,1,1,0,0,1], N = 7
  * Output: [0,0,1,1,0,0,0,0]
  * Explanation:
@@ -33,14 +30,12 @@ import java.util.Arrays;
  * Day 7: [0, 0, 1, 1, 0, 0, 0, 0]
  *
  * Example 2:
- *
  * Input: cells = [1,0,0,1,0,0,1,0], N = 1000000000
  * Output: [0,0,1,1,1,1,1,0]
  */
 public class PrisonCellsAfterNdays {
 
     public static void main(String[] args) {
-
         System.out.println(Arrays.toString(prisonAfterNDays(new int[]{1,0,0,1,0,0,1,0}, 1000000000)));
     }
 
@@ -51,7 +46,9 @@ public class PrisonCellsAfterNdays {
         N = N % 14 == 0 ? 14 : N % 14;
 
         while(N > 0) {
+
             for(int i = 1 ; i < cells.length-1 ; i++) {
+
                 if(arr[i-1] == arr[i+1]) {
                     cells[i] = 1;
                 }

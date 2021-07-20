@@ -18,27 +18,30 @@ public class NumberOfSubarraysWithSumK {
 
         int count = 0;
         int currSum = 0;
-
         Map<Integer, Integer> prevSum = new HashMap<>();
 
         for(int i = 0; i < nums.length; i++) {
 
             currSum += nums[i];
 
-            if(currSum == k)
+            if(currSum == k) {
                 count++;
+            }
 
             // currsum exceeds given sum by currsum - sum. Find number of subarrays having this sum and exclude
             // those subarray from currsum by increasing count by same amount.
-            if(prevSum.containsKey(currSum - k))
+            if(prevSum.containsKey(currSum - k)) {
                 count += prevSum.get(currSum - k);
+            }
 
             Integer p = prevSum.get(currSum);
 
-            if(p == null)
+            if(p == null) {
                 prevSum.put(currSum, 1);
-            else
+            }
+            else {
                 prevSum.put(currSum, p + 1);
+            }
         }
         return count;
     }

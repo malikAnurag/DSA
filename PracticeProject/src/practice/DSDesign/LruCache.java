@@ -20,6 +20,7 @@ public class LruCache {
     }
 
     public int get(int key) {
+
         if (map.containsKey(key)) {
             LruNode node = map.get(key);
             removeNode(node);
@@ -43,12 +44,14 @@ public class LruCache {
     }
 
     public void set(int key, int value) {
+
         LruNode node = new LruNode(key, value);
 
         if (map.containsKey(key)) {
             LruNode temp = map.get(key);
             removeNode(temp);
-        } else {
+        }
+        else {
             if (capacity == map.size()) {
                 LruNode temp = end.prev;
                 removeNode(temp);

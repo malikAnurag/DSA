@@ -38,9 +38,7 @@ public class RightView {
 	}
 
 	public static void printSideView(TreeNode root) {
-
-		int dist = 0;
-		populateMap(root, hm, dist);
+		populateMap(root, hm, 0);
 	}
 
 	public static void populateMap(TreeNode root, TreeMap<Integer, Integer> hm, int dist) {
@@ -55,5 +53,4 @@ public class RightView {
 		populateMap(root.right, hm, dist + 1);
 		populateMap(root.left, hm, dist + 1);
 	}
-
 }

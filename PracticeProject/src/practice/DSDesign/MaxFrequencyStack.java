@@ -39,49 +39,47 @@ import java.util.Stack;
 public class MaxFrequencyStack {
 
     int maxFreq;
-    Map<Integer, Integer> freq;
-    Map<Integer, Stack<Integer>> group;
+    Map<Integer, Integer> numberToFrequencyMap;
+    Map<Integer, Stack<Integer>> frequencyToStackMap;
 
     public MaxFrequencyStack() {
-        freq = new HashMap();
-        group = new HashMap();
+        numberToFrequencyMap = new HashMap();
+        frequencyToStackMap = new HashMap();
         maxFreq = 0;
     }
 
     public void push(int val) {
 
-        int f = freq.getOrDefault(val, 0) + 1;
+        int frequency = numberToFrequencyMap.getOrDefault(val, 0) + 1;
 
-        freq.put(val, f);
+        numberToFrequencyMap.put(val, frequency);
 
-        if(f > maxFreq) {
-            maxFreq = f;
+        if(frequency > maxFreq) {
+            maxFreq = frequency;
         }
 
-        Stack<Integer> st = group.get(f);
+        Stack<Integer> st = frequencyToStackMap.get(frequency);
 
         if(st == null) {
             st = new Stack();
         }
 
         st.push(val);
-        group.put(f, st);
+        frequencyToStackMap.put(frequency, st);
     }
 
     public int pop() {
 
-        int res = group.get(maxFreq).pop();
+        int result = frequencyToStackMap.get(maxFreq).pop();
 
-        freq.put(res, maxFreq - 1);
+        numberToFrequencyMap.put(result, maxFreq - 1);
 
-        if(group.get(maxFreq).size() == 0) {
+        if(frequencyToStackMap.get(maxFreq).size() == 0) {
             maxFreq--;
         }
-
-        return res;
+        return result;
     }
 }
-
 /**
  * Your FreqStack object will be instantiated and called as such:
  * FreqStack obj = new FreqStack();

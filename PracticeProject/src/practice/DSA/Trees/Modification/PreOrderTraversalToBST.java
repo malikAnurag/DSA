@@ -10,17 +10,19 @@ import java.util.Stack;
 public class PreOrderTraversalToBST {
 
     public static void main(String[] args) {
+
         int[] preorder = {10, 5, 1, 7, 40, 50};
         System.out.println(getNode(preorder));
     }
 
-
     public static TreeNode getNode(int[] preorder) {
 
-        if(preorder == null)
+        if(preorder == null) {
             return null;
-        else if(preorder.length == 1)
+        }
+        else if(preorder.length == 1) {
             return new TreeNode(preorder[0]);
+        }
 
         Stack<TreeNode> st = new Stack<>();
         TreeNode root = new TreeNode(preorder[0]);

@@ -28,6 +28,7 @@ public class CloneListWithRandomPointer {
 
         // making copies of all nodes next to them
         while (temp1 != null) {
+
             ListNode node = new ListNode(temp1.val);
             node.next = temp1.next;
             temp1.next = node;
@@ -38,6 +39,7 @@ public class CloneListWithRandomPointer {
         temp1 = head;
 
         while (temp1 != null && temp1.next != null) {
+
             temp1.next.random = temp1.random != null ? temp1.random.next : null;
             temp1 = temp1.next.next;
         }
@@ -47,6 +49,7 @@ public class CloneListWithRandomPointer {
         ListNode ans = res;
 
         while (temp1 != null) {
+
             temp1.next = temp1.next != null ? temp1.next.next : null;
             temp1 = temp1.next;
 

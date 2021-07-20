@@ -11,7 +11,6 @@ import java.util.Arrays;
  * Note: You are not suppose to use the library's sort function for this problem.
  *
  * Example:
- *
  * Input: [2,0,2,1,1,0]
  * Output: [0,0,1,1,2,2]
  *
@@ -24,7 +23,6 @@ import java.util.Arrays;
 public class SortColors {
 
     public static void main(String[] args) {
-
         System.out.println(Arrays.toString(sortColors(new int[]{2,0,2,1,1,0})));
     }
 

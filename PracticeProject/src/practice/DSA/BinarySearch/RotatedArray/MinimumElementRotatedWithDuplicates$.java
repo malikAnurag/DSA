@@ -34,14 +34,15 @@ public class MinimumElementRotatedWithDuplicates$ {
 
             int mid = (low + high) / 2;
 
-            if (arr[mid] == arr[high])
+            if (arr[mid] == arr[high]) {
                 high--;
-
-            else if (arr[mid] > arr[high])
+            }
+            else if (arr[mid] > arr[high]) {
                 low = mid + 1;
-
-            else
+            }
+            else {
                 high = mid;
+            }
         }
         return arr[high];
     }

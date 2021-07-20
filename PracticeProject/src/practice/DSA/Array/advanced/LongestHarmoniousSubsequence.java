@@ -12,7 +12,6 @@ import java.util.Arrays;
  * A subsequence of array is a sequence that can be derived from the array by deleting some or no
  * elements without changing the order of the remaining elements.
  *
- *
  * Example 1:
  * Input: nums = [1,3,2,2,5,2,3,7]
  * Output: 5
@@ -36,8 +35,7 @@ public class LongestHarmoniousSubsequence {
 
     public static int findLHS(int[] arr) {
 
-        // O(n) time, O(1) space
-
+        // O(n log n) time, O(1) space
         Arrays.sort(arr);
 
         int left = 0, right = 1;
@@ -53,7 +51,8 @@ public class LongestHarmoniousSubsequence {
 
             if(diff <= 1) {
                 right++;
-            } else {
+            }
+            else {
                 left++;
             }
         }

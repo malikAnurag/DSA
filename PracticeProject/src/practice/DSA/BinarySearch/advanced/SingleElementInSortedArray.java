@@ -27,10 +27,12 @@ public class SingleElementInSortedArray {
 
             int mid = (left + right) / 2;
 
-            if ((mid % 2 == 0 && arr[mid] == arr[mid + 1]) || (mid % 2 != 0 && arr[mid] == arr[mid - 1]))
+            if ((mid % 2 == 0 && arr[mid] == arr[mid + 1]) || (mid % 2 != 0 && arr[mid] == arr[mid - 1])) {
                 left = mid + 1;
-            else
+            }
+            else {
                 right = mid;
+            }
         }
         return arr[left];
     }

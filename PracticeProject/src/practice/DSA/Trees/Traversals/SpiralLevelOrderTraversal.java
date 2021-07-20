@@ -66,8 +66,7 @@ public class SpiralLevelOrderTraversal {
 			}
 		}
 	}
-	
-	
+
 	public static int height(TreeNode root) {
 		if (root == null)
 			return 0;

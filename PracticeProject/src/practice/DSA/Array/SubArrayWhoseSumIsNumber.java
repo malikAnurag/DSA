@@ -1,8 +1,11 @@
 package practice.DSA.Array;
 
 import java.util.Arrays;
-
+/**
+ * Find a continuous sub-array whose sum is equal to the given target number.
+ */
 public class SubArrayWhoseSumIsNumber {
+
     public static void main(String[] args) {
         findSubArray(new int[]{42, 15, 12, 8, 6, 32}, 26);
 

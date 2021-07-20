@@ -30,11 +30,13 @@ public class PivotIndex {
         }
 
         for (int i = 0; i < array.length; i++) {
+
             sum -= array[i];
 
             if (lSum == sum) {
                 return i;
             }
+
             lSum += array[i];
         }
         return -1;

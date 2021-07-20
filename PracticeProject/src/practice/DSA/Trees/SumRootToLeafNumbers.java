@@ -27,8 +27,6 @@ public class SumRootToLeafNumbers {
 //		       2   3
 //			  / \
 //		     4   5
-
-
     }
 
     public static int findSum(TreeNode root, int val) {

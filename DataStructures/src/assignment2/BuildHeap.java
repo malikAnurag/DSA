@@ -1,10 +1,6 @@
 package assignment2;
 
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.StringTokenizer;
@@ -51,27 +47,26 @@ public class BuildHeap {
     }
 
     public void heapify(int[] arr, int n, int i) {
-    	
-    		int smallest = i;
-    		int l = 2*i + 1;
-    		int r = 2*i + 2;
-    		
-    		if(l< n && arr[l]< arr[smallest])
-    			smallest = l;
-    		
-    		if(r<n && arr[r]<arr[smallest])
-    			smallest = r;
-    		
-    		if(smallest != i) {
-    			Swap swap = new Swap(i,smallest);
-    			swaps.add(swap);
-    			int temp = arr[i];
-    			arr[i] = arr[smallest];
-    			arr[smallest] = temp;
-    			
-    			heapify(arr, n , smallest);
-    		}
-    	
+
+        int smallest = i;
+        int l = 2 * i + 1;
+        int r = 2 * i + 2;
+
+        if(l < n && arr[l] < arr[smallest])
+            smallest = l;
+
+        if(r < n && arr[r] < arr[smallest])
+            smallest = r;
+
+        if(smallest != i) {
+            Swap swap = new Swap(i, smallest);
+            swaps.add(swap);
+            int temp = arr[i];
+            arr[i] = arr[smallest];
+            arr[smallest] = temp;
+
+            heapify(arr, n, smallest);
+        }
     }
     public void solve() throws IOException {
         in = new FastScanner();

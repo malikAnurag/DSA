@@ -35,7 +35,8 @@ public class PopulateNextPointers_II_ExtraSpace {
         while(!q.isEmpty()) {
 
             int size = q.size();
-            for(int i = 0 ; i < size; i++) {
+
+            for(int i = 0; i < size; i++) {
 
                 TreeNode node = q.remove();
 

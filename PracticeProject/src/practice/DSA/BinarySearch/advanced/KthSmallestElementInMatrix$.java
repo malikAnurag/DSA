@@ -40,7 +40,8 @@ public class KthSmallestElementInMatrix$ {
 
             if(count < k) {
                 lo = mid + 1;
-            } else {
+            }
+            else {
                 hi = mid;
             }
         }
@@ -55,12 +56,12 @@ public class KthSmallestElementInMatrix$ {
 
             if(matrix[i][j] > target) {
                 i--;
-            } else {
+            }
+            else {
                 count = count + i + 1;
                 j++;
             }
         }
         return count;
-
     }
 }

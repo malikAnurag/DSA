@@ -9,7 +9,6 @@ public class InsertionSort {
         int arr[] = { 12, 11, 13, 5, 6 };
         insertionSort(arr);
         System.out.println(Arrays.toString(arr));
-
     }
 
     public static void insertionSort(int[] arr) {
@@ -17,6 +16,7 @@ public class InsertionSort {
         int n = arr.length;
 
         for(int i = 1 ; i < n ; i++) {
+
             int j = i - 1;
             int key = arr[i];
 

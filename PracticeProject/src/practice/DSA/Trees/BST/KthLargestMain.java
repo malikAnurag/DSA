@@ -6,7 +6,7 @@ public class KthLargestMain {
 
         // Finding THIRD largest element here
 
-        KthLargestElementinStream kthLargest = new KthLargestElementinStream(new int[]{4, 5, 8, 2}, 3);
+        KthLargestElementInStream kthLargest = new KthLargestElementInStream(new int[]{4, 5, 8, 2}, 3);
         System.out.println(kthLargest.add(3));   // return 4
         System.out.println(kthLargest.add(5));   // return 5
         System.out.println(kthLargest.add(10));  // return 5

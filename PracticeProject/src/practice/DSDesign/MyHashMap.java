@@ -45,11 +45,13 @@ public class MyHashMap {
      * value will always be non-negative.
      */
     public void put(int key, int value) {
+
         int bucket = key % SIZE;
 
         if (map[bucket] == null) {
             map[bucket] = new LinkedList<>();
-        } else {
+        }
+        else {
             for (Entry entry : map[bucket]) {
                 if (entry.key == key) {
                     entry.value = value;
@@ -57,13 +59,14 @@ public class MyHashMap {
                 }
             }
         }
-        map[bucket].add(new Entry(key, value));
+        map[bucket].add(new Entry(key, value));// If not found in the existing entries then add a new entry to that bucket
     }
 
     /**
      * Returns the value to which the specified key is mapped, or -1 if this map contains no mapping for the key
      */
     public int get(int key) {
+
         int bucket = key % SIZE;
         LinkedList<Entry> entries = map[bucket];
 
@@ -82,6 +85,7 @@ public class MyHashMap {
      * Removes the mapping of the specified value key if this map contains a mapping for the key
      */
     public void remove(int key) {
+
         int bucket = key % SIZE;
         Entry toRemove = null;
         LinkedList<Entry> entries = map[bucket];
@@ -95,7 +99,8 @@ public class MyHashMap {
             }
         }
 
-        if (toRemove == null) return;
+        if (toRemove == null)
+            return;
 
         map[bucket].remove(toRemove);
     }

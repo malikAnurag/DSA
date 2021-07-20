@@ -49,10 +49,12 @@ public class ConsecutiveCharacters {
         char prev = '\0';
 
         for (char c : arr) {
+
             if (prev != '\0') {
                 if (c == prev) {
                     counter++;
-                } else if (c != prev) {
+                }
+                else {
                     max = Math.max(max, counter);
                     counter = 1;
                     prev = c;
@@ -62,7 +64,5 @@ public class ConsecutiveCharacters {
             }
         }
         return Math.max(max, counter);
-
     }
-
 }

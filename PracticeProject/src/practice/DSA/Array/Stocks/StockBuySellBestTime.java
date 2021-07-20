@@ -35,6 +35,7 @@ public class StockBuySellBestTime {
         int maxProfit = Integer.MIN_VALUE;
 
         for(int i = 0 ; i < prices.length ; i++) {
+
             if(prices[i] < minPrice)
                 minPrice = prices[i];
 
@@ -42,8 +43,6 @@ public class StockBuySellBestTime {
                 maxProfit = prices[i] - minPrice;
             }
         }
-
         return maxProfit;
     }
-
 }

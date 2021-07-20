@@ -20,6 +20,7 @@ public class ArraySum {
     }
 
     public static void getSum(int start, int sum) {
+
         if(start == arr.length) {
             return;
         }

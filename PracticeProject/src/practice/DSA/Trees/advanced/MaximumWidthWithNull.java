@@ -67,11 +67,11 @@ import java.util.LinkedList;
 public class MaximumWidthWithNull {
 
     /*
-		   1(0)
-         /   \
-        3(0)  2 (1)
-       / \     \
-      5(0) 3(1) 9 (2)
+		    1(0)
+         /      \
+        3(0)      2 (1)
+       / \      /    \
+     5(0) 3(1) null(2) 9 (3)
 		 *
 		 *
 		 * */
@@ -104,14 +104,17 @@ public class MaximumWidthWithNull {
             // this evaluation happens when the whole level is filled
             max = Math.max(max, list.peekLast().pos - list.peekFirst().pos + 1);
 
-            for(int i = 0 ; i < size ; i++) {
+            for(int i = 0; i < size; i++) {
 
                 Holder holder = list.poll();
 
-                if(holder.node.left != null)
+                if(holder.node.left != null) {
                     list.add(new Holder(holder.node.left, 2 * holder.pos));
-                if(holder.node.right != null)
+                }
+
+                if(holder.node.right != null) {
                     list.add(new Holder(holder.node.right, 2 * holder.pos + 1));
+                }
             }
         }
         return max;

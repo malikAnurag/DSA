@@ -28,17 +28,17 @@ public class ValidBST {
     }
 
     /* Returns true if the given tree is a BST and its values are >= min and <= max. */
-    static boolean isBSTUtil(TreeNode treeNode, int min, int max) {
+    static boolean isBSTUtil(TreeNode root, int min, int max) {
         /* an empty tree is BST */
-        if(treeNode == null)
+        if(root == null)
             return true;
 
-        /* false if this treeNode violates the min/max constraints */
-        if(treeNode.key < min || treeNode.key > max)
+        /* false if this root violates the min/max constraints */
+        if(root.key < min || root.key > max)
             return false;
 
         /* otherwise check the subtrees recursively tightening the min/max constraints */
         // Allow only distinct values
-        return (isBSTUtil(treeNode.left, min, treeNode.key - 1) && isBSTUtil(treeNode.right, treeNode.key + 1, max));
+        return (isBSTUtil(root.left, min, root.key - 1) && isBSTUtil(root.right, root.key + 1, max));
     }
 }

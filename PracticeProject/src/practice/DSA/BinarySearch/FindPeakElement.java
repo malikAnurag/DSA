@@ -38,7 +38,8 @@ public class FindPeakElement {
 
             if(nums[mid] > nums[mid + 1]) {
                 right = mid;
-            } else {
+            }
+            else {
                 left = mid + 1;
             }
         }

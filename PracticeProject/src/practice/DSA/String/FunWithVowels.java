@@ -27,11 +27,14 @@ class FunWithVowels {
         Map<Character, String> longSeqMap = new HashMap<>();
 
         for (char c : charArray) {
+
             String currentCharseq;
             String prevCharseq = null;
+
             if (c == a) {
                 currentCharseq = longSeqMap.getOrDefault(c, "");
-            } else {
+            }
+            else {
                 currentCharseq = longSeqMap.get(c);
                 char precChar = cMap.get(c);
                 prevCharseq = longSeqMap.get(precChar);
@@ -39,12 +42,16 @@ class FunWithVowels {
 
             if (prevCharseq == null && currentCharseq != null) {
                 updateMap(currentCharseq, c, longSeqMap);
-            } else if (currentCharseq == null && prevCharseq != null) {
+            }
+            else if (currentCharseq == null && prevCharseq != null) {
                 updateMap(prevCharseq, c, longSeqMap);
-            } else if (currentCharseq != null && prevCharseq != null) {
+            }
+            else if (currentCharseq != null && prevCharseq != null) {
+
                 if (currentCharseq.length() < prevCharseq.length()) {
                     updateMap(prevCharseq, c, longSeqMap);
-                } else {
+                }
+                else {
                     updateMap(currentCharseq, c, longSeqMap);
                 }
             }
@@ -53,7 +60,6 @@ class FunWithVowels {
         if (longSeqMap.get(u) == null) {
             return 0;
         }
-
         return longSeqMap.get(u).length();
     }
 
@@ -61,5 +67,4 @@ class FunWithVowels {
         String currCharLongestSub = longestSub + c;
         longSeqMap.put(c, currCharLongestSub);
     }
-
 }

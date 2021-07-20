@@ -4,11 +4,9 @@ public class FirstMissingIntConstSpace {
 
 
     public static void main(String[] args) {
-
         int[] A = new int[]{1, 2, 3, 4, 5, 6, 7, 9};
-        System.out.println("Missing integer: " + findFirst(A, A.length + 1));
+        System.out.println("Missing integer: " + findFirst(A, A.length + 1)); // One is missing, that's why length + 1
     }
-
 
     public static int findFirst(int[] A, int n) {
 

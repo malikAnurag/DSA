@@ -51,6 +51,5 @@ public class MergeSort {
         while (j < n2) {
             arr[k++] = R[j++];
         }
-
     }
 }

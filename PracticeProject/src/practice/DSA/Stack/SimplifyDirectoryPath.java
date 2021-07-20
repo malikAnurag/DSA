@@ -10,25 +10,25 @@ public class SimplifyDirectoryPath {
         String B = "/../../home/../c//d";
         String C = "/home//foo";
 
-        System.out.println(getSimplePath(A));
+//        System.out.println(getSimplePath(A));
         System.out.println(getSimplePath(B));
-        System.out.println(getSimplePath(C));
-
+//        System.out.println(getSimplePath(C));
     }
-
 
     public static String getSimplePath(String A) {
 
         Stack<String> stack = new Stack<>();
         String[] args = A.trim().split("/");
 
-        for (String s : args) {
-            if (s.equals("..")) {
+        for (String str : args) {
+
+            if (str.equals("..")) {
                 if (!stack.isEmpty()) {
                     stack.pop();
                 }
-            } else if (!s.isEmpty() && !s.equals(".")) {
-                stack.push(s);
+            }
+            else if (!str.isEmpty() && !str.equals(".")) {
+                stack.push(str);
             }
         }
 
@@ -39,7 +39,6 @@ public class SimplifyDirectoryPath {
             sb.insert(0, stack.pop());
             sb.insert(0, "/");
         }
-
         return sb.length() != 0 ? sb.toString() : "/";
     }
 }

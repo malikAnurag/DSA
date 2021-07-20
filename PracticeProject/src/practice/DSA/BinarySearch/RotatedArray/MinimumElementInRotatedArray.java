@@ -24,17 +24,18 @@ public class MinimumElementInRotatedArray {
 
             int mid = (left + right) / 2;
 
-            if(rotated[left] <= rotated[right])
+            if(rotated[left] <= rotated[right]) {
                 return rotated[left];
-
-            else if(rotated[mid - 1] >= rotated[mid] && rotated[mid] <= rotated[mid + 1])
+            }
+            else if(rotated[mid - 1] >= rotated[mid] && rotated[mid] <= rotated[mid + 1]) {
                 return rotated[mid];
-
-            else if(rotated[mid] <= rotated[right])
+            }
+            else if(rotated[mid] <= rotated[right]) {
                 right = mid - 1;
-
-            else
+            }
+            else {
                 left = mid + 1;
+            }
         }
         return -1;
     }

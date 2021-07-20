@@ -36,7 +36,8 @@ public class LongestValidParenthesis_O1_Space {
 
             if (c == '(') {
                 open++;
-            } else {
+            }
+            else {
                 closed++;
             }
 
@@ -49,6 +50,7 @@ public class LongestValidParenthesis_O1_Space {
                 max = Math.max(len, max);
             }
         }
+
         open = closed = 0;
 
         for (int i = str.length() - 1; i >= 0; i--) {
@@ -57,7 +59,8 @@ public class LongestValidParenthesis_O1_Space {
 
             if (c == '(') {
                 open++;
-            } else {
+            }
+            else {
                 closed++;
             }
 

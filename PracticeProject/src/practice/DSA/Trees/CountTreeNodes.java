@@ -29,24 +29,24 @@ public class CountTreeNodes {
     }
 
     public static int countNodes(TreeNode root) {
-        Node n = new Node(0);
+        NodeVal n = new NodeVal(0);
         count(root, n);
         return n.value;
     }
 
-    public static void count(TreeNode root, Node n) {
+    public static void count(TreeNode root, NodeVal n) {
         if(root == null)
-            return ;
+            return;
 
-        count(root.left, n);
         n.value += 1;
+        count(root.left, n);
         count(root.right, n);
     }
 }
 
-class Node {
+class NodeVal {
     int value;
-    Node(int value) {
+    NodeVal(int value) {
         this.value = value;
     }
 }

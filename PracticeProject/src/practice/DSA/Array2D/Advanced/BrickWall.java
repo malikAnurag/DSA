@@ -56,9 +56,11 @@ public class BrickWall {
         Map<Integer, Integer> map = new HashMap<>();
 
         for(List<Integer> list : wall) {
+
             int end = 0;
 
             for(int brick = 0; brick < list.size() - 1; brick++) {
+
                 end += list.get(brick);
                 map.put(end, map.getOrDefault(end, 0) + 1);
                 untouched = Math.max(untouched, map.get(end));

@@ -4,7 +4,6 @@ import java.util.Stack;
 
 /**
  * Construction of an expression Tree from given postfix expression.
- * 
  */
 public class ConstructExpressionTree {
 
@@ -23,7 +22,8 @@ public class ConstructExpressionTree {
 
             if(!isOperator(c)) {
                 st.push(new CharTreeNode(c));
-            } else {
+            }
+            else {
                 CharTreeNode node = new CharTreeNode(c);
                 node.right = st.pop();
                 node.left = st.pop();
@@ -47,6 +47,7 @@ public class ConstructExpressionTree {
         inOrderTraversal(root.right);
     }
 }
+
 class CharTreeNode {
 
     char value;

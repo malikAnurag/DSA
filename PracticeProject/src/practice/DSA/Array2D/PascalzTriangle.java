@@ -25,17 +25,21 @@ public class PascalzTriangle {
     }
 
     public static List<List<Integer>> generatePascalTriangle(int numRows) {
+
         List<List<Integer>> result = new ArrayList();
         List<Integer> al;
 
         for(int i = 1; i <= numRows; i++) {
+
             al = new ArrayList();
+
             for(int j = 0; j < i; j++) {
                 int t;
 
                 if(j == 0 || j == i - 1) {
                     al.add(1);
-                } else {
+                }
+                else {
                     t = result.get(i - 2).get(j) + result.get(i - 2).get(j - 1);
                     al.add(t);
                 }

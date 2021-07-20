@@ -34,7 +34,6 @@ public class PathSum {
         root.right.right.right = new TreeNode(1);
 
         System.out.println(checkPathSum(root, 22));
-
     }
 
     static boolean checkPathSum(TreeNode root, int target) {

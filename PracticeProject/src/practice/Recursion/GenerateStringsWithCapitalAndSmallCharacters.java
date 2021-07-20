@@ -39,7 +39,8 @@ public class GenerateStringsWithCapitalAndSmallCharacters {
 
             if(Character.isLowerCase(c1)) {
                 sb.setCharAt(i, Character.toUpperCase(c1));
-            } else {
+            }
+            else {
                 sb.setCharAt(i, Character.toLowerCase(c1));
             }
 

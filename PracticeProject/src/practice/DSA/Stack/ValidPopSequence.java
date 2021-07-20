@@ -28,11 +28,12 @@ public class ValidPopSequence {
 
     public static boolean checkSequence(int[] pushed, int[] popped) {
 
-        Stack<Integer> st = new Stack<>();
-        int size = pushed.length;
         int counter = 0;
+        int size = pushed.length;
+        Stack<Integer> st = new Stack<>();
 
         for (int i = 0; i < size; i++) {
+
             st.push(pushed[i]);
 
             while (!st.isEmpty() && counter < size && popped[counter] == st.peek()) {

@@ -15,6 +15,7 @@ package practice.DSA.BinarySearch;
  * Explanation: The square root of 8 is 2.82842..., and since the decimal part is truncated, 2 is returned.
  */
 public class FindSquareRoot {
+
     public static void main(String[] args) {
         System.out.println(getSquareRoot(4)); // 2
         System.out.println(getSquareRoot(8)); // 2
@@ -32,12 +33,12 @@ public class FindSquareRoot {
         while(left <= right) {
 
             int mid = left + (right - left)/2;
-            long midsqr = (long) mid * mid;
+            long midSqr = (long) mid * mid;
 
-            if(midsqr == x) {
+            if(midSqr == x) {
                 return mid;
             }
-            else if(midsqr > x) {
+            else if(midSqr > x) {
                 right = mid - 1;
             }
             else {

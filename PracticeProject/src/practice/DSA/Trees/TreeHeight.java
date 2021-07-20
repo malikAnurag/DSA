@@ -6,6 +6,7 @@ public class TreeHeight {
 
 		if(root == null)
 			return 0;
+
 		int lh = height(root.left);
 		int rh = height(root.right);
 

@@ -13,8 +13,7 @@ public class MinimumDepth {
 	 * 
 	 * */
 	public static void main(String[] args) {
-		
-		TreeNode root = new TreeNode(1); 
+		TreeNode root = new TreeNode(1);
         root.left = new TreeNode(2); 
         root.right = new TreeNode(3); 
         root.left.left = new TreeNode(4); 
@@ -24,8 +23,8 @@ public class MinimumDepth {
         root.right.left.right = new TreeNode(8); 
         root.right.right.right = new TreeNode(9); 
         
-        System.out.println("Minimum depth: "+computeDepth(root));
-        System.out.println("Height: "+TreeHeight.height(root));
+        System.out.println("Minimum depth: " + computeDepth(root));
+        System.out.println("Height: " + TreeHeight.height(root));
 	}
 
 	public static int computeDepth(TreeNode root) {

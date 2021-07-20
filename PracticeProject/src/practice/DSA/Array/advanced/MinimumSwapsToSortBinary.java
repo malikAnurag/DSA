@@ -1,7 +1,7 @@
 package practice.DSA.Array.advanced;
 
 /**
- * Given a binary array, find the number of minimum adjacent swaps needed to group 1's and 0's.
+ * Given a binary array, find the number of minimum ADJACENT swaps needed to group 1's and 0's.
  */
 public class MinimumSwapsToSortBinary {
 

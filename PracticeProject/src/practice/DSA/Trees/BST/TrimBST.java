@@ -35,7 +35,9 @@ import practice.DSA.Trees.TreeNode;
  * Output: [2]
  */
 public class TrimBST {
+
     public static void main(String[] args) {
+
         TreeNode root = new TreeNode(1);
         root.left = new TreeNode(0);
         root.right = new TreeNode(2);
@@ -53,11 +55,13 @@ public class TrimBST {
         root.left = trimBST(root.left , low , high);
         root.right = trimBST(root.right, low, high);
 
-        if(root.key < low)
+        if(root.key < low) {
             return root.right;
+        }
 
-        if(root.key > high)
+        if(root.key > high) {
             return root.left;
+        }
 
         return root;
     }

@@ -14,15 +14,15 @@ import java.util.Stack;
 public class CheckValidStringParenthesis {
 
     public static void main(String[] args) {
-
         System.out.println(checkValidString("(*)"));
         System.out.println(checkValidString("*())"));
     }
 
     public static boolean checkValidString(String s) {
 
-        if (s.length() == 1 && !s.equals("*"))
+        if (s.length() == 1 && !s.equals("*")) {
             return false;
+        }
 
         //Use two stacks to store the indices for '(' and '*'
         //Whenever a ')' is encountered, pop the indices from 1st stack and if it is empty, use the second stack
@@ -31,23 +31,30 @@ public class CheckValidStringParenthesis {
 
         for (int i = 0; i < s.length(); i++) {
 
-            if (s.charAt(i) == '(')
+            if (s.charAt(i) == '(') {
                 stack1.push(i);
-            else if (s.charAt(i) == '*')
+            }
+            else if (s.charAt(i) == '*') {
                 stack2.push(i);
+            }
             else {
-                if (!stack1.isEmpty())
+                if (!stack1.isEmpty()) {
                     stack1.pop();
-                else if (!stack2.isEmpty())
+                }
+                else if (!stack2.isEmpty()) {
                     stack2.pop();
-                else
+                }
+                else {
                     return false;
+                }
             }
         }
         // If both the stacks are not empty and the '*' stack has any index < that of '(' then return false
         while (!stack1.isEmpty() && !stack2.isEmpty()) {
-            if (stack2.pop() < stack1.pop())
+
+            if (stack2.pop() < stack1.pop()) {
                 return false;
+            }
         }
         return stack1.isEmpty();
     }

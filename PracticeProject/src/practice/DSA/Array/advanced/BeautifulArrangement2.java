@@ -28,7 +28,7 @@ public class BeautifulArrangement2 {
 
     public static int[] constructArray(int n, int k) {
 
-        int counter = 0;
+        int start = 0;
         int[] arr = new int[n];
 
         for(int i = 0; i < n; i++) {
@@ -36,7 +36,7 @@ public class BeautifulArrangement2 {
         }
 
         for(int i = 0; i < k; i++) {
-            rotate(arr, counter++);
+            rotate(arr, start++);
         }
         return arr;
     }

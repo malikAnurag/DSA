@@ -40,22 +40,23 @@ public class FlattenTreeToList {
         System.out.print(head.right.right.right.right.right.right.right.right.key + " ");
 	}
 	
-	public static TreeNode flatten(TreeNode node) {
-		TreeNode head = node;
-		Stack<TreeNode> st = new Stack<TreeNode>();
+	public static TreeNode flatten(TreeNode root) {
 
-		while (node != null || !st.empty()) {
+		TreeNode head = root;
+		Stack<TreeNode> st = new Stack<>();
 
-			if (node.right != null) {
-				st.push(node.right);
+		while (root != null || !st.empty()) {
+
+			if (root.right != null) {
+				st.push(root.right);
 			}
-			node.right = node.left;
-			node.left = null;
+			root.right = root.left;
+			root.left = null;
 
-			if (node.right == null && !st.empty()) {
-				node.right = st.pop();
+			if (root.right == null && !st.empty()) {
+				root.right = st.pop();
 			}
-			node = node.right;
+			root = root.right;
 		}
 		return head;
 	}

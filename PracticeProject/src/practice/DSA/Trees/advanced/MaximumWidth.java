@@ -1,5 +1,6 @@
 package practice.DSA.Trees.advanced;
 
+import practice.DSA.Trees.TreeHeight;
 import practice.DSA.Trees.TreeNode;
 
 /**
@@ -45,18 +46,18 @@ public class MaximumWidth {
     public static int widthOfBinaryTree(TreeNode root) {
 
         int[] count = new int[10];
-        int h = height(root);
+        int h = TreeHeight.height(root);
 
         maxWidth(count, 0, root);
 
         return getMax(count, h);
     }
 
-    public static void maxWidth(int[] count, int level, TreeNode node) {
-        if (node != null) {
+    public static void maxWidth(int[] count, int level, TreeNode root) {
+        if (root != null) {
             count[level]++;
-            maxWidth(count, level + 1, node.left);
-            maxWidth(count, level + 1, node.right);
+            maxWidth(count, level + 1, root.left);
+            maxWidth(count, level + 1, root.right);
         }
     }
 
@@ -69,16 +70,5 @@ public class MaximumWidth {
                 max = count[i];
         }
         return max;
-    }
-
-    public static int height(TreeNode root) {
-
-        if (root == null)
-            return 0;
-
-        int lh = height(root.left);
-        int rh = height(root.right);
-
-        return lh > rh ? lh + 1 : rh + 1;
     }
 }

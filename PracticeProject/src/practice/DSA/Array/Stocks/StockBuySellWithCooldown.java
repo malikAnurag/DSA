@@ -22,7 +22,6 @@ public class StockBuySellWithCooldown {
     static Map<Integer, Integer> buyMap = new HashMap<>();
     static Map<Integer, Integer> sellMap = new HashMap<>();
 
-
     public static void main(String[] args) {
 
         System.out.println("Max Profit : " + buy(new int[]{1, 2, 3, 0, 2}, 0));
@@ -52,6 +51,4 @@ public class StockBuySellWithCooldown {
         sellMap.put(i, Math.max(prices[i] + buy(prices, i + 2), sell(prices, i + 1)));
         return sellMap.get(i);
     }
-
-
 }

@@ -49,6 +49,7 @@ public class AlienDictionary {
             int i = 0, j = 0;
 
             while(i < arr1.length && j < arr2.length) {
+
                 char c1 = arr1[i];
                 char c2 = arr2[j];
 

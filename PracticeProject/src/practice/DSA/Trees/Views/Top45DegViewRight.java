@@ -37,9 +37,7 @@ public class Top45DegViewRight {
 	}
 
 	public static void printRightView(TreeNode root) {
-
-		int dist = 0;
-		populateMap(root, hm, dist);
+		populateMap(root, hm, 0);
 	}
 
 	public static void populateMap(TreeNode root, TreeMap<Integer, Integer> hm, int dist) {

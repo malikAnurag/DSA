@@ -1,7 +1,7 @@
 package practice.DSA.BinarySearch.advanced;
 
 /**
- * Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
+ * Implement pow(x, n), which calculates x raised to the power n (i.e., x^n).
  *
  * Example 1:
  * Input: x = 2.00000, n = 10
@@ -28,18 +28,22 @@ public class CalculatePowerOfN {
 
         double result = calculatePower(x, n);
 
-        if(n < 0)
+        if(n < 0) {
             return 1/result;
+        }
 
         return result;
     }
 
     public static double calculatePower(double x, int n) {
 
-        if(n == 0)
+        if(n == 0) {
             return 1;
-        if(n == 1)
+        }
+
+        if(n == 1) {
             return x;
+        }
 
         double half = calculatePower(x, n/2);
 

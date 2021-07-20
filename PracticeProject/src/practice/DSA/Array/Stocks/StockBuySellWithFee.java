@@ -7,8 +7,6 @@ package practice.DSA.Array.Stocks;
  *
  * Note: You may not engage in multiple transactions simultaneously (i.e., you must sell the stock before you buy again).
  *
- *
- *
  * Example 1:
  *
  * Input: prices = [1,3,2,8,4,9], fee = 2
@@ -19,8 +17,8 @@ package practice.DSA.Array.Stocks;
  * - Buying at prices[4] = 4
  * - Selling at prices[5] = 9
  * The total profit is ((8 - 1) - 2) + ((9 - 4) - 2) = 8.
- * Example 2:
  *
+ * Example 2:
  * Input: prices = [1,3,7,5,10,3], fee = 3
  * Output: 6
  */
@@ -34,7 +32,7 @@ public class StockBuySellWithFee {
 
     public static int maxProfit(int[] prices, int fee) {
 
-        if(prices.length == 0 || prices.length < 2) {
+        if(prices.length < 2) {
             return 0;
         }
 

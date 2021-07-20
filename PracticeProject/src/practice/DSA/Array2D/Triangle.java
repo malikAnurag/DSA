@@ -53,14 +53,18 @@ public class Triangle {
     public static int minimumTotal(List<List<Integer>> triangle) {
 
         for(int i = 1; i < triangle.size(); i++) {
+
             for(int j = 0; j < triangle.get(i).size(); j++) {
+
                 int sum;
 
                 if(j == 0) {
                     sum = triangle.get(i - 1).get(j) + triangle.get(i).get(j);
-                } else if(j == triangle.get(i).size() - 1) {
+                }
+                else if(j == triangle.get(i).size() - 1) {
                     sum = triangle.get(i).get(triangle.get(i).size() - 1) + triangle.get(i - 1).get(triangle.get(i - 1).size() - 1);
-                } else {
+                }
+                else {
                     sum = Math.min(triangle.get(i - 1).get(j), triangle.get(i - 1).get(j - 1)) + triangle.get(i).get(j);
                 }
                 triangle.get(i).set(j, sum);

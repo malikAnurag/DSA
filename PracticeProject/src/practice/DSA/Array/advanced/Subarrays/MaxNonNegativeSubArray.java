@@ -11,11 +11,9 @@ import java.util.List;
  * and skipping the third element is invalid.
  *
  * Maximum sub-array is defined in terms of the sum of the elements in the sub-array.
- *
  * Find and return the required subarray.
  *
  * NOTE:
- *
  * If there is a tie, then compare with segment's length and return segment which has maximum length.
  * If there is still a tie, then return the segment with minimum starting index.
  *
@@ -53,6 +51,7 @@ public class MaxNonNegativeSubArray {
         long curr = 0;
 
         for (int i : A) {
+
             if (i >= 0) {
                 curr += i;
                 newArray.add(i);

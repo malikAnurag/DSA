@@ -30,6 +30,7 @@ public class PermutationOfString$ {
         }
 
         for(int i = patLength ;  i < txtLength ; i++) {
+
             if(Arrays.equals(pat,txt))
                 return true;
 
@@ -38,5 +39,4 @@ public class PermutationOfString$ {
         }
         return Arrays.equals(pat,txt);
     }
-
 }

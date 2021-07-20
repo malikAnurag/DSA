@@ -38,9 +38,7 @@ public class TopView {
 	}
 
 	public static void printTopView(TreeNode root) {
-
-		int d = 0;
-		populateMap(root, hm, d);
+		populateMap(root, hm, 0);
 	}
 
 	public static void populateMap(TreeNode root, TreeMap<Integer, Integer> hm, int dist) {

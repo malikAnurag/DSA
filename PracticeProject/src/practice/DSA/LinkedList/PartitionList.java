@@ -44,6 +44,7 @@ public class PartitionList {
         while(head != null) {
 
             if(head.val < x) {
+
                 if(small == null) {
                     small = new ListNode(head.val);
                     res1 = small;

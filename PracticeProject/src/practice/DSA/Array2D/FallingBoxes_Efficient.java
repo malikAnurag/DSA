@@ -43,9 +43,6 @@ public class FallingBoxes_Efficient {
 
         while(i >= 0 && j >= 0) {
             if(matrix[i][j] == 0) {
-                List<Integer> al = new ArrayList();
-                al.add(i);
-                al.add(j);
                 zeros.put(j, new Pair(i, j));
                 j--;
                 i = matrix.length - 1;

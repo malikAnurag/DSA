@@ -19,9 +19,9 @@ import java.util.Map;
 public class MaximumSizeSubarrayOfSumK {
 
     public static void main(String[] args) {
-        System.out.println(getMaxSize(new int[]{1,-1,5,-2,3}, 3));
-        System.out.println(getMaxSize(new int[]{-2,-1,2,1}, 1));
-        System.out.println(getMaxSize(new int[]{-1,1}, 1));
+        System.out.println(getMaxSize(new int[]{1, -1, 5, -2, 3}, 3));
+        System.out.println(getMaxSize(new int[]{-2, -1, 2, 1}, 1));
+        System.out.println(getMaxSize(new int[]{-1, 1}, 1));
     }
 
     public static int getMaxSize(int[] nums, int k) {
@@ -30,14 +30,22 @@ public class MaximumSizeSubarrayOfSumK {
         int sum = 0;
         int maxLen = 0;
 
-        for(int i = 0; i < nums.length; i++) {
+        for(int i = 0; i < nums.length; i++) { // k = 3
 
             sum += nums[i];
+
+            /*
+                1 => 0
+                0 => 1
+                5 => 2
+                3 => 3
+                6 => 4
+             */
 
             if(sum == k) {
                 maxLen = i + 1;
             }
-            else if(hm.containsKey(sum - k)) {
+            else if(hm.containsKey(sum - k)) { // If the difference was encountered, subtract that and check the length
                 maxLen = Math.max(maxLen, i - hm.get(sum - k));
             }
 

@@ -41,10 +41,12 @@ public class FirstMissingPositiveInt {
     public static int getMissingPositive(int[] A) {
 
         if (A.length == 1) {
-            if (A[0] < 0)
+            if (A[0] < 0) {
                 return 1;
-            else
+            }
+            else {
                 return A[0] + 1;
+            }
         }
 
         int index = 0;
@@ -55,12 +57,12 @@ public class FirstMissingPositiveInt {
             index++;
         }
 
-        if (index == A.length - 1)
+        if (index == A.length - 1) { // If all the elements in the array are negative
             return 1;
-
-        else if (A[index] > 1)
+        }
+        else if (A[index] > 1) { // If the first positive element in the array is not 1
             return 1;
-
+        }
         else {
             for (int i = index; i < A.length - 1; i++) {
                 if (A[i + 1] != A[i] + 1) {
@@ -71,9 +73,9 @@ public class FirstMissingPositiveInt {
             }
         }
 
-        if (flag)
+        if (flag) {
             return missing;
-
+        }
         return A[A.length - 1] + 1;
     }
 }

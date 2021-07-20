@@ -45,7 +45,7 @@ public class Candies {
         }
 
         for(int i = n - 2; i >= 0; i--) {
-            if(ratings[i + 1] < ratings[i]) {
+            if(ratings[i] > ratings[i + 1]) {
                 right2left[i] = right2left[i + 1] + 1;
             }
         }

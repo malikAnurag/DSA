@@ -64,14 +64,16 @@ public class InsertionInBinaryTree {
 
             if(node.left != null) {
                 q.add(node.left);
-            } else {
+            }
+            else {
                 node.left = new TreeNode(i);
                 break;
             }
 
             if(node.right != null) {
                 q.add(node.right);
-            } else {
+            }
+            else {
                 node.right = new TreeNode(i);
                 break;
             }

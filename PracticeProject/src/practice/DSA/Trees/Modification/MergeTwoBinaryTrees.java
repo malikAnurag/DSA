@@ -82,19 +82,23 @@ public class MergeTwoBinaryTrees {
 
     public static TreeNode merge(TreeNode node1, TreeNode node2) {
 
-        if(node1 == null && node2 == null)
+        if(node1 == null && node2 == null) {
             return null;
+        }
 
         if(node1 != null && node2 != null) {
-            TreeNode node = new TreeNode(node1.key+node2.key);
+
+            TreeNode node = new TreeNode(node1.key + node2.key);
             node.left = merge(node1.left, node2.left);
             node.right = merge(node1.right, node2.right);
             return node;
         }
 
-        if(node2 == null)
+        if(node2 == null) {
             return node1;
-        else
+        }
+        else {
             return node2;
+        }
     }
 }

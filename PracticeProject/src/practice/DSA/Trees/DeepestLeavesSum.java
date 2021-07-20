@@ -53,7 +53,6 @@ public class DeepestLeavesSum {
         System.out.println(deepestLeavesSum(root));
     }
 
-
     public static int deepestLeavesSum(TreeNode root) {
 
         int height = height(root);
@@ -61,7 +60,6 @@ public class DeepestLeavesSum {
         helper(root, 1, height);
 
         int sum = 0;
-
         for(int i : al)
             sum += i;
 
@@ -75,13 +73,14 @@ public class DeepestLeavesSum {
             return;
         }
 
-        if(root.left != null)
+        if(root.left != null) {
             helper(root.left, level + 1, height);
+        }
 
-        if(root.right != null)
+        if(root.right != null) {
             helper(root.right, level + 1, height);
+        }
     }
-
 
     public static int height(TreeNode root) {
 

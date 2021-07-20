@@ -8,10 +8,11 @@ public class SelectionSort {
 	public static void main(String[] args) {
 
 		int[] arr = new int[] { 29, 2, 45, 11, 55, 7, 6 };
+
 		selectionSort(arr);
+
 		for (int i : arr)
 			System.out.print(i + " ");
-
 	}
 
 	public static void selectionSort(int[] arr) {

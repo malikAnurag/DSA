@@ -59,7 +59,8 @@ public class NumberOfMatchingSubsequences {
 
                 if(str.length() == 1) {
                     count++;
-                } else {
+                }
+                else {
                     map.get(str.charAt(1)).addLast(str.substring(1));
                 }
             }

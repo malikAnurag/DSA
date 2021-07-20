@@ -18,7 +18,8 @@ import java.util.Set;
  *  Example 2:
  * Input: [0,0,null,0,null,0,null,null,0] TODO : treeCamera1.png
  * Output: 2
- * Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid configurations of camera placement.
+ * Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid
+ * configurations of camera placement.
  *
  * Note:
  * The number of nodes in the given tree will be in the range [1, 1000].
@@ -56,6 +57,7 @@ public class BinaryTreeCameras$ {
     }
 
     private static void dfs(TreeNode root, TreeNode parent) {
+
         if(root != null) {
 
             dfs(root.left, root);

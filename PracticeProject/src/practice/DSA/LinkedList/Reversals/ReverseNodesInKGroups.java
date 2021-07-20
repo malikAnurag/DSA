@@ -92,6 +92,7 @@ public class ReverseNodesInKGroups {
         int count = 0;
 
         while(count < k && curr != null) {
+
             ListNode next = curr.next;
             curr.next = prev;
             prev = curr;

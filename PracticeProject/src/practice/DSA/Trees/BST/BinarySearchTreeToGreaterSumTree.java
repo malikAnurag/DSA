@@ -13,7 +13,7 @@ import practice.DSA.Trees.TreeNode;
  * Both the left and right subtrees must also be binary search trees.
  * Note: This question is the same as 538: https://leetcode.com/problems/convert-bst-to-greater-tree/
  *
- * //TODO : gst.png
+ * //TODO : BinarySearchTreeToGreaterSumTree.png
  *
  * Example 1:
  * Input: root = [4,1,6,0,2,5,7,null,null,null,3,null,null,null,8]

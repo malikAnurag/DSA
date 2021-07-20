@@ -61,7 +61,7 @@ public class ContinuousTree {
             return Math.abs(root.key - root.left.key) == 1 && isContinuousTree(root.left);
         }
 
-        return Math.abs(root.key - root.left.key) == 1 &&
+        return  Math.abs(root.key - root.left.key) == 1 &&
                 Math.abs(root.key - root.right.key) == 1 &&
                 isContinuousTree(root.left) &&
                 isContinuousTree(root.right);

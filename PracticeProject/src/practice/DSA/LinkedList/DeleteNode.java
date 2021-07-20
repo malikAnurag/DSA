@@ -19,6 +19,7 @@ public class DeleteNode {
         deleteNode(head);
 
         while(head != null) {
+
             if(head.next != null)
                 System.out.print(head.val + " -> ");
             else

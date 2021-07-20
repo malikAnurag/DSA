@@ -22,10 +22,13 @@ public class ReverseAlphabets {
 		char[] c = str.toCharArray();
 
 		while (left < right) {
+
 			if (!Character.isAlphabetic(c[left]))
 				left++;
+
 			else if (!Character.isAlphabetic(c[right]))
 				right--;
+
 			else {
 				char temp = c[left];
 				c[left] = c[right];

@@ -13,7 +13,6 @@ import java.util.List;
 
 public class BranchesOfTree {
 
-
     /*
 	 * 	  1
         /    \
@@ -38,7 +37,6 @@ public class BranchesOfTree {
         root.right.right.right = new TreeNode(9);
         List<Integer> al = new ArrayList<>();
         printBranches(root, al);
-
     }
 
     public static void printBranches(TreeNode root, List<Integer> al) {
@@ -46,18 +44,19 @@ public class BranchesOfTree {
         if(root == null)
             return;
 
-        if(root.left == null && root.right == null){
-            for (int i : al) {
+        if(root.left == null && root.right == null) {
+            for(int i : al) {
                 System.out.print(i + ",");
             }
             System.out.println(root.key);
             return;
         }
-        
+
         al.add(root.key);
 
-        if(root.left != null)
+        if(root.left != null) {
             printBranches(root.left, al);
+        }
 
         if(root.right != null) {
             printBranches(root.right, al);

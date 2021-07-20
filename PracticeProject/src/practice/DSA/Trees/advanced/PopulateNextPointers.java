@@ -36,7 +36,6 @@ public class PopulateNextPointers {
         if(root.right != null && root.next != null) {
             root.right.next = root.next.left;
         }
-
         connectNext(root.left);
         connectNext(root.right);
     }

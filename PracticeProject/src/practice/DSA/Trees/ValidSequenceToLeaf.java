@@ -36,10 +36,10 @@ public class ValidSequenceToLeaf {
 
     public static boolean checkValidity(TreeNode root, int[] arr, int index) {
 
-        if (root == null)
+        if(root == null)
             return arr.length == 0;
 
-        if (root.left == null && root.right == null && index == arr.length - 1 && root.key == arr[index])
+        if(root.left == null && root.right == null && index == arr.length - 1 && root.key == arr[index])
             return true;
 
         return (index < arr.length &&

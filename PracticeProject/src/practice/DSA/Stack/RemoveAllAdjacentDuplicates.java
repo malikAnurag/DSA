@@ -51,7 +51,8 @@ public class RemoveAllAdjacentDuplicates {
 
                 if(count + 1 == k) {
                     st.pop();
-                } else {
+                }
+                else {
                     Pair p = st.pop();
                     p.freq += 1;
                     st.push(p);

@@ -38,19 +38,23 @@ public class NestedIterator implements Iterator<Integer> {
         al = new ArrayList();
 
         for(NestedInteger ni : nestedList) {
+
             if(ni.isInteger()) {
                 al.add(ni.getInteger());
-            } else {
+            }
+            else {
                 populateList(ni);
             }
         }
     }
 
     private void populateList(NestedInteger ni) {
+
         for(NestedInteger nested : ni.getList()) {
             if(nested.isInteger()) {
                 al.add(nested.getInteger());
-            } else {
+            }
+            else {
                 populateList(nested);
             }
         }
@@ -58,6 +62,7 @@ public class NestedIterator implements Iterator<Integer> {
 
     @Override
     public Integer next() {
+
         if(hasNext()) {
             return al.get(index++);
         }

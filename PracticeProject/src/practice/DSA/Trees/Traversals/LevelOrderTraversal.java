@@ -32,7 +32,6 @@ public class LevelOrderTraversal {
 		printLevelOrder(root);
 	}
 
-
 	public static void printLevelOrder(TreeNode root) {
 
 		Queue<TreeNode> q = new LinkedList<>();

@@ -15,7 +15,6 @@ public class NobleInteger {
         System.out.println("Nobel integer present: " + isNobleIntegerPresent(new int[]{-1, -9, -2, -78, 1}));
     }
 
-
     public static int isNobleIntegerPresent(int[] A) {
 
         Arrays.sort(A); // 3 7 10 16

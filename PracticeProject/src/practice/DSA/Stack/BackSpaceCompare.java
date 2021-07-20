@@ -7,8 +7,6 @@ import java.util.Stack;
  *
  * Note that after backspacing an empty text, the text will continue empty.
  *
- *
- *
  * Example 1:
  *
  * Input: s = "ab#c", t = "ad#c"
@@ -59,7 +57,7 @@ public class BackSpaceCompare {
             sb.append(stack.pop());
         }
 
-        System.out.println("Returning String : " + sb.reverse());
+//        System.out.println("Returning String : " + sb.reverse());
         return sb.reverse().toString();
     }
 }

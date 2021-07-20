@@ -58,6 +58,7 @@ public class DeleteNodeFromBST {
         TreeNode successor = null;
 
         while(root != null) {
+
             if(root.key > key) {
                 successor = root;
                 root = root.left;

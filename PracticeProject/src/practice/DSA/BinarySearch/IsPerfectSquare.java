@@ -28,13 +28,16 @@ public class IsPerfectSquare {
             long mid = (left + right) / 2;
             long midSqr = mid * mid;
 
-            if(midSqr == num)
+            if(midSqr == num) {
                 return true;
+            }
 
-            if(midSqr > num)
+            if(midSqr > num) {
                 right = mid - 1;
-            else
+            }
+            else {
                 left = mid + 1;
+            }
         }
         return false;
     }

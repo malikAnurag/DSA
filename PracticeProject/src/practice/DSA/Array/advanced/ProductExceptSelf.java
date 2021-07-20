@@ -62,7 +62,6 @@ public class ProductExceptSelf {
             System.out.print(i + " ");
     }
 
-
     public static void printProductAbove(int[] nums) {
 
         int n = nums.length;

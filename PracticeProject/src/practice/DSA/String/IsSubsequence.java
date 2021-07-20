@@ -37,6 +37,7 @@ public class IsSubsequence {
         int counter = 0;
 
         while(sLen < subLength && tLen < txtLength) {
+
             if(sub.charAt(sLen) == txt.charAt(tLen)) {
                 sLen++;
                 tLen++;

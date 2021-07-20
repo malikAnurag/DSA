@@ -51,8 +51,10 @@ public class SuperPalindromes {
             long n = Long.valueOf(sb.toString());
             n *= n;
 
-            if(n > r) break;
-            else if(l <= n && isPalindrome(n)) count++;
+            if(n > r)
+                break;
+            else if(l <= n && isPalindrome(n))
+                count++;
         }
 
 
@@ -68,8 +70,10 @@ public class SuperPalindromes {
             long n = Long.valueOf(sb.toString());
             n *= n;
 
-            if(n > r) break;
-            else if(l <= n && isPalindrome(n)) count++;
+            if(n > r)
+                break;
+            else if(l <= n && isPalindrome(n))
+                count++;
         }
 
         return count;

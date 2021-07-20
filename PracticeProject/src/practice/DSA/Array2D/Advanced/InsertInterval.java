@@ -36,6 +36,7 @@ public class InsertInterval {
         List<int[]> result = new ArrayList();
 
         for(int[] element : intervals) {
+
             if(newInterval == null || element[1] < newInterval[0]) { // new interval starts after existing
                 result.add(element);
             }
@@ -43,7 +44,8 @@ public class InsertInterval {
                 result.add(newInterval);
                 result.add(element);
                 newInterval = null;
-            } else {
+            }
+            else {
                 newInterval[0] = Math.min(element[0], newInterval[0]);
                 newInterval[1] = Math.max(element[1], newInterval[1]);
             }

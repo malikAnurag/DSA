@@ -1,7 +1,6 @@
 package practice.DSA.LinkedList;
 
 import java.util.Comparator;
-import java.util.List;
 import java.util.PriorityQueue;
 
 /**
@@ -68,7 +67,7 @@ public class MergeKsortedLists {
 
             @Override
             public int compare(ListNode node1, ListNode node2) {
-                return node1.val-node2.val;
+                return node1.val - node2.val;
             }
         });
 

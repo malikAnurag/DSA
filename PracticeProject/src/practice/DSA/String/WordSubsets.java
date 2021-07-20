@@ -13,25 +13,23 @@ import java.util.List;
  *
  * Return a list of all universal words in A.  You can return the words in any order.
  *
- *
  * Example 1:
- *
  * Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["e","o"]
  * Output: ["facebook","google","leetcode"]
- * Example 2:
  *
+ * Example 2:
  * Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["l","e"]
  * Output: ["apple","google","leetcode"]
- * Example 3:
  *
+ * Example 3:
  * Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["e","oo"]
  * Output: ["facebook","google"]
- * Example 4:
  *
+ * Example 4:
  * Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["lo","eo"]
  * Output: ["google","leetcode"]
- * Example 5:
  *
+ * Example 5:
  * Input: A = ["amazon","apple","facebook","google","leetcode"], B = ["ec","oc","ceo"]
  * Output: ["facebook","leetcode"]
  */
@@ -41,7 +39,6 @@ public class WordSubsets {
         System.out.println(wordSubsets(new String[]{"amazon", "apple", "facebook", "google", "leetcode"}, new String[]{"lo", "eo"}).toString());
     }
 
-
     public static List<String> wordSubsets(String[] A, String[] B) {
 
         List<String> result = new ArrayList();
@@ -49,6 +46,7 @@ public class WordSubsets {
         int[] target = new int[26];
 
         for (String s : B) {
+
             int[] temp = new int[26];
 
             for (char c : s.toCharArray()) {

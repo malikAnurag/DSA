@@ -42,13 +42,15 @@ public class RemoveKDigits {
 
         int minIndex = 0;
 
-        for(int i = 1; i <= n; i++)
-            if(num.charAt(i) < num.charAt(minIndex))
+        for(int i = 1; i <= n; i++) {
+
+            if(num.charAt(i) < num.charAt(minIndex)) {
                 minIndex = i;
+            }
+        }
 
         sb.append(num.charAt(minIndex)); // 1
         num = num.substring(minIndex + 1); // 432219
-
         removeDigits(sb, num, n - minIndex);
     }
 }

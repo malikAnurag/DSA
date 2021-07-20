@@ -39,17 +39,21 @@ public class FirstAndLastOccurence {
     }
 
     public static int findFirst(int[] arr, int k) {
+
         int low = 0;
         int high = arr.length - 1;
 
         while(low <= high) {
+
             int mid = low + (high - low) / 2;
 
             if(arr[mid] == k && (mid == 0 || arr[mid - 1] < k)) {
                 return mid;
-            } else if(arr[mid] < k) {
+            }
+            else if(arr[mid] < k) {
                 low = mid + 1;
-            } else {
+            }
+            else {
                 high = mid - 1;
             }
         }
@@ -57,17 +61,21 @@ public class FirstAndLastOccurence {
     }
 
     public static int findLast(int[] arr, int k) {
+
         int low = 0;
         int high = arr.length - 1;
 
         while(low <= high) {
+
             int mid = (low + high) / 2;
 
             if(arr[mid] == k && (mid == arr.length - 1 || arr[mid + 1] > k)) {
                 return mid;
-            } else if(arr[mid] > k) {
+            }
+            else if(arr[mid] > k) {
                 high = mid - 1;
-            } else {
+            }
+            else {
                 low = mid + 1;
             }
         }

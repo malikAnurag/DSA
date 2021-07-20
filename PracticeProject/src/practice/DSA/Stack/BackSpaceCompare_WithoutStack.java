@@ -32,13 +32,13 @@ public class BackSpaceCompare_WithoutStack {
         System.out.println(compareStrings("ab##", "c#d#"));
         System.out.println(compareStrings("a##c", "#a#c"));
         System.out.println(compareStrings("a#c", "b"));
+        System.out.println(compareStrings("###", ""));
     }
 
     public static boolean compareStrings(String s1, String s2) {
 
         String S1 = getString(s1);
         String S2 = getString(s2);
-
         return S1.equals(S2);
     }
 
@@ -47,10 +47,11 @@ public class BackSpaceCompare_WithoutStack {
         StringBuilder sb = new StringBuilder();
 
         for(char c : str.toCharArray()) {
+
             if(c == '#' && sb.length() > 0) {
                 sb.deleteCharAt(sb.length() - 1);
             }
-            else {
+            else if(c != '#'){
                 sb.append(c);
             }
         }

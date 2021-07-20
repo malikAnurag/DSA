@@ -32,6 +32,7 @@ public class BoundaryTraversal {
 	}
 
 	public static void printBoundaryNodes(TreeNode node) {
+
 		if (node == null)
 			return;
 

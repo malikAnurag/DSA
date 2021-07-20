@@ -44,6 +44,7 @@ public class PostOrderTraversal {
         st1.push(root);
 
         while (!st1.isEmpty()) {
+
             TreeNode node = st1.pop();
             st2.push(node);
 

@@ -10,7 +10,6 @@ import practice.DSA.Trees.TreeNode;
  * 3. Recursively build the right subtree on the subarray suffix to the right of the maximum value.
  * 4. Return the maximum binary tree built from nums.
  *
- *
  * Example 1:
  *
  * Input: nums = [3,2,1,6,0,5]
@@ -29,19 +28,19 @@ import practice.DSA.Trees.TreeNode;
 public class ConstructMaxBinaryTree {
 
     public static void main(String[] args) {
-        System.out.println(constructMaximumBinaryTree(new int[]{3,2,1,6,0,5}));
+        System.out.println(constructMaximumBinaryTree(new int[]{3, 2, 1, 6, 0, 5}));
     }
 
     public static TreeNode constructMaximumBinaryTree(int[] nums) {
         return makeTree(nums, 0 , nums.length-1);
     }
 
-
     static TreeNode makeTree(int[] nums, int start, int end) {
 
         if(start < 0 || start > end || end >= nums.length) {
             return null;
-        } else if(start == end) {
+        }
+        else if(start == end) {
             return new TreeNode(nums[end]);
         }
 

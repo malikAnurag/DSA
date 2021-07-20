@@ -6,13 +6,12 @@ import java.util.Set;
 
 /**
  * Design a data structure that supports all following operations in average O(1) time.
- * <p>
+ *
  * 1. insert(val): Inserts an item val to the set if not already present and returns a boolean.
  * 2. remove(val): Removes an item val from the set if present and returns a boolean.
  * 3. getRandom: Returns a random element from current set of elements. Each element must have the same probability
  * of being returned.
  */
-
 
 public class InsertDeleteGetRandomDS {
 
@@ -31,7 +30,7 @@ class RandomizedSet {
     Set<Integer> hs;
 
     public RandomizedSet() {
-        hs = new HashSet<Integer>();
+        hs = new HashSet<>();
     }
 
     /**
@@ -53,8 +52,8 @@ class RandomizedSet {
      */
     public int getRandom() {
 
-        Random rand = new Random();
-        int index = rand.nextInt(hs.size());
+        Random random = new Random();
+        int index = random.nextInt(hs.size());
         return (int) hs.toArray()[index];
     }
 }
