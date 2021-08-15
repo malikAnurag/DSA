@@ -12,6 +12,12 @@ import java.util.Arrays;
  * Output: 2
  * Explanation: The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
  */
+
+//Time Complexity: O(n^2). We have outer and inner loops, each going through n elements.
+//Sorting the array takes O(nlogn), so overall complexity is O(nlogn+n^2)
+//This is asymptotically equivalent to O(n^2)
+//Space Complexity: from O(logn) to O(n), depending on the implementation of the sorting algorithm.
+
 public class _3SumClosest {
 
     public static void main(String[] args) {

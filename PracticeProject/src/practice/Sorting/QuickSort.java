@@ -22,27 +22,24 @@ public class QuickSort {
         }
     }
 
-
     public static int getPartitionIndex(int[] arr, int low, int high) {
 
+        int i = low;
         int pivot = arr[high];
-        int i = low - 1;
 
-        for (int j = low; j <= high - 1; j++) {
+        for (int j = low; j < high; j++) {
 
             if (arr[j] <= pivot) {
-                i++;
-
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
+                i++;
             }
         }
 
-        int t = arr[i + 1];
-        arr[i + 1] = arr[high];
+        int t = arr[i];
+        arr[i] = arr[high];
         arr[high] = t;
-
-        return i + 1;
+        return i;
     }
 }

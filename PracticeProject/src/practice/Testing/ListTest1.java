@@ -1,32 +1,22 @@
 package practice.Testing;
 
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class ListTest1 {
 
     public static void main(String[] args) {
 
+        Map<Long, String> hm = new HashMap<>();
 
-        Demo d1 = new Demo();
-        d1.getL1().add(1);
+        hm.put(1L, "abc1");
+        hm.put(2L, "abc2");
+        hm.put(3L, "abc3");
 
-        System.out.println(d1.getL1().get(0));
+        List<Long> ids = new ArrayList<>(hm.keySet());
 
-    }
-
-
-    static class Demo {
-
-         List<Integer> l1;
-
-        public List<Integer> getL1() {
-            return l1;
-        }
-
-        public void setL1(List<Integer> l1) {
-            this.l1 = l1;
-        }
+        System.out.println(ids);
     }
 }

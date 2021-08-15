@@ -40,6 +40,7 @@ public class MaxSumOfRectangleNotLargerThanK {
         int maxSum = Integer.MIN_VALUE;
 
         while(L < cols) {
+
             int[] arr = new int[rows];
 
             while(R < cols) {

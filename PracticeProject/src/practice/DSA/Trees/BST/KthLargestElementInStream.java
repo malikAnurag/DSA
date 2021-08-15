@@ -40,6 +40,7 @@ public class KthLargestElementInStream {
     private int k_count;
 
     public KthLargestElementInStream(int[] arr, int k) {
+
         BST = null;
 
         for(int i = 0; i < arr.length; i++) {

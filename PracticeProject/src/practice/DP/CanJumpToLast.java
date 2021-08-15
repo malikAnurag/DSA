@@ -22,12 +22,14 @@ public class CanJumpToLast {
         if (A[0] == 0 && A.length == 1)
             return true;
 
-        int presum = A[0];
+        int preSum = A[0];
         int i = 0;
 
-        while (presum >= i) {
-            presum = Math.max(presum, A[i] + i);
-            if (presum >= A.length - 1)
+        while (preSum >= i) {
+
+            preSum = Math.max(preSum, A[i] + i);
+
+            if (preSum >= A.length - 1)
                 return true;
             i++;
         }

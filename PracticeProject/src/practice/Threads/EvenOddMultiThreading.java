@@ -32,9 +32,11 @@ class TaskEvenOdd implements Runnable {
         int number = isEvenNumber ? 2 : 1;
 
         while (number <= max) {
+
             if (isEvenNumber) {
                 print.printEven(number);
-            } else {
+            }
+            else {
                 print.printOdd(number);
             }
             number += 2;

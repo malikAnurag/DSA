@@ -24,23 +24,25 @@ public class UncrossedLines {
 
     public static int getUncrossedLines(int[] A, int[] B) {
 
-        int[][] dp = new int[A.length+1][B.length+1];
+        int[][] dp = new int[A.length + 1][B.length + 1];
 
         // Here dp[i][j] means taking i elements from A and j elements from B
 
-        for(int i = 1 ; i <= A.length ; i++) {
-            for(int j = 1; j <= B.length ; j++) {
-                if(A[i-1] == B[j-1]) {
-                    dp[i][j] = 1 + dp[i-1][j-1]; // we need to leave the current elements(i-1,j-1) and
-                                                //  check the results of elements till i-1 and j-1 in the table
+        for(int i = 1; i <= A.length; i++) {
+
+            for(int j = 1; j <= B.length; j++) {
+
+                if(A[i - 1] == B[j - 1]) {
+                    dp[i][j] = 1 + dp[i - 1][j - 1]; // we need to leave the current elements(i-1,j-1) and
+                    //  check the results of elements till i-1 and j-1 in the table
                 }
                 else {
-                    dp[i][j] = Math.max(dp[i-1][j], dp[i][j-1]);
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - 1]);
                 }
             }
         }
-        for(int i = 0 ; i < dp.length ; i++) {
-            for(int j = 0; j < dp[0].length ; j++) {
+        for(int i = 0; i < dp.length; i++) {
+            for(int j = 0; j < dp[0].length; j++) {
                 System.out.print(dp[i][j] + " ");
             }
             System.out.println(" ");

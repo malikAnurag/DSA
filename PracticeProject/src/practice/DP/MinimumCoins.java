@@ -9,7 +9,6 @@ import java.util.Arrays;
  * valued coins, what is the minimum number of coins to make the change?
  *
  * Examples:
- *
  * Input: coins[] = {25, 10, 5}, V = 30
  * Output: Minimum 2 coins required
  * We can use one coin of 25 cents and one of 5 cents
@@ -36,8 +35,8 @@ public class MinimumCoins {
         dp[0] = 0;
 
         for(int coin : coins) {
-            for(int i = coin ; i<= amount ; i++) {
-                dp[i] = Math.min(dp[i], dp[i-coin] + 1);
+            for(int i = coin; i <= amount; i++) {
+                dp[i] = Math.min(dp[i], dp[i - coin] + 1);
             }
         }
         return dp[amount] <= amount ? dp[amount] : -1;
