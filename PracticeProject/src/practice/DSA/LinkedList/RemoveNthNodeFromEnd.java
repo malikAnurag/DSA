@@ -42,34 +42,30 @@ public class RemoveNthNodeFromEnd {
     public static ListNode removeNthFromEnd(ListNode head, int n) {
 
         int len = 0;
-        ListNode copy = head;
 
-        while(copy != null) {
+        ListNode curr = head;
+
+        while(curr != null) {
             len++;
-            copy = copy.next;
+            curr = curr.next;
         }
 
-        if(len == 1 && n == 1) {
-            return null;
+        if(len == n) {
+            head = head.next;
+            return head;
         }
 
-        copy = head;
+        curr = head;
+        ListNode prev = null;
 
-        for(int i = 0; i < len - n - 1; i++) {
-            copy = copy.next;
+        for(int i = 0 ; i <= len - n - 1 ; i++) {
+            prev = curr;
+            curr = curr.next;
         }
 
-        if(copy != head) {
-            copy.next = copy.next.next;
-        }
-        else {
-            if(len == n) {
-                head = head.next;
-            }
-            else {
-                head.next = head.next.next;
-            }
-        }
+        if(prev != null)
+            prev.next = curr.next;
+
         return head;
     }
 }

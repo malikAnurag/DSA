@@ -4,10 +4,20 @@ import practice.DSA.LinkedList.ListNode;
 import practice.DSA.LinkedList.ListNodeUtil;
 
 /**
- * Rotate the given list by k i.e put first k nodes to the end of the resultant list.
+ * Given the head of a linked list, rotate the list to the right by k places.
  *
- * Input : a -> b -> c -> d , 2
- * Output : c -> d -> a -> b
+ * Example 1:
+ * Input: head = [1,2,3,4,5], k = 2
+ * Output: [4,5,1,2,3]
+ *
+ * Example 2:
+ * Input: head = [0,1,2], k = 4
+ * Output: [2,0,1]
+ *
+ * Constraints:
+ * The number of nodes in the list is in the range [0, 500].
+ * -100 <= Node.val <= 100
+ * 0 <= k <= 2 * 10^9
  */
 
 public class RotateListByK {
@@ -31,27 +41,33 @@ public class RotateListByK {
 
     public static ListNode rotateList(ListNode head, int k) {
 
-        ListNode temp = head;
-        ListNode prev = null;
-        int count = 0;
+        if(head == null || k == 0)
+            return head;
 
-        while (temp != null) {
-            prev = temp;
-            temp = temp.next;
+        int n = 0;
+        int counter = 0;
+
+        ListNode copy = head;
+        ListNode prev = null;
+
+        while(copy != null) {
+            n++;
+            prev = copy;
+            copy = copy.next;
         }
-        // prev here is the last node of the list
-        // Attaching last node of the list to the head and forming a cycle
 
         prev.next = head;
-        temp = head;
+        copy = head;
 
-        while (count < k) {
-            prev = temp;
-            temp = temp.next;
-            count++;
+        // find new tail : (n - k % n - 1)th node
+        // and new head : (n - k % n)th node
+        while(counter < (n - k % n) - 1)  {
+            copy = copy.next;
+            counter++;
         }
-        prev.next = null;
-        head = temp;
+
+        head = copy.next;
+        copy.next = null;
 
         return head;
     }

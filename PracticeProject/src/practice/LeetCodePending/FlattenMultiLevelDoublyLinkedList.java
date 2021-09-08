@@ -76,15 +76,17 @@ public class FlattenMultiLevelDoublyLinkedList {
         return root;
     }
 
-    public void preorder(ListNode node){
-        if(node==null)
+    public void preorder(ListNode node) {
+        if(node == null)
             return;
+
         ListNode temp = new ListNode();
         temp.val = node.val;
-        if(root==null){
-            root=temp;
+
+        if(root == null) {
+            root = temp;
         }
-        else{
+        else {
             cur.next = temp;
             temp.prev = cur;
         }

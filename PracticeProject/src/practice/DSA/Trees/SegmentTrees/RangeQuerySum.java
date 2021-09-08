@@ -46,90 +46,94 @@ public class RangeQuerySum {
 
 class NumArray {
 
-    int[] segmentTree;
-    int[] nums;
-    int n;
+    class SegmentTreeNode {
 
-    public NumArray(int[] arr) {
+        private int start, end;
+        private SegmentTreeNode left, right;
+        private int sum;
 
-        n = arr.length;
-        nums = arr;
-
-        int heightOfTree = (int) Math.ceil(Math.log(n) / Math.log(2));
-
-        int maxSize = 2 * (int) Math.pow(2, heightOfTree) - 1;
-
-        segmentTree = new int[maxSize];
-
-        constructUtil(0, n - 1, 0);
-    }
-
-    int constructUtil(int startIndex, int endIndex, int currentIndex) {
-
-        if(startIndex == endIndex) {
-            segmentTree[currentIndex] = nums[startIndex];
-            return nums[startIndex];
-        }
-
-        int mid = getMid(startIndex, endIndex);
-
-        segmentTree[currentIndex] = constructUtil(startIndex, mid, 2 * currentIndex + 1) +
-                                    constructUtil(mid + 1, endIndex, 2 * currentIndex + 2);
-
-        return segmentTree[currentIndex];
-    }
-
-    public void update(int indexToUpdate, int val) {
-
-        int diff = val - nums[indexToUpdate];
-
-        nums[indexToUpdate] = val;
-
-        updateValueUtil(0, n - 1, indexToUpdate, diff, 0);
-    }
-
-    void updateValueUtil(int startIndex, int endIndex, int indexToUpdate, int diff, int currentIndex) {
-
-        if(indexToUpdate < startIndex || indexToUpdate > endIndex) {
-            return;
-        }
-
-        segmentTree[currentIndex] = segmentTree[currentIndex] + diff;
-
-        if(startIndex != endIndex) {
-            int mid = getMid(startIndex, endIndex);
-            updateValueUtil(startIndex, mid, indexToUpdate, diff, 2 * currentIndex + 1);
-            updateValueUtil(mid + 1, endIndex, indexToUpdate, diff, 2 * currentIndex + 2);
+        public SegmentTreeNode(int start, int end) {
+            this.start = start;
+            this.end = end;
+            this.left = null;
+            this.right = null;
+            this.sum = 0;
         }
     }
 
-    public int sumRange(int left, int right) {
+    SegmentTreeNode root;
 
-        if(left < 0 || right >= n || left > right) {
-            return -1;
-        }
-        return getSumUtil(0, n - 1, left, right, 0);
+    public NumArray(int[] nums) {
+        root = buildTree(nums, 0, nums.length - 1);
     }
 
-    int getSumUtil(int startIndex, int endIndex, int left, int right, int currentIndex) {
+    // TC : O(n)
+    private SegmentTreeNode buildTree(int[] nums, int start, int end) {
 
-        // If segment of this node is a part of given range, then return the sum of the segment
-        if(left <= startIndex && right >= endIndex) {
-            return segmentTree[currentIndex];
+        if(start > end) {
+            return null;
+        } else {
+            SegmentTreeNode ret = new SegmentTreeNode(start, end);
+
+            if(start == end) {
+                ret.sum = nums[start]; // leaf nodes
+            } else {
+                int mid = start + (end - start) / 2;
+                ret.left = buildTree(nums, start, mid);
+                ret.right = buildTree(nums, mid + 1, end);
+                ret.sum = ret.left.sum + ret.right.sum;
+            }
+            return ret;
         }
-
-        // If segment of this node is outside the given range
-        if(endIndex < left || startIndex > right) {
-            return 0;
-        }
-
-        int mid = getMid(startIndex, endIndex);
-
-        return getSumUtil(startIndex, mid, left, right, 2 * currentIndex + 1) +
-               getSumUtil(mid + 1, endIndex, left, right, 2 * currentIndex + 2);
     }
 
-    int getMid(int left, int right) {
-        return left + (right - left) / 2;
+    // TC : O(logn)
+    void update(int i, int val) {
+        updateHelper(root, i, val);
+    }
+
+    void updateHelper(SegmentTreeNode root, int pos, int val) {
+
+        // found leaf node to be updated
+        if(root.start == root.end) {
+            root.sum = val;
+        } else {
+            // parent nodes across the path
+            int mid = root.start + (root.end - root.start) / 2;
+
+            if(pos <= mid) {
+                updateHelper(root.left, pos, val);
+            } else {
+                updateHelper(root.right, pos, val);
+            }
+            root.sum = root.left.sum + root.right.sum;
+        }
+    }
+
+    public int sumRange(int i, int j) {
+        return sumRangeHelper(root, i, j);
+    }
+
+    // TC : O(logn)
+    public int sumRangeHelper(SegmentTreeNode root, int start, int end) {
+
+        // if you found out the node that matches your search return its value
+        if(root.start == start && root.end == end) {
+            return root.sum;
+        } else {
+
+            int mid = root.start + (root.end - root.start) / 2; // overflow conditions
+
+            if(end <= mid) {
+                // move left
+                return sumRangeHelper(root.left, start, end);
+            } else if(start >= mid + 1) {
+                // move right
+                return sumRangeHelper(root.right, start, end);
+            } else {
+                // consider both nodes
+                return sumRangeHelper(root.left, start, mid) + sumRangeHelper(root.right, mid + 1, end);
+            }
+        }
     }
 }

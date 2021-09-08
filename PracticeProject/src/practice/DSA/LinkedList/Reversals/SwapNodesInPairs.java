@@ -37,7 +37,6 @@ public class SwapNodesInPairs {
 
         System.out.println("\nResultant List: ");
         ListNodeUtil.printList(swapPairs(head));
-
     }
 
     public static ListNode swapPairs(ListNode head) {
