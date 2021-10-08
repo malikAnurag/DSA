@@ -8,7 +8,7 @@ public class ReverseAlphabets {
 
 	public static void main(String[] args) {
 
-		String s = "a@b$&c(de)";
+		String s = "-$b-cd";//"a@b$&c(de)";
 //		String s1 = "Anurag is my full name";
 		System.out.println("Original String: " + s);
 		System.out.println("Reversed string: " + reverseAlpha(s));

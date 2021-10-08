@@ -74,7 +74,6 @@ public class ReverseNodesInKGroups {
                 if(ktail != null) {
                     ktail.next = revHead;
                 }
-
                 ktail = head;
                 head = ptr;
             }

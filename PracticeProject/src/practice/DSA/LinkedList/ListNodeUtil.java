@@ -6,6 +6,7 @@ public class ListNodeUtil {
         ListNode dummy = head;
 
         while(dummy != null) {
+
             if(dummy.next != null)
                 System.out.print(dummy.val + " -> ");
             else

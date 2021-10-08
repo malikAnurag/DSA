@@ -17,11 +17,11 @@ public class Trie {
 
         TrieNode p = root;
 
-        for (int i = 0; i < word.length(); i++) {
+        for(int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
             int index = c - 'a';
 
-            if (p.children[index] == null) {
+            if(p.children[index] == null) {
                 p.children[index] = new TrieNode(c);
             }
             p = p.children[index];
@@ -33,42 +33,32 @@ public class Trie {
 
         TrieNode p = searchNode(word);
 
-        if (p == null)
+        if(p == null)
             return false;
-
-        else if (p.isWord)
-            return true;
-
-        return false;
+        else
+            return p.isWord;
     }
 
     public boolean startsWith(String prefix) {
 
         TrieNode p = searchNode(prefix);
-
-        if (p != null) {
-            return true;
-        } else
-            return false;
+        return p != null;
     }
 
     public TrieNode searchNode(String word) {
 
         TrieNode p = root;
 
-        for (int i = 0; i < word.length(); i++) {
+        for(int i = 0; i < word.length(); i++) {
             char c = word.charAt(i);
             int index = c - 'a';
 
-            if (p.children[index] != null) {
+            if(p.children[index] != null) {
                 p = p.children[index];
             } else {
                 return null;
             }
         }
-        if (p == root)
-            return null;
-
-        return p;
+        return p == root ? null : p;
     }
 }

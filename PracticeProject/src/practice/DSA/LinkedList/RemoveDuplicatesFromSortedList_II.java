@@ -17,6 +17,9 @@ package practice.DSA.LinkedList;
  * -100 <= Node.val <= 100
  * The list is guaranteed to be sorted in ascending order.
  */
+
+/* COMPLETE REMOVAL OF DUPLICATES FROM THE LIST */
+
 public class RemoveDuplicatesFromSortedList_II {
 
     public static void main(String[] args) {

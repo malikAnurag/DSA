@@ -9,14 +9,16 @@ public class ListTest1 {
 
     public static void main(String[] args) {
 
-        Map<Long, String> hm = new HashMap<>();
+        Map<String, String> hm = new HashMap<>();
 
-        hm.put(1L, "abc1");
-        hm.put(2L, "abc2");
-        hm.put(3L, "abc3");
+        hm.put("1", "abc1");
+        hm.put("2", "abc2");
+        hm.put("3", "abc3");
 
-        List<Long> ids = new ArrayList<>(hm.keySet());
+        List<Long> ids = new ArrayList(hm.keySet());
 
-        System.out.println(ids);
+        for(Long l : ids) {
+            System.out.println(l);
+        }
     }
 }
