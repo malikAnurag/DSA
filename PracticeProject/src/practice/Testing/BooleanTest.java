@@ -5,9 +5,8 @@ public class BooleanTest {
 	public static void main(String[] args) {
 
 		System.out.println("abc" instanceof String);
-		
+//
 		System.out.println(isTrue());
-
 
 	}
 	
@@ -15,5 +14,4 @@ public class BooleanTest {
 		
 		return (true || true && false);
 	}
-
 }

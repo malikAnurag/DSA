@@ -1,8 +1,4 @@
 package practice.DSA.Array.Stocks;
-
-import java.util.HashMap;
-import java.util.Map;
-
 /**
  * Say you have an array for which the ith element is the price of a given stock on day i.
  *
@@ -19,36 +15,38 @@ import java.util.Map;
  */
 public class StockBuySellWithCooldown {
 
-    static Map<Integer, Integer> buyMap = new HashMap<>();
-    static Map<Integer, Integer> sellMap = new HashMap<>();
-
     public static void main(String[] args) {
-
-        System.out.println("Max Profit : " + buy(new int[]{1, 2, 3, 0, 2}, 0));
+        System.out.println("Max Profit : " + calculateMaxProfitWithCooldown(new int[]{1, 2, 3, 0, 2}, 0));
     }
 
-    public static int buy(int[] prices, int i) {
+    /*
+      sold[i]=hold[i−1]+price[i]
+      held[i]=max(held[i−1],reset[i−1]−price[i])
+      reset[i]=max(reset[i−1],sold[i−1])
 
-        if(i >= prices.length) {
-            return 0;
+      Here is how we interpret each formula:
+
+      sold[i]: the previous state of sold can only be held. Therefore, the maximal profits of this state is the maximal profits of the previous state plus
+               the revenue by selling the stock at the current price.
+
+      held[i]: the previous state of held could also be held, i.e. one does no transaction. Or its previous state could be reset, from which state, one can
+               acquire a stock at the current price point.
+
+      reset[i]: the previous state of reset could either be reset or sold. Both transitions do not involve any transaction with the stock.
+    */
+
+    public static int calculateMaxProfitWithCooldown(int[] prices, int i) {
+
+        int held = Integer.MIN_VALUE, sold = Integer.MIN_VALUE, reset = 0;
+
+        for(int price : prices) {
+
+            int preSold = sold;
+
+            sold = held + price;
+            held = Math.max(held, reset - price);
+            reset = Math.max(reset, preSold);
         }
-
-        if(buyMap.containsKey(i))
-            return buyMap.get(i);
-
-        buyMap.put(i, Math.max(-prices[i] + sell(prices, i + 1), buy(prices, i+1)));
-        return buyMap.get(i);
-    }
-
-    public static int sell(int[] prices, int i) {
-
-        if(i >= prices.length) {
-            return 0;
-        }
-        if(sellMap.containsKey(i))
-            return sellMap.get(i);
-
-        sellMap.put(i, Math.max(prices[i] + buy(prices, i + 2), sell(prices, i + 1)));
-        return sellMap.get(i);
+        return Math.max(sold, reset);
     }
 }

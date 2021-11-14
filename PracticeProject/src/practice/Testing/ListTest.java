@@ -1,9 +1,13 @@
 package practice.Testing;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 public class ListTest {
+
+    private static final List<Integer> finalList = Collections.unmodifiableList(Arrays.asList(1,2,3,4));
 
     public static void main(String[] args) {
 
@@ -22,9 +26,14 @@ public class ListTest {
 
     static class Address{
         String streetName;
+        List<Integer> list;
 
         Address(String streetName){
             this.streetName = streetName;
+        }
+
+        Address(List<Integer> list) {
+            this.list = list;
         }
 
         void setStreetName(String streetName){

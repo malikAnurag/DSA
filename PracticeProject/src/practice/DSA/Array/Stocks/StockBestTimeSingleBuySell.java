@@ -21,7 +21,7 @@ package practice.DSA.Array.Stocks;
  * Output: 0
  * Explanation: In this case, no transactions are done and the max profit = 0.
  */
-public class StockBuySellBestTime {
+public class StockBestTimeSingleBuySell {
 
     public static void main(String[] args) {
 

@@ -21,7 +21,7 @@ public class SingleNumber2 {
 ones - At any point of time, this variable holds XOR of all the elements which have appeared "only" once.
 twos - At any point of time, this variable holds XOR of all the elements which have appeared "only" twice.
 
-So, at any point time below three cases can heppen
+So, at any point time below three cases can happen
 
 A new number appears - It gets XOR'd to the variable ones.
 A number gets repeated(appears twice) - It is removed from ones and XOR'd to the variable twice.
