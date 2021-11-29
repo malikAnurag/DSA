@@ -13,6 +13,7 @@ public class QuickFind {
         }
     }
 
+    // Instead of storing parent node, we store the root node for each vertex, that's why we don't have to iterate in quick find
     public int find(int x) {
         return root[x];
     }

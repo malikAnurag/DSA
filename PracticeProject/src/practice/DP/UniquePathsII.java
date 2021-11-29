@@ -28,7 +28,6 @@ package practice.DP;
 public class UniquePathsII {
 
     public static void main(String[] args) {
-        System.out.println(3 << 2);
         System.out.println("Unique Paths : " + getUniquePaths(new int[][]{{0, 0, 0}, {0, 1, 0}, {0, 0, 0}}));
         System.out.println("Unique Paths : " + getUniquePaths(new int[][]{{0, 1}}));
     }
@@ -40,11 +39,9 @@ public class UniquePathsII {
 
         int width = grid[0].length;
         int[] dp = new int[width];
-
         dp[0] = 1;
 
         for(int[] row : grid) {
-
             for(int j = 0; j < width; j++) {
 
                 if(row[j] == 1) {

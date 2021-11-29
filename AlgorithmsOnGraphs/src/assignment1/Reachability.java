@@ -10,7 +10,6 @@ public class Reachability {
     private static int reach(ArrayList<Integer>[] adj, int x, int y) {
 
         int[] visited = new int[adj.length];
-
         return explore(adj, x, y, visited);
     }
 

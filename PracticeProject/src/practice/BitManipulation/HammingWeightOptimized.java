@@ -23,6 +23,7 @@ public class HammingWeightOptimized {
 
     public static int getHammingDist(int n) {
         int count = 0 ;
+
         while(n != 0) { // no of times we loop is the number of ones present in the given number
             n = n & (n - 1);
             count++;

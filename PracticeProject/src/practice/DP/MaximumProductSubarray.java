@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DP;
 /**
  * Given an integer array nums, find a contiguous non-empty subarray within the array that has the largest product, and return the product.
  * It is guaranteed that the answer will fit in a 32-bit integer.
@@ -19,10 +19,11 @@ package practice.DSA.Array.advanced.Subarrays;
  * -10 <= nums[i] <= 10
  * The product of any prefix or suffix of nums is guaranteed to fit in a 32-bit integer.
  */
-public class MaximumProductSubarray$ {
+public class MaximumProductSubarray {
 
     public static void main(String[] args) {
-
+        System.out.println(maxProduct(new int[]{2, 3, -2, 4}));
+        System.out.println(maxProduct(new int[]{-2, 0, -1}));
     }
 
     public static int maxProduct(int[] nums) {

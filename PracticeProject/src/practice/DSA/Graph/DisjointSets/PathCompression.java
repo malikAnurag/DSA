@@ -5,7 +5,7 @@ After finding the root node, we can update the parent node of all traversed elem
 When we search for the root node of the same element again, we only need to traverse two elements to find its root node, which is highly efficient.
 
 Time Complexities:
-                  Find - O(log N), Union - O(log N),  Connected - O(log N)
+                  Find - O(log N), Union - O(log N),  Connected - O(log N) [Average]
 * */
 public class PathCompression {
 

@@ -27,7 +27,6 @@ public class SearchInRotated {
             if(arr[left] <= key && key <= arr[mid]) {
                 return search(arr, left, mid - 1, key);
             }
-
             return search(arr, mid + 1, right, key);
         }
 

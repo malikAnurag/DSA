@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced;
+package practice.DP;
 
 /**
  * Given an array of non-negative integers nums, you are initially positioned at the first index of the array.
@@ -17,7 +17,7 @@ package practice.DSA.Array.advanced;
  * Input: nums = [2,3,0,1,4]
  * Output: 2
  */
-public class JumpingGameArray_Easy {
+public class JumpGame2 {
 
     public static void main(String[] args) {
         System.out.println("Minimum number of jumps : " + getJumps(new int[]{2, 3, 1, 1, 4}));

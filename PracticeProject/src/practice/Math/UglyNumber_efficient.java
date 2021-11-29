@@ -8,13 +8,10 @@ import java.util.TreeSet;
  * Ugly numbers are positive numbers whose prime factors only include 2, 3, 5.
  *
  * Example:
- *
  * Input: n = 10
  * Output: 12
  * Explanation: 1, 2, 3, 4, 5, 6, 8, 9, 10, 12 is the sequence of the first 10 ugly numbers.
  * Note:
- *
- *
  * Input  : n = 7
  * Output : 8
  *
@@ -39,29 +36,15 @@ public class UglyNumber_efficient {
 
     public static int nthUglyNumber(int n) {
 
-        if (n == 1)
-            return n;
+        TreeSet<Long> ans = new TreeSet<>();
+        ans.add(1L);
 
-        int[] nums = {2, 3, 5};
-
-        TreeSet<Long> set = new TreeSet<>();
-        Long result = 1L;
-        set.add(result);
-
-        for (int i = 0; i < n; i++) {
-            // Each time we poll the peak value of q, is the ith number
-            result = set.pollFirst();
-            for (int num : nums) {
-                Long uglyNum = result * num;
-                if (!set.contains(uglyNum)) {
-                    set.add(uglyNum);
-                }
-            }
-            for(long k : set)
-                System.out.print(k + " ");
-
-            System.out.println();
+        for(int i = 0 ; i < n - 1 ; i++) {
+            long first = ans.pollFirst();
+            ans.add(first * 2);
+            ans.add(first * 3);
+            ans.add(first * 5);
         }
-        return result.intValue();
+        return ans.first().intValue();
     }
 }

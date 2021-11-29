@@ -32,8 +32,7 @@ public class Dijkstra {
 
         int[] dist = new int[adj.length];
 
-        for(int i = 0; i < dist.length ; i++)
-            dist[i] = Integer.MAX_VALUE;
+        Arrays.fill(dist, Integer.MAX_VALUE);
 
         PriorityQueue<Node> queue = new PriorityQueue<>();
         dist[s] = 0;
