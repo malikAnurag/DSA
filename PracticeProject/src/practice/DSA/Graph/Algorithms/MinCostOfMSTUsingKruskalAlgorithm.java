@@ -1,4 +1,4 @@
-package practice.DSA.Graph;
+package practice.DSA.Graph.Algorithms;
 
 import java.util.PriorityQueue;
 
