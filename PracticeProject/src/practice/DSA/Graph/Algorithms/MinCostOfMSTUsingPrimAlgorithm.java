@@ -41,6 +41,10 @@ public class MinCostOfMSTUsingPrimAlgorithm {
         System.out.println(getMinCostUsingPrim(new int[][] {{0, 0}}));
     }
 
+    /*
+    * Time Complexity : O(E + V logV)
+    * Space Complexity: O(V)
+    * */
     static int getMinCostUsingPrim(int[][] points) {
 
         int size = points.length;
@@ -52,24 +56,24 @@ public class MinCostOfMSTUsingPrimAlgorithm {
         int ans = 0;
         int[] coordinate1 = points[0];
 
-        for(int i = 1; i < size; i++) {
+        for (int i = 1; i < size; i++) {
             int[] coordinate2 = points[i];
             int cost = Math.abs(coordinate1[0] - coordinate2[0]) + Math.abs(coordinate1[1] - coordinate2[1]);
             pq.add(new Edge(0, i, cost));
         }
 
-        while(!pq.isEmpty() && count > 0) {
+        while (!pq.isEmpty() && count > 0) {
 
             Edge edge = pq.poll();
             int point2 = edge.point2;
             int cost = edge.cost;
 
-            if(!visited[point2]) {
+            if (!visited[point2]) {
                 ans += cost;
                 visited[point2] = true;
 
-                for(int i = 0; i < size; i++) {
-                    if(!visited[i]) {
+                for (int i = 0; i < size; i++) {
+                    if (!visited[i]) {
                         int c = Math.abs(points[point2][0] - points[i][0]) + Math.abs(points[point2][1] - points[i][1]);
                         pq.add(new Edge(point2, i, c));
                     }

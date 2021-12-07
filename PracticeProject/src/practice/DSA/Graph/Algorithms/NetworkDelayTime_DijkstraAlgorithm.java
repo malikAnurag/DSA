@@ -41,6 +41,10 @@ public class NetworkDelayTime_DijkstraAlgorithm {
         System.out.println(getMinimumTime(new int[][]{{1, 2, 1}}, 2, 2));
     }
 
+    /*
+    * Time Complexity: O(N^2 + E)
+    * Space Complexity: O(N + E)
+    * */
     static int getMinimumTime(int[][] times, int n, int k) {
 
         Map<Integer, Integer> dist = new HashMap<>();

@@ -31,6 +31,10 @@ public class TopologicalSortKahnAlgorithm {
         System.out.println(Arrays.toString(getOrderingOfCourses(4, new int[][]{{1, 0}, {2,0}, {3,1}, {3,2}})));
     }
 
+    /*
+    * Time Complexity: O(V + E)
+    * Space Complexity: O(V + E)
+    * */
     static int[] getOrderingOfCourses(int n, int[][] prerequisites) {
 
         int index = 0;
@@ -73,6 +77,7 @@ public class TopologicalSortKahnAlgorithm {
         }
         if(index == n)
             return topo;
+
         return new int[0];
     }
 }

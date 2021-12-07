@@ -40,6 +40,10 @@ public class MinCostOfMSTUsingKruskalAlgorithm {
         System.out.println(getMinCostUsingKruskal(new int[][] {{0, 0}}));
     }
 
+    /*
+        Time Complexity: O(E log E)
+        Space Complexity: O(V)
+    * */
     static int getMinCostUsingKruskal(int[][] points) {
 
         if(points == null || points.length == 0)
