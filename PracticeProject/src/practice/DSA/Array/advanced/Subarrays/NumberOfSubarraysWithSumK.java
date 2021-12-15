@@ -28,8 +28,10 @@ public class NumberOfSubarraysWithSumK {
                 count++;
             }
 
-            // currsum exceeds given sum by currsum - sum. Find number of subarrays having this sum and exclude
-            // those subarray from currsum by increasing count by same amount.
+            // currsum exceeds given sum by currsum - k. If we have seen this sum before, that means we have seen an array with sum k.
+            // currSum = sum(seen before) + k as currSum is cumulative sum
+            // This means that the elements from the point of previous sum to the point of current sum, sums up to k.
+            // This value will determine the number of times a subarray with sum k has occurred up to the current index
             if(prevSum.containsKey(currSum - k)) {
                 count += prevSum.get(currSum - k);
             }

@@ -64,7 +64,6 @@ public class MinCostOfMSTUsingKruskalAlgorithm {
                 pq.add(edge);
             }
         }
-        System.out.println(pq);
         int cost = 0;
         int count = size - 1;
 
@@ -79,7 +78,6 @@ public class MinCostOfMSTUsingKruskalAlgorithm {
                 cost += edge.cost;
                 count--;
             }
-            System.out.println();
         }
         return cost;
     }
