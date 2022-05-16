@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.SlidingWindow;
+package practice.DSA.Array.Advanced.SlidingWindow;
 
 /**
  * Given an array of n integers, find the sub-array of length k with maximum sum.

@@ -1,7 +1,8 @@
 package practice.DSA.String.advanced;
 
 /**
- * Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string "".
+ * Write a function to find the longest common prefix string amongst an array of strings.
+ * If there is no common prefix, return an empty string "".
  *
  * Example 1:
  * Input: strs = ["flower","flow","flight"]

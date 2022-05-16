@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DSA.Array.Advanced.Subarrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -62,7 +62,7 @@ public class MaxNonNegativeSubArray {
             }
 
             if (curr > sum || (curr == sum && newArray.size() > maxArray.size())) {
-                maxArray = newArray;
+                maxArray = new ArrayList<>(newArray);
                 sum = curr;
             }
         }

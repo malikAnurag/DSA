@@ -21,9 +21,9 @@ public class ZigZagString {
         int j = 0;
         boolean down = true;
 
-        for (int i = 0; i < x.length; i++) {
+        for (char c : x) {
 
-            arr[j] += x[i];
+            arr[j] += c;
 
             if (j == B - 1)
                 down = false;

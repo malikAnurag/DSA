@@ -27,8 +27,8 @@ public class PossibleBipartition {
 
     public static boolean isBipartitionPossible(int N, int[][] dislikes) {
 
-        List<List<Integer>> graph = new ArrayList<>(N + 1);
         int[] group = new int[N + 1];
+        List<List<Integer>> graph = new ArrayList<>(N + 1);
 
         for (int i = 0; i <= N; i++)
             graph.add(new ArrayList<>());

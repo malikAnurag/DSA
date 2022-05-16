@@ -43,8 +43,8 @@ public class KthLargestElementInStream {
 
         BST = null;
 
-        for(int i = 0; i < arr.length; i++) {
-            BST = insertNode(BST, arr[i]);
+        for (int j : arr) {
+            BST = insertNode(BST, j);
         }
         k_count = k;
     }

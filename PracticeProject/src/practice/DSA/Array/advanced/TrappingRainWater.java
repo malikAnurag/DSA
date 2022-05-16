@@ -1,4 +1,7 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it can trap after raining.
@@ -18,6 +21,11 @@ public class TrappingRainWater {
     public static void main(String[] args) {
         System.out.println(getWater(new int[]{0, 1, 0, 2, 1, 0, 1, 3, 2, 1, 2, 1}));
         System.out.println(getWater(new int[]{4, 2, 0, 3, 2, 5}));
+
+        List<Long> ids = new ArrayList<>();
+        ids.add(1L);ids.add(2L);
+        System.out.println(ids.toString());
+
     }
 
     public static int getWater(int[] height) {

@@ -37,7 +37,6 @@ package practice.DSA.Trees.SegmentTrees;
 public class RangeQuerySum {
 
     public static void main(String[] args) {
-
         NumArray obj = new NumArray(new int[] {1, 3, 5});
         obj.update(1, 2);
         System.out.println(obj.sumRange(0, 2));

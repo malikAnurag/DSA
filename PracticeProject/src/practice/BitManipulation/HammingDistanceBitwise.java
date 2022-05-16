@@ -30,7 +30,8 @@ public class HammingDistanceBitwise {
     /* Here XOR operation would give 1 only at those bits which are different in both these numbers.
     * Here we adopt the right shift operation, where each bit would have its turn to be shifted to the rightmost position.
     * Once shifted, we then check if the rightmost bit is one, which we can use either the
-    * modulo operation (i.e. i % 2) or the bit AND operation (i.e. i & 1). Both operations would mask out the rest of the bits other than the rightmost bit.
+    * modulo operation (i.e. i % 2) or the bit AND operation (i.e. i & 1). Both operations would mask out the rest of the bits
+    * other than the rightmost bit.
     * */
     static int getHammingDistance(int x, int y) {
 

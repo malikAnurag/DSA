@@ -2,22 +2,304 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7cc452de-f4ba-4f7e-b564-ff2ba5aea3ad" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/DominoTrominoTiling.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/JumpGame3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/PartitionEqualSubsetSum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/LinkedList/RemoveDuplicatesFromUnsortedList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/CherryPickUp_ii.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/CherryPick_II.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/JumpGames/JumpGame4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/RankTeamsByVotes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/SlidingWindow/MinimumSwapsToGroupAllOnes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/SlidingWindow/SequentialDigits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/StoneGames/StoneGame_IV.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/TransposeOfaMatrix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/SearchInsertPosition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/BFS/shortestPathInBinary.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/SumRootToLeafBinaryNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/sum-of-root-to-leaf-binary-numbers.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/Testing/Karat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PracticeProject/src/practice/Testing/MapTest3.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AlgorithmsOnGraphs/src/assignment3/BFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/AlgorithmsOnGraphs/src/assignment3/BFS.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/PracticeProject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/PracticeProject.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/BitManipulation/HammingDistanceBitwise.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/BitManipulation/HammingDistanceBitwise.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DP/CoinChange2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DP/JumpGame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DP/JumpGame2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DP/JumpGame3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DP/PartitionEqualSubsetSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DP/PartitionEqualSubsetSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/CakeCutting.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/CakeCutting.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/SearchInsertPosition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/Stocks/Interval.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/Stocks/StockBestTimeSingleBuySell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/Stocks/StockBuySell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/Stocks/StockBuySellWithCooldown.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/Stocks/StockBuySellWithFee.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/TopKFrequentElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/TopKFrequentElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/AdvantageShuffle.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/AdvantageShuffle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ArithmeticSlices.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ArithmeticSlices.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ArithmeticSlices_II.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ArithmeticSlices_II.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ArrayOfDoubledPairs.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ArrayOfDoubledPairs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/BeautifulArrangement2.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/BeautifulArrangement2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/BeautifulArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/BeautifulArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Candies.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Candies.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ConstainsDuplicate_III$.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ConstainsDuplicate_III$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ContainerWithMostWater.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ContainerWithMostWater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/CourseSchedules/CourseSchedules3.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/CourseSchedules/CourseSchedules3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/DegreeOfArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/DegreeOfArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/FindAllDisappearedNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/FindAllDisappearedNumbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/FirstMissingPositiveInt.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/FirstMissingPositiveInt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/LongestHarmoniousSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/LongestHarmoniousSubsequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/MaxCircularSum$.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/MaxSpecialProduct$.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/MaxSpecialProduct$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/MinimumOperationsToMakeArrayEqual.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/MinimumOperationsToMakeArrayEqual.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/MinimumSwapsToSortBinary.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/MinimumSwapsToSortBinary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/NobleInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/NobleInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/NonDecreasingArray$.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/NonDecreasingArray$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/PivotIndex.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/PivotIndex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ProductExceptSelf.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ProductExceptSelf.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/RepeatedNumber_X.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/RepeatedNumber_X.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SlidingWindow/MaxConsecutiveOnes_III.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SlidingWindow/MaxConsecutiveOnes_III.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SlidingWindow/MaxPointsFromCards.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SlidingWindow/MaxPointsFromCards.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SlidingWindow/MaximumSumSubarrayOfSizeK.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SlidingWindow/MaximumSumSubarrayOfSizeK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SlidingWindow/SlidingWindowMaximum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SlidingWindow/SlidingWindowMaximum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SortColors.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/SortColors.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/ContiguousSubarrayWithZeroAndOne.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/ContiguousSubarrayWithZeroAndOne.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaxNonNegativeSubArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaxNonNegativeSubArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaxSubArraySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaxSubArraySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaxSubArraySum2.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaxSubArraySum2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaxSubArraySumCircular.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaxSubArraySumCircular.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaximumErasureValue.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaximumErasureValue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaximumSizeSubarrayOfSumK.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/MaximumSizeSubarrayOfSumK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/NumberOfSubarraysWithSumK.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/NumberOfSubarraysWithSumK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/SmallestSubWithSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/SmallestSubWithSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/SubArraysWithBoundedMaximum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/SubArraysWithBoundedMaximum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/SubarraySumLessThanK.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/Subarrays/SubarraySumLessThanK.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ThreeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/ThreeSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/TrappingRainWater.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/TrappingRainWater.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/WiggleSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/WiggleSubsequence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/_3SumClosest.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/_3SumClosest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/_3SumWithMultiplicity$.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/_3SumWithMultiplicity$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/_4Sum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array/advanced/_4Sum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/BrickWall.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/BrickWall.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/IntervalListIntersection.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/IntervalListIntersection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/IslandPerimeter.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/IslandPerimeter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/MaxSumOfRectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/MaxSumOfRectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/SearchIn2DMatrix_II.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/SearchIn2DMatrix_II.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/SubmatricesThatSumToTarget$.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/Advanced/SubmatricesThatSumToTarget$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/FallingBoxes_Efficient.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/FallingBoxes_Efficient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/QueueReconstruction$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/QueueReconstruction.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/QueueReconstruction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/TwoCityScheduling$$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/TwoCityScheduling$.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Array2D/TwoCityScheduling$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/FindPeakElement.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/FindPeakElement.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/FindSquareRoot.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/FindSquareRoot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/FirstBadVersion.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/FirstBadVersion.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/SearchIn2DArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/SearchIn2DArray.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/advanced/SingleElementInSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/BinarySearch/advanced/SingleElementInSortedArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/Edge.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/Edge.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/MinCostOfMSTUsingKruskalAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/MinCostOfMSTUsingKruskalAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/MinCostOfMSTUsingPrimAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/MinCostOfMSTUsingPrimAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/NetworkDelayTime_DijkstraAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/NetworkDelayTime_DijkstraAlgorithm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/UnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/UnionFind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/StepByStepDirections.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/StepByStepDirections.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/NumberOfSubarraysWithSumK.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/NumberOfSubarraysWithSumK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/TopologicalSortKahnAlgorithm.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/Algorithms/TopologicalSortKahnAlgorithm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/CelebrityProblem_Efficient.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/CelebrityProblem_Efficient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/CourseSchedule.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/CourseSchedule.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/KeysAndRooms.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/KeysAndRooms.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/NumberOfIslands.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/NumberOfIslands.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/PacificAtlanticWaterFlow.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/PacificAtlanticWaterFlow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/PossibleBipartition.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/PossibleBipartition.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/RedundantConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Graph/RedundantConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/LinkedList/InsertIntoCyclicSortedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/LinkedList/InsertIntoCyclicSortedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/PriorityQueue/FindKClosestElements$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/PriorityQueue/FindKClosestElements$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/PriorityQueue/FindKClosestElements.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/PriorityQueue/FindKClosestElements.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Stack/RemoveAllAdjacentDuplicates$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Stack/RemoveAllAdjacentDuplicates$Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Stack/RemoveAllAdjacentDuplicates.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Stack/RemoveAllAdjacentDuplicates.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/AlienDictionary.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/AlienDictionary.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/Complex.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/Complex.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/ComplexNumberMultiplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/ComplexNumberMultiplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/CountAnagrams.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/CountAnagrams.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/DetectCapital.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/DetectCapital.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/NextSimilarNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/NextSimilarNumber.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/RansomNote.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/RansomNote.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/SortCharacterByFrequency.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/SortCharacterByFrequency.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/SuperPalindromes.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/SuperPalindromes.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/WordBreakII$.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/WordBreakII$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/ZigZagString.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/ZigZagString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/CheckAndReplacePattern.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/CheckAndReplacePattern.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/CompareVersionNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/CompareVersionNumbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/CountBinaryStrings.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/CountBinaryStrings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/FlipStringToMonotone.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/FlipStringToMonotone.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/ImplementStrStr.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/ImplementStrStr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/LongestCommonPrefix_efficient.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/LongestCommonPrefix_efficient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/LongestStringChain.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/LongestStringChain.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/ReorderDataInLogs.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/ReorderDataInLogs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/StringToInteger.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/StringToInteger.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/substring/AllSubstringsOfString.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/substring/AllSubstringsOfString.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/substring/ConsecutiveCharacters.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/substring/ConsecutiveCharacters.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/substring/MinimumWindowSubstring.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/String/advanced/substring/MinimumWindowSubstring.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/BST/BalancedBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/BST/BalancedBinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/BST/KthLargestElementInStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/BST/KthLargestElementInStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/BinaryTreeTilt.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/BinaryTreeTilt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/Construction/BinaryTreeFromInAndPostOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/Construction/BinaryTreeFromInAndPostOrder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/FoldableBinaryTrees.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/FoldableBinaryTrees.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/GoodNodesInBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/GoodNodesInBinaryTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/MaxProductOfSplittedTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/MaxProductOfSplittedTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/PathSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/PathSum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/PathSum_II.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/PathSum_II.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/SameTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/SameTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/SegmentTrees/NumArray$SegmentTreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/SegmentTrees/NumArray$SegmentTreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/SegmentTrees/NumArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/SegmentTrees/NumArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/SegmentTrees/RangeQuerySum.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/SegmentTrees/RangeQuerySum.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/Holder.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/Holder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/HouseRobberIII.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/HouseRobberIII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/LinkedListInTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/LinkedListInTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/MaximumWidth.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/MaximumWidth.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/MaximumWidthWithNull.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/MaximumWidthWithNull.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/treeCamera.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/advanced/treeCamera1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/tilt1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/tilt2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSA/Trees/tilt3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/Entry.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/Entry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/FindMedianFromDataStream.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/FindMedianFromDataStream.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/MyCircularQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/MyCircularQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/MyHashMap.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/MyHashMap.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/NestedIterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/NestedIterator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/ShuffleArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/DSDesign/ShuffleArray.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/Testing/ArrayTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/Testing/ArrayTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/bin/practice/Threads/TaskEvenOdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/bin/practice/Threads/TaskEvenOdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/BitManipulation/HammingDistanceBitwise.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/BitManipulation/HammingDistanceBitwise.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DP/CoinChange2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/CoinChangeCombinations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DP/JumpGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/JumpGames/JumpGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DP/JumpGame2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/JumpGames/JumpGame2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DP/JumpGame3.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/JumpGames/JumpGame3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DP/LongestCommonSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DP/LongestCommonSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/CakeCutting.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/CakeCutting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/SearchInsertPosition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Stocks/StockBestTimeSingleBuySell.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Stocks/StockBestTimeSingleBuySell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Stocks/StockBuySell.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Stocks/StockBuySell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Stocks/StockBuySellWithCooldown.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Stocks/StockBuySellWithCooldown.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Stocks/StockBuySellWithFee.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Stocks/StockBuySellWithFee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/TopKFrequentElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/TopKFrequentElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/AdvantageShuffle.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/AdvantageShuffle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/ArithmeticSlices.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/ArithmeticSlices.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/ArithmeticSlices_II.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/ArithmeticSlices_II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/ArrayOfDoubledPairs.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/ArrayOfDoubledPairs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/BeautifulArrangement2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/BeautifulArrangement2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/BeautifulArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/BeautifulArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Candies.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Candies.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/ConstainsDuplicate_III$.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/ConstainsDuplicate_III$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/ContainerWithMostWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/ContainerWithMostWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/ContainerWithMostWater.png" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/ContainerWithMostWater.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/CourseSchedules/CourseSchedules3.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/CourseSchedules/CourseSchedules3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/DegreeOfArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/DegreeOfArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/FindAllDisappearedNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/FindAllDisappearedNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/FirstMissingPositiveInt.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/FirstMissingPositiveInt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/LongestHarmoniousSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/LongestHarmoniousSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/MaxCircularSum$.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/MaxSpecialProduct$.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/MaxSpecialProduct$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/MinimumOperationsToMakeArrayEqual.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/MinimumOperationsToMakeArrayEqual.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/MinimumSwapsToSortBinary.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/MinimumSwapsToSortBinary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/NobleInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/NobleInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/NonDecreasingArray$.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/NonDecreasingArray$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/PivotIndex.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/PivotIndex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/ProductExceptSelf.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/ProductExceptSelf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/RepeatedNumber_X.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/RepeatedNumber_X.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/SlidingWindow/MaxConsecutiveOnes_III.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/SlidingWindow/MaxConsecutiveOnes_III.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/SlidingWindow/MaxPointsFromCards.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/SlidingWindow/MaxPointsFromCards.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/SlidingWindow/MaximumSumSubarrayOfSizeK.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/SlidingWindow/MaximumSumSubarrayOfSizeK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/SlidingWindow/SlidingWindowMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/SlidingWindow/SlidingWindowMaximum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/SortColors.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/SortColors.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/ContiguousSubarrayWithZeroAndOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/ContiguousSubarrayWithZeroAndOne.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/MaxNonNegativeSubArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/MaxNonNegativeSubArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/MaxSubArraySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/MaxSubArraySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/MaxSubArraySum2.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/MaxSubArraySum2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/MaxSubArraySumCircular.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/MaxSubArraySumCircular.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/MaximumErasureValue.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/MaximumErasureValue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/MaximumSizeSubarrayOfSumK.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/MaximumSizeSubarrayOfSumK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/NumberOfSubarraysWithSumK.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/NumberOfSubarraysWithSumK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/SmallestSubWithSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/SmallestSubWithSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/SubArraysWithBoundedMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/SubArraysWithBoundedMaximum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/Subarrays/SubarraySumLessThanK.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/Subarrays/SubarraySumLessThanK.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/ThreeSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/ThreeSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/TrappingRainWater.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/TrappingRainWater.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/TrappingRainwater.png" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/TrappingRainwater.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/WiggleSubsequence.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/WiggleSubsequence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/_3SumClosest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/_3SumClosest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/_3SumWithMultiplicity$.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/_3SumWithMultiplicity$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/advanced/_4Sum.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array/Advanced/_4Sum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/BrickWall.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/BrickWall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/IntervalListIntersection.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/IntervalListIntersection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/IslandPerimeter.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/IslandPerimeter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/MaxSumOfRectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/MaxSumOfRectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/PrettyPrint.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/PrettyPrint.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/SearchIn2DMatrix_II.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/SearchIn2DMatrix_II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/SubmatricesThatSumToTarget$.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/Advanced/SubmatricesThatSumToTarget$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/FallingBoxes_Efficient.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/FallingBoxes_Efficient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/PrisonCellsAfterNdays.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/PrisonCellsAfterNdays.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/QueueReconstruction.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/QueueReconstruction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/TwoCityScheduling$.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Array2D/TwoCityScheduling$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/FindPeakElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/FindPeakElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/FindSquareRoot.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/FindSquareRoot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/FirstBadVersion.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/FirstBadVersion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/SearchIn2DArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/SearchIn2DArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/advanced/SingleElementInSortedArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/BinarySearch/advanced/SingleElementInSortedArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/Algorithms/MinCostOfMSTUsingKruskalAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/Algorithms/MinCostOfMSTUsingKruskalAlgorithm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/Threads/EvenOddMultiThreading.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/Threads/EvenOddMultiThreading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/Algorithms/TopologicalSortKahnAlgorithm.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/Algorithms/TopologicalSortKahnAlgorithm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/CelebrityProblem_Efficient.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/CelebrityProblem_Efficient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/CourseSchedule.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/CourseSchedule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/FloodFill.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/FloodFill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/KeysAndRooms.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/KeysAndRooms.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/NumberOfIslands.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/NumberOfIslands.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/PacificAtlanticWaterFlow.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/PacificAtlanticWaterFlow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/PossibleBipartition.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/PossibleBipartition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/RedundantConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Graph/RedundantConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/LinkedList/InsertIntoCyclicSortedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/LinkedList/InsertIntoCyclicSortedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/PriorityQueue/FindKClosestElements.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/PriorityQueue/FindKClosestElements.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Stack/RemoveAllAdjacentDuplicates.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Stack/RemoveAllAdjacentDuplicates.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/AlienDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/AlienDictionary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/ComplexNumberMultiplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/ComplexNumberMultiplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/CountAnagrams.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/CountAnagrams.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/DetectCapital.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/DetectCapital.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/NextSimilarNumber.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/NextSimilarNumber.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/RansomNote.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/RansomNote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/SortCharacterByFrequency.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/SortCharacterByFrequency.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/SuperPalindromes.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/SuperPalindromes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/WordBreakII$.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/WordBreakII$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/ZigZagString.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/ZigZagString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/CheckAndReplacePattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/CheckAndReplacePattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/CompareVersionNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/CompareVersionNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/CountBinaryStrings.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/CountBinaryStrings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/FlipStringToMonotone.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/FlipStringToMonotone.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/GoodWaysToSplit.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/GoodWaysToSplit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/ImplementStrStr.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/ImplementStrStr.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/LongestCommonPrefix_efficient.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/LongestCommonPrefix_efficient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/LongestStringChain.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/LongestStringChain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/ReorderDataInLogs.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/ReorderDataInLogs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/StringToInteger.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/StringToInteger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/substring/AllSubstringsOfString.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/substring/AllSubstringsOfString.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/substring/ConsecutiveCharacters.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/substring/ConsecutiveCharacters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/substring/MinimumWindowSubstring.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/String/advanced/substring/MinimumWindowSubstring.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BST/BalancedBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BST/BalancedBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BST/KthLargestElementInStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BST/KthLargestElementInStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BinaryTreeTilt.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BinaryTreeTilt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/Construction/BinaryTreeFromInAndPostOrder.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/Construction/BinaryTreeFromInAndPostOrder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/FoldableBinaryTrees.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/FoldableBinaryTrees.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/GoodNodesInBinaryTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/GoodNodesInBinaryTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/MaxProductOfSplittedTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/MaxProductOfSplittedTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/PathSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/PathSum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/PathSum_II.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/PathSum_II.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/SameTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/SameTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/SegmentTrees/RangeQuerySum.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/SegmentTrees/RangeQuerySum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/ValidSequenceToLeaf.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/ValidSequenceToLeaf.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/BinaryTreeCameras$.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/BinaryTreeCameras$.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/HouseRobberIII.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/HouseRobberIII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/LinkedListInTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/LinkedListInTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/MaximumWidth.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/MaximumWidth.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/MaximumWidthWithNull.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/MaximumWidthWithNull.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/treeCamera.png" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/BinaryTreeCamera.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/treeCamera1.png" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/advanced/BinaryTreeCamera1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/tilt1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BinaryTreeTilt1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/tilt2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BinaryTreeTilt2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/tilt3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSA/Trees/BinaryTreeTilt3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/FindMedianFromDataStream.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/FindMedianFromDataStream.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/MyCircularQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/MyCircularQueue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/MyHashMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/MyHashMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/NestedIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/NestedIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/ShuffleArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/DSDesign/ShuffleArray.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PracticeProject/src/practice/Testing/ArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/PracticeProject/src/practice/Testing/ArrayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,49 +342,84 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
-  <component name="RunManager" selected="Application.PartitionEqualSubsetSum">
-    <configuration name="DominoTrominoTiling" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.DP.DominoTrominoTiling" />
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="practice.DP.JumpGames" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.RankTeamsByVotes">
+    <configuration name="ArrayTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Testing.ArrayTest" />
       <module name="PracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.Testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JumpGame3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.DP.JumpGame3" />
+    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Testing.MapTest" />
       <module name="PracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.Testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MinCostOfMSTUsingKruskalAlgorithm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.DSA.Graph.Algorithms.MinCostOfMSTUsingKruskalAlgorithm" />
+    <configuration name="MapTest3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.Testing.MapTest3" />
       <module name="PracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.Testing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PartitionEqualSubsetSum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.DP.PartitionEqualSubsetSum" />
+    <configuration name="ProductExceptSelf" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.DSA.Array.Advanced.ProductExceptSelf" />
       <module name="PracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.DSA.Array.Advanced.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemoveDuplicatesFromUnsortedList" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.DSA.LinkedList.RemoveDuplicatesFromUnsortedList" />
+    <configuration name="RankTeamsByVotes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.DSA.Array.Advanced.RankTeamsByVotes" />
       <module name="PracticeProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.DSA.Array.Advanced.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.PartitionEqualSubsetSum" />
-        <item itemvalue="Application.RemoveDuplicatesFromUnsortedList" />
-        <item itemvalue="Application.DominoTrominoTiling" />
-        <item itemvalue="Application.JumpGame3" />
-        <item itemvalue="Application.MinCostOfMSTUsingKruskalAlgorithm" />
+        <item itemvalue="Application.RankTeamsByVotes" />
+        <item itemvalue="Application.MapTest3" />
+        <item itemvalue="Application.MapTest" />
+        <item itemvalue="Application.ArrayTest" />
+        <item itemvalue="Application.ProductExceptSelf" />
       </list>
     </recent_temporary>
   </component>

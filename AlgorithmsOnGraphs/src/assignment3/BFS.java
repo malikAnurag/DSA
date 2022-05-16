@@ -1,9 +1,6 @@
 package assignment3;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * Given an undirected graph with 𝑛 vertices and 𝑚 edges and two vertices 𝑢 and 𝑣, compute the length
@@ -17,8 +14,7 @@ public class BFS {
             return 0;
 
         int[] dist = new int[adj.length];
-        for (int i = 0; i < dist.length; i++)
-            dist[i] = Integer.MAX_VALUE;
+        Arrays.fill(dist, Integer.MAX_VALUE);
 
         dist[s] = 0;
         LinkedList<Integer> queue = new LinkedList<>();
@@ -47,7 +43,7 @@ public class BFS {
         int m = scanner.nextInt();
         ArrayList<Integer>[] adj = (ArrayList<Integer>[])new ArrayList[n];
         for (int i = 0; i < n; i++) {
-            adj[i] = new ArrayList<Integer>();
+            adj[i] = new ArrayList<>();
         }
         for (int i = 0; i < m; i++) {
             int x, y;

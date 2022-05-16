@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DSA.Array.Advanced.Subarrays;
 
 import java.util.HashMap;
 import java.util.Map;

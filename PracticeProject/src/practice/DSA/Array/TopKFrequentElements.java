@@ -6,11 +6,10 @@ import java.util.*;
  * Given a non-empty array of integers, return the k most frequent elements.
  *
  * Example 1:
- *
  * Input: nums = [1,1,1,2,2,3], k = 2
  * Output: [1,2]
- * Example 2:
  *
+ * Example 2:
  * Input: nums = [1], k = 1
  * Output: [1]
  * Note:
@@ -40,7 +39,7 @@ public class TopKFrequentElements {
             al.add(entry);
         }
 
-        Collections.sort(al, (e1, e2) -> e2.getValue().compareTo(e1.getValue()));
+        al.sort((e1, e2) -> e2.getValue().compareTo(e1.getValue()));
 
         int[] result = new int[k];
         int counter = 0;

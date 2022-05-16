@@ -34,10 +34,7 @@ public class DetectCapital {
     public static boolean detectCapitalUse(String word) {
 
         char[] arr = word.toCharArray();
-        boolean firstCapital = false;
-
-        if (Character.isUpperCase(arr[0]))
-            firstCapital = true;
+        boolean firstCapital = Character.isUpperCase(arr[0]);
 
         if (!firstCapital) {
             for (int i = 1; i < arr.length; i++) {

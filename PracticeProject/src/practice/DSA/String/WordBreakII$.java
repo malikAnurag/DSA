@@ -3,7 +3,8 @@ package practice.DSA.String;
 import java.util.*;
 
 /**
- * Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a
+ * Given a non-empty string s and a dictionary wordDict containing a list of non-empty words,
+ * add spaces in s to construct a sentence where each word is a
  * valid dictionary word. Return all such possible sentences.
  *
  * Note:

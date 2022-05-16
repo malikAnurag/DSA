@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DSA.Array.Advanced.Subarrays;
 
 public class MaxSubArraySum2 {
 

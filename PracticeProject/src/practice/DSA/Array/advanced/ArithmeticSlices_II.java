@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,7 +6,8 @@ import java.util.Map;
 /**
  * Given an integer array nums, return the number of all the arithmetic subsequences of nums.
  *
- * A sequence of numbers is called arithmetic if it consists of at least three elements and if the difference between any two consecutive elements is the same.
+ * A sequence of numbers is called arithmetic if it consists of at least three elements and
+ * if the difference between any two consecutive elements is the same.
  *
  * For example, [1, 3, 5, 7, 9], [7, 7, 7, 7], and [3, -1, -5, -9] are arithmetic sequences.
  * For example, [1, 1, 2, 5, 7] is not an arithmetic sequence.
@@ -36,6 +37,7 @@ public class ArithmeticSlices_II {
 
     public static void main(String[] args) {
 
+        System.out.println(numberOfArithmeticSlices(new int[] {2,4,6,8,10}));
     }
 
     public static int numberOfArithmeticSlices(int[] nums) {
@@ -64,6 +66,8 @@ public class ArithmeticSlices_II {
                 hm[i].put(dif, n1+n2+1);
             }
         }
+        for(Map<Integer, Integer> h : hm)
+            System.out.println(h);
         return ans;
     }
 }

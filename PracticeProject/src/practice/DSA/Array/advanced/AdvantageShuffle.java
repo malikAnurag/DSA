@@ -1,8 +1,9 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
 
 import java.util.*;
 /**
- * Given two arrays A and B of equal size, the advantage of A with respect to B is the number of indices i for which A[i] > B[i].
+ * Given two arrays A and B of equal size, the advantage of A with respect to B is the number of indices i for which
+ * A[i] > B[i].
  * Return any permutation of A that maximizes its advantage with respect to B.
  *
  * Example 1:

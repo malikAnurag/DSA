@@ -1,7 +1,7 @@
 package practice.DSA.String.advanced;
 
 /**
- * Give a string s, count the number of non-empty (contiguous) substrings that have the same number of 0's and 1's,
+ * Given a string s, count the number of non-empty (contiguous) substrings that have the same number of 0's and 1's,
  * and all the 0's and all the 1's in these substrings are grouped consecutively.
  *
  * Substrings that occur multiple times are counted the number of times they occur.
@@ -9,7 +9,8 @@ package practice.DSA.String.advanced;
  * Example 1:
  * Input: "00110011"
  * Output: 6
- * Explanation: There are 6 substrings that have equal number of consecutive 1's and 0's: "0011", "01", "1100", "10", "0011", and "01".
+ * Explanation: There are 6 substrings that have equal number of consecutive 1's and 0's:
+ * "0011", "01", "1100", "10", "0011", and "01".
  *
  * Notice that some of these substrings repeat and are counted the number of times they occur.
  *

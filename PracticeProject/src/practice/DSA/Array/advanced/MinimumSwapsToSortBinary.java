@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
 
 /**
  * Given a binary array, find the number of minimum ADJACENT swaps needed to group 1's and 0's.

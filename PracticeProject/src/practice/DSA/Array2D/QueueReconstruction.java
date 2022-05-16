@@ -40,16 +40,13 @@ public class QueueReconstruction {
         *   1. If height is same, increasing order of the number of people in front of this person
         *   2. If height is not same, decreasing order of the height.
         * */
-        Arrays.sort(people, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
+        Arrays.sort(people, (o1, o2) -> {
 
-                if(o1[0] == o2[0]) {
-                    return o1[1] - o2[1];
-                }
-                else {
-                    return o2[0] - o1[0];
-                }
+            if(o1[0] == o2[0]) {
+                return o1[1] - o2[1];
+            }
+            else {
+                return o2[0] - o1[0];
             }
         });
 

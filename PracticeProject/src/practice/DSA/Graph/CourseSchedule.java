@@ -32,8 +32,8 @@ public class CourseSchedule {
             adj[i] = new ArrayList<>();
 
 
-        for(int i = 0 ; i < preRequisites.length ; i++) {
-            adj[preRequisites[i][0]].add(preRequisites[i][1]);
+        for (int[] preRequisite : preRequisites) {
+            adj[preRequisite[0]].add(preRequisite[1]);
         }
 
         for(int i  = 0 ; i < courses ; i++) {

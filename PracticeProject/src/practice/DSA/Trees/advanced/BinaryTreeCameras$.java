@@ -11,12 +11,12 @@ import java.util.Set;
  * Calculate the minimum number of cameras needed to monitor all nodes of the tree.
  *
  *  Example 1:
- * Input: [0,0,null,0,0] TODO : treeCamera.png
+ * Input: [0,0,null,0,0] TODO : BinaryTreeCamera.png
  * Output: 1
  * Explanation: One camera is enough to monitor all nodes if placed as shown.
  *
  *  Example 2:
- * Input: [0,0,null,0,null,0,null,null,0] TODO : treeCamera1.png
+ * Input: [0,0,null,0,null,0,null,null,0] TODO : BinaryTreeCamera1.png
  * Output: 2
  * Explanation: At least two cameras are needed to monitor all nodes of the tree. The above image shows one of the valid
  * configurations of camera placement.

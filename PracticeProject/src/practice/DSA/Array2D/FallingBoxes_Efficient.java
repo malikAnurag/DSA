@@ -22,18 +22,18 @@ public class FallingBoxes_Efficient {
         int[][] matrix = {
                 {1, 1, 1},
                 {1, 0, 1},
-                {0, 1, 0},
+                {0, 1, 1},
                 {1, 1, 1},
                 {0, 1, 1}};
 
-        List<List<Integer>> result = Foo(matrix);
+        List<List<Integer>> result = fallingBoxes(matrix);
 
         for(List<Integer> list : result) {
             System.out.println(list.get(0) + " , " + list.get(1));
         }
     }
 
-    public static List<List<Integer>> Foo(int[][] matrix) {
+    public static List<List<Integer>> fallingBoxes(int[][] matrix) {
 
         List<List<Integer>> result = new ArrayList();
         Map<Integer, Pair> zeros = new HashMap<>();
@@ -48,6 +48,10 @@ public class FallingBoxes_Efficient {
                 i = matrix.length - 1;
             } else {
                 i--;
+            }
+            if(i == 0) {
+                i = matrix.length - 1;
+                j--;
             }
         }
 

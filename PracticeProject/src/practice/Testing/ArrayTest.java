@@ -20,7 +20,7 @@ public class ArrayTest {
 	}
 
 	public static boolean print(boolean[] arr) {
-		return arr[1] = false;
+		return arr[1] = true;
 	}
 
 	static int printInt(int[] arr) {

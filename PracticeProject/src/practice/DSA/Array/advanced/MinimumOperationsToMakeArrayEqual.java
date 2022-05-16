@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
 
 /**
  * You have an array arr of length n where arr[i] = (2 * i) + 1 for all valid values of i (i.e. 0 <= i < n).

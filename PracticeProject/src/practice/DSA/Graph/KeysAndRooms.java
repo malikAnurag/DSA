@@ -67,9 +67,7 @@ public class KeysAndRooms {
 
             visited.add(room);
 
-            List<Integer> newRooms = rooms.get(room);
-
-            for (int newRoom : newRooms) {
+            for (int newRoom : rooms.get(room)) {
                 if (!visited.contains(newRoom)) {
                     q.add(newRoom);
                 }

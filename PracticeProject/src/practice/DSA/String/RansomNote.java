@@ -2,7 +2,8 @@ package practice.DSA.String;
 
 /**
  * Given an arbitrary ransom note string and another string containing letters from all the magazines,
- * write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
+ * write a function that will return true if the ransom note can be constructed from the magazines ; otherwise,
+ * it will return false.
  * Each letter in the magazine string can only be used once in your ransom note.
  *
  * Note:
@@ -12,11 +13,8 @@ public class RansomNote {
 
     public static void main(String[] args) {
         System.out.println("Is Ransom possible?");
-
         System.out.println("Answer: " + isRansomPossible("a", "b"));
-
         System.out.println("Answer: " + isRansomPossible("aa", "ab"));
-
         System.out.println("Answer: " + isRansomPossible("aa", "aab"));
     }
 

@@ -4,7 +4,8 @@ import practice.DSA.Trees.TreeHeight;
 import practice.DSA.Trees.TreeNode;
 
 /**
- * Given a binary tree, write a function to get the maximum width of the given tree. Width of a tree is maximum of widths of all levels.
+ * Given a binary tree, write a function to get the maximum width of the given tree.
+ * Width of a tree is maximum of widths of all levels.
  * Let us consider the below example tree.
  *
  *          1

@@ -1,13 +1,15 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DSA.Array.Advanced.Subarrays;
 
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * You are given an array of positive integers nums and want to erase a subarray containing UNIQUE elements. The score you get by erasing the subarray is equal
- * to the sum of its elements.
+ * You are given an array of positive integers nums and want to erase a subarray containing UNIQUE elements.
+ * The score you get by erasing the subarray is equal to the sum of its elements.
+ *
  * Return the maximum score you can get by erasing exactly one subarray.
- * An array b is called to be a subarray of a if it forms a contiguous subsequence of a, that is, if it is equal to a[l],a[l+1],...,a[r] for some (l,r).
+ * An array b is called to be a subarray of a if it forms a contiguous subsequence of a, that is,
+ * if it is equal to a[l],a[l+1],...,a[r] for some (l,r).
  *
  * Example 1:
  * Input: nums = [4,2,4,5,6]

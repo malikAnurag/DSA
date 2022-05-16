@@ -21,8 +21,8 @@ public class IntervalListIntersection {
 
         int[][] intersection = getIntersectionList(A, B);
 
-        for (int i = 0; i < intersection.length; i++) {
-            System.out.println(intersection[i][0] + ", " + intersection[i][1]);
+        for (int[] ints : intersection) {
+            System.out.println(ints[0] + ", " + ints[1]);
         }
     }
 

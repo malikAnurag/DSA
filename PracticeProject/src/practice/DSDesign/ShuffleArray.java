@@ -6,7 +6,6 @@ public class ShuffleArray {
 
     private int[] array;
     private int[] original;
-
     Random rand = new Random();
 
     private int randRange(int min, int max) {

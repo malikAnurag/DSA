@@ -51,10 +51,10 @@ public class BinaryTreeFromInAndPostOrder {
             hm.put(inorder[i], i);
         }
 
-        return helper(inorder, postorder, 0, postorder.length - 1);
+        return helper(postorder, 0, postorder.length - 1);
     }
 
-    public static TreeNode helper(int[] inorder, int[] postorder, int start, int end) {
+    public static TreeNode helper(int[] postorder, int start, int end) {
 
         if(start > end)
             return null;
@@ -64,8 +64,8 @@ public class BinaryTreeFromInAndPostOrder {
 
         int index = hm.get(postorder[i]);
 
-        root.right = helper(inorder, postorder, index + 1, end);
-        root.left = helper(inorder, postorder, start, index - 1);
+        root.right = helper(postorder, index + 1, end);
+        root.left = helper(postorder, start, index - 1);
 
         return root;
     }

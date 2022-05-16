@@ -26,7 +26,7 @@ public class SortCharacterByFrequency {
 
         List<Map.Entry<Character, Integer>> al = new ArrayList<>(hm.entrySet());
 
-        Collections.sort(al, (o1, o2) -> o2.getValue().compareTo(o1.getValue()));
+        al.sort((o1, o2) -> o2.getValue().compareTo(o1.getValue()));
 
         StringBuilder sb = new StringBuilder();
 

@@ -19,12 +19,7 @@ public class TwoCityScheduling$ {
 
     public static int getMinimumCost(int[][] costs) {
 
-        Arrays.sort(costs, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                return (o1[0] - o1[1]) - (o2[0] - o2[1]);
-            }
-        });
+        Arrays.sort(costs, (o1, o2) -> (o1[0] - o1[1]) - (o2[0] - o2[1]));
 
         int minCost = 0;
         int N = costs.length;
@@ -35,6 +30,4 @@ public class TwoCityScheduling$ {
         }
         return minCost;
     }
-
-
 }

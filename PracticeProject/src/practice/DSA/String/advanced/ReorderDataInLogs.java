@@ -6,7 +6,8 @@ import java.util.Collections;
 import java.util.List;
 
 /**
- * You are given an array of logs. Each log is a space-delimited string of words, where the first word is the identifier.
+ * You are given an array of logs. Each log is a space-delimited string of words,
+ * where the first word is the identifier.
  *
  * There are two types of logs:
  *
@@ -15,7 +16,8 @@ import java.util.List;
  * Reorder these logs so that:
  *
  * The letter-logs come before all digit-logs.
- * The letter-logs are sorted lexicographically by their contents. If their contents are the same, then sort them lexicographically by their identifiers.
+ * The letter-logs are sorted lexicographically by their contents.
+ * If their contents are the same, then sort them lexicographically by their identifiers.
  * The digit-logs maintain their relative ordering.
  * Return the final order of the logs.
  *
@@ -63,7 +65,8 @@ public class ReorderDataInLogs {
 
         Collections.sort(words, (s1, s2) -> {
 
-            /* If this is the case then the pattern will be applied at most limit-1 {2-1 = 1 time here} times, the resulting array’s length will not be more than n,
+            /* If this is the case then the pattern will be applied at most limit-1 {2-1 = 1 time here} times,
+            the resulting array’s length will not be more than n,
             and the resulting array’s last entry will contain all input beyond the last matched pattern. */
             String[] S1 = s1.split(" ", 2);
             String[] S2 = s2.split(" ", 2);

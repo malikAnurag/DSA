@@ -39,10 +39,10 @@ public class InsertIntoCyclicSortedList {
         ListNodeUtil.printList(head); // endless loop as it is a circular list
     }
 
-    static ListNode getUpdatedList(ListNode head, int insertVal) {
+    static void getUpdatedList(ListNode head, int insertVal) {
 
         if(head == null)
-            return null;
+            return;
 
         ListNode copy = head;
         ListNode newNode = new ListNode(insertVal);
@@ -52,7 +52,7 @@ public class InsertIntoCyclicSortedList {
             e.g. 1->2->4, insert 3
             condition: insertVal >= n.val && insertVal <= n.next.val
 
-            case 2: insertVal is >= largest node value or <= smalles node value
+            case 2: insertVal is >= largest node value or <= smallest node value
             e.g. 1->2->4, insert 0 or 1->2->4, insert 5
             condition: n.next.val < n.val && (insertVal >= n.val || insertVal <= n.next.val)
 
@@ -73,6 +73,5 @@ public class InsertIntoCyclicSortedList {
             }
             copy = copy.next;
         }
-        return head;
     }
 }

@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
 
 import java.util.Arrays;
 

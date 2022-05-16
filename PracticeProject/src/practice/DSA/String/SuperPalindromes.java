@@ -3,7 +3,8 @@ package practice.DSA.String;
 /**
  * Let's say a positive integer is a super-palindrome if it is a palindrome, and it is also the square of a palindrome.
  *
- * Given two positive integers left and right represented as strings, return the number of super-palindromes integers in the inclusive range [left, right].
+ * Given two positive integers left and right represented as strings, return the number of super-palindromes
+ * integers in the inclusive range [left, right].
  *
  * Example 1:
  *
@@ -36,8 +37,8 @@ public class SuperPalindromes {
 
         int count = 0;
 
-        long l = Long.valueOf(left);
-        long r = Long.valueOf(right);
+        long l = Long.parseLong(left);
+        long r = Long.parseLong(right);
 
         for(int i = 1; i <= 100000; i++) {
 
@@ -48,7 +49,7 @@ public class SuperPalindromes {
                 sb.append(sb.charAt(j));
             }
 
-            long n = Long.valueOf(sb.toString());
+            long n = Long.parseLong(sb.toString());
             n *= n;
 
             if(n > r)
@@ -67,7 +68,7 @@ public class SuperPalindromes {
                 sb.append(sb.charAt(j));
             }
 
-            long n = Long.valueOf(sb.toString());
+            long n = Long.parseLong(sb.toString());
             n *= n;
 
             if(n > r)

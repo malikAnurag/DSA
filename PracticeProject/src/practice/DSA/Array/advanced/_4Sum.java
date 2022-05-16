@@ -1,10 +1,11 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 /**
- * Given an array nums of n integers, return an array of all the unique quadruplets [nums[a], nums[b], nums[c], nums[d]] such that:
+ * Given an array nums of n integers, return an array of all the unique quadruplets
+ * [nums[a], nums[b], nums[c], nums[d]] such that:
  * 0 <= a, b, c, d < n
  * a, b, c, and d are distinct.
  * nums[a] + nums[b] + nums[c] + nums[d] == target

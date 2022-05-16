@@ -1,10 +1,11 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DSA.Array.Advanced.Subarrays;
 
 import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Given an integer array nums and an integer k, return the maximum length of a subarray that sums to k. If there isn't one, return 0 instead.
+ * Given an integer array nums and an integer k, return the maximum length of a subarray that sums to k.
+ * If there isn't one, return 0 instead.
  *
  * Example 1:
  * Input: nums = [1,-1,5,-2,3], k = 3

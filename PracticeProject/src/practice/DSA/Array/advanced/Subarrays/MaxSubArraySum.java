@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DSA.Array.Advanced.Subarrays;
 
 /**
  * Kadane's Algorithm to find the max sum of sub-array!
@@ -18,12 +18,11 @@ public class MaxSubArraySum {
 
     public static int findMaxSum(int[] arr) {
 
-        int n = arr.length;
         int sum = 0, maxSum = Integer.MIN_VALUE;
 
-        for (int i = 0; i < n; i++) {
+        for (int j : arr) {
 
-            sum += arr[i];
+            sum += j;
 
             if (sum < 0)
                 sum = 0;

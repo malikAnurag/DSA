@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.CourseSchedules;
+package practice.DSA.Array.Advanced.CourseSchedules;
 
 import java.util.Arrays;
 import java.util.PriorityQueue;

@@ -1,6 +1,7 @@
 package practice.DSA.String.advanced.substring;
 /**
- * Given two strings s and t of lengths m and n respectively, return the minimum window substring of s such that every character in t
+ * Given two strings s and t of lengths m and n respectively, return the minimum window substring of s
+ * such that every character in t
  * (including duplicates) is included in the window. If there is no such substring, return the empty string "".
  * The testcases will be generated such that the answer is unique.
  * A substring is a contiguous sequence of characters within the string.
@@ -44,6 +45,11 @@ public class MinimumWindowSubstring {
             freq[c]++;
         }
 
+        /*
+        * 'A' -> 1
+        * 'B' -> 1
+        * 'C' -> 1
+        * */
         int start = 0, end = 0, minStart = 0, minLen = Integer.MAX_VALUE, counter = t.length();
 
         while(end < s.length()) {

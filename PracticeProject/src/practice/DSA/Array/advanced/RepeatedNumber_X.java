@@ -1,8 +1,9 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
 
 /**
  * N/3 repeated number in an array with O(1) space
- * We are given a read only array of n integers. Find any element that appears more than n/3 times in the array in linear time and constant additional space.
+ * We are given a read only array of n integers.
+ * Find any element that appears more than n/3 times in the array in linear time and constant additional space.
  * If no such element exists, return -1.
  *
  * Examples:

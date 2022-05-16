@@ -1,6 +1,7 @@
 package practice.DSA.Array2D.Advanced;
 /**
- * Write an efficient algorithm that searches for a target value in an m x n integer matrix. The matrix has the following properties:
+ * Write an efficient algorithm that searches for a target value in an m x n integer matrix.
+ * The matrix has the following properties:
  *
  * Integers in each row are sorted in ascending from left to right.
  * Integers in each column are sorted in ascending from top to bottom.
@@ -26,9 +27,9 @@ package practice.DSA.Array2D.Advanced;
 
 Time complexity : O(n+m)
 
-The key to the time complexity analysis is noticing that, on every iteration (during which we do not return true) either row or col is is
-decremented/incremented exactly once. Because row can only be decremented m times and col can only be incremented n times before causing
-the while loop to terminate, the loop cannot run for more than n+m iterations.
+The key to the time complexity analysis is noticing that, on every iteration (during which we do not return true) either
+ row or col is is decremented/incremented exactly once. Because row can only be decremented m times and col can only be
+ incremented n times before causing the while loop to terminate, the loop cannot run for more than n+m iterations.
 Because all other work is constant, the overall time complexity is linear in the sum of the dimensions of the matrix.
 
 Space complexity : O(1)
@@ -37,7 +38,11 @@ Because this approach only manipulates a few pointers, its memory footprint is c
 public class SearchIn2DMatrix_II {
 
     public static void main(String[] args) {
-        System.out.println(searchMatrix(new int[][]{{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}}, 5));
+        System.out.println(searchMatrix(new int[][]{{1,4,7,11,15},
+                                                    {2,5,8,12,19},
+                                                    {3,6,9,16,22},
+                                                    {10,13,14,17,24},
+                                                    {18,21,23,26,30}}, 5));
     }
 
     public static boolean searchMatrix(int[][] matrix, int target) {

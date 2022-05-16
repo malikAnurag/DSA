@@ -6,7 +6,8 @@ package practice.DSA.String;
  * imaginary is the imaginary part and is an integer in the range [-100, 100].
  * i2 == -1.
  *
- * Given two complex numbers num1 and num2 as strings, return a string of the complex number that represents their multiplications.
+ * Given two complex numbers num1 and num2 as strings, return a string of the complex number that
+ * represents their multiplications.
  *
  * Example 1:
  * Input: num1 = "1+1i", num2 = "1+1i"

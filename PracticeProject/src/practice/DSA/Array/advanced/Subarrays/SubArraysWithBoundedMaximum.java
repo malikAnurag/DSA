@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DSA.Array.Advanced.Subarrays;
 
 /**
  * We are given an array nums of positive integers, and two positive integers left and right (left <= right).

@@ -1,8 +1,9 @@
-package practice.DSA.Array.advanced;
+package practice.DSA.Array.Advanced;
 
 import java.util.TreeSet;
 /**
- * Given an integer array nums and two integers k and t, return true if there are two distinct indices i and j in the array such that abs(nums[i] - nums[j]) <= t
+ * Given an integer array nums and two integers k and t, return true if there are
+ * two distinct indices i and j in the array such that abs(nums[i] - nums[j]) <= t
  * and abs(i - j) <= k.
  *
  * Example 1:

@@ -3,7 +3,8 @@ package practice.DSA.String;
 import java.util.Arrays;
 
 /**
- * Given a word and a text, return the count of the occurrences of anagrams of the word in the text(For eg: anagrams of word for are for, ofr, rof etc.))
+ * Given a word and a text, return the count of the occurrences of anagrams of the word in the text
+ * (For eg: anagrams of word for are for, ofr, rof etc.))
  *
  * Examples:
  *

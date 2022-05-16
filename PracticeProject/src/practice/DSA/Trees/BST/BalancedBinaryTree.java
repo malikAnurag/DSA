@@ -23,7 +23,8 @@ import practice.DSA.Trees.TreeNode;
  * The number of nodes in the tree is in the range [0, 5000].
  * -104 <= Node.val <= 104
  */
-//TODO : A height-balanced binary tree is defined as a binary tree in which the left and right subtrees of every node differ in height by NO MORE than 1.
+//TODO : A height-balanced binary tree is defined as a binary tree in which the left and right subtrees of every node differ in
+// height by NO MORE than 1.
 public class BalancedBinaryTree {
 
     public static void main(String[] args) {

@@ -11,7 +11,7 @@ public class MaxSumOfRectangle {
 //                                    { 3, 8, 10, 1, 3 },
 //                                    { -4, -1, 1, 7, -6 } }; // 29
 
-        int arr[][] = new int[][] { { 2, 1, -3, -4, -5 },
+        int[][] arr = new int[][] { { 2, 1, -3, -4, -5 },
                                     { 0, 6, 3, 4, 1 },
                                     { 2, -2, -1, 4, -5 },
                                     { -3, 3, 1, 0, 3 } }; // 18
@@ -19,10 +19,12 @@ public class MaxSumOfRectangle {
         System.out.println(maxSumSubmatrix(arr));
     }
 
-    /* Take an array of size equal to the number of rows and keep on adding the values as you go from left to right and start with L = R.
+    /* Take an array of size equal to the number of rows and keep on adding the values as you go from left to right
+    and start with L = R.
     *  This will be done starting from every column to the end(total number of columns)
     *  And before starting every iteration, the 1-D array will be populated by the numbers present in that particular column
-    *  For every 1-D array prepared (after the iteration of one full column), apply kadane's algorithm to find out the max sum and update the global max.
+    *  For every 1-D array prepared (after the iteration of one full column), apply kadane's algorithm to find out the
+    max sum and update the global max.
     * */
 
     public static int maxSumSubmatrix(int[][] matrix) {

@@ -1,4 +1,4 @@
-package practice.DSA.Array.advanced.Subarrays;
+package practice.DSA.Array.Advanced.Subarrays;
 
 /**
  * Given an array of integers and a number x, find the smallest sub-array with sum greater than the given value.
