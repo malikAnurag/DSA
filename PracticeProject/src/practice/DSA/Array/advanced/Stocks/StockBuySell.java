@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced.Stocks;
+package practice.DSA.Array.advanced.Stocks;
 
 /**
  * The cost of a stock on each day is given in an array, find the max profit that you can make by buying

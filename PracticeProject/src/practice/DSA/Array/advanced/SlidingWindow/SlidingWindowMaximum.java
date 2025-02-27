@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced.SlidingWindow;
+package practice.DSA.Array.advanced.SlidingWindow;
 
 import java.util.Arrays;
 

@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced;
+package practice.DSA.Array.advanced;
 
 /**
  * Given an integer array nums, return the length of the longest wiggle sequence.

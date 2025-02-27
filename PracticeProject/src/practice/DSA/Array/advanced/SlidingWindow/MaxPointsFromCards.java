@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced.SlidingWindow;
+package practice.DSA.Array.advanced.SlidingWindow;
 
 /**
  * There are several cards arranged in a row, and each card has an associated number of points The points are given

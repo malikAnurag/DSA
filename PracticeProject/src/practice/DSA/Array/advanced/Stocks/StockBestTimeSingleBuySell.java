@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced.Stocks;
+package practice.DSA.Array.advanced.Stocks;
 
 /**
  * You are given an array prices where prices[i] is the price of a given stock on the ith day.

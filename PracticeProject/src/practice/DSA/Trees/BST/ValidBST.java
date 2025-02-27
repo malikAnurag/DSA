@@ -24,21 +24,18 @@ public class ValidBST {
         root.right.left = new TreeNode(5);
         root.right.right = new TreeNode(4);
 
-        System.out.println(isBSTUtil(root, Integer.MIN_VALUE, Integer.MAX_VALUE));
+        System.out.println(isBSTUtil(root, null, null));
     }
 
     /* Returns true if the given tree is a BST and its values are >= min and <= max. */
-    static boolean isBSTUtil(TreeNode root, int min, int max) {
-        /* an empty tree is BST */
+    private static boolean isBSTUtil(TreeNode root, Integer min, Integer max) {
+
         if(root == null)
             return true;
 
-        /* false if this root violates the min/max constraints */
-        if(root.key < min || root.key > max)
+        if((min != null && root.key <= min) || (max != null && root.key >= max))
             return false;
 
-        /* otherwise check the subtrees recursively tightening the min/max constraints */
-        // Allow only distinct values
-        return (isBSTUtil(root.left, min, root.key - 1) && isBSTUtil(root.right, root.key + 1, max));
+        return isBSTUtil(root.right, root.key, max) && isBSTUtil(root.left, min, root.key);
     }
 }

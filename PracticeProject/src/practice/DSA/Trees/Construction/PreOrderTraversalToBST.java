@@ -1,4 +1,4 @@
-package practice.DSA.Trees.Modification;
+package practice.DSA.Trees.Construction;
 
 import practice.DSA.Trees.TreeNode;
 

@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced.Subarrays;
+package practice.DSA.Array.advanced.Subarrays;
 
 /**
  * Given a circular integer array nums of length n, return the maximum possible sum of a non-empty subarray of nums.

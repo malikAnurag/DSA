@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced;
+package practice.DSA.Array.advanced;
 
 import java.util.Map;
 import java.util.TreeMap;

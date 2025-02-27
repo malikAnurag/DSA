@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced.Subarrays;
+package practice.DSA.Array.advanced.Subarrays;
 
 /**
  * Kadane's Algorithm to find the max sum of sub-array!

@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced;
+package practice.DSA.Array.advanced;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -47,7 +47,7 @@ public class ArithmeticSlices_II {
 
         for(int i = 0 ; i < nums.length ; i++) {
 
-            hm[i] = new HashMap();
+            hm[i] = new HashMap<>();
 
             for(int j = 0 ; j < i ; j++) {
 

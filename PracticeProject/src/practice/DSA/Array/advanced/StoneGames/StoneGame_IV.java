@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced.StoneGames;
+package practice.DSA.Array.advanced.StoneGames;
 
 /**
  * Alice and Bob take turns playing a game, with Alice starting first.

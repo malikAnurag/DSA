@@ -1,4 +1,6 @@
-package practice.DSA.Trees;
+package practice.DSA.Trees.Symmetric;
+
+import practice.DSA.Trees.TreeNode;
 
 /**
  * Given a binary tree, find out if the tree can be folded or not.

@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced;
+package practice.DSA.Array.advanced;
 
 /**
  * Equilibrium/Pivot index of an array is an index such that the sum of elements at lower indexes is equal to the sum of elements at higher indexes.

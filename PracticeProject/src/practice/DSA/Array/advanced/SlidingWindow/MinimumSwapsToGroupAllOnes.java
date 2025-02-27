@@ -1,4 +1,4 @@
-package practice.DSA.Array.Advanced.SlidingWindow;
+package practice.DSA.Array.advanced.SlidingWindow;
 
 /**
  * Given a binary array data, return the minimum number of swaps required to group all 1’s present in the array
