@@ -42,8 +42,6 @@ public class MinCostOfMSTUsingPrimAlgorithm {
     }
 
     /*
-    * Time Complexity : O(E + V logV)
-    * Space Complexity: O(V)
     * */
     static int getMinCostUsingPrim(int[][] points) {
 

@@ -48,7 +48,7 @@ public class BackSpaceCompare_WithoutStack {
 
         for(char c : str.toCharArray()) {
 
-            if(c == '#' && sb.length() > 0) {
+            if(c == '#' && !sb.isEmpty()) {
                 sb.deleteCharAt(sb.length() - 1);
             }
             else if(c != '#'){

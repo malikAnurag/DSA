@@ -52,7 +52,7 @@ public class BinaryNumberToInteger {
         int result = 0;
 
         for (int i = sb.length() - 1; i >= 0; i--) {
-            result += Integer.valueOf(String.valueOf(sb.toString().charAt(i))) * Math.pow(2, power++);
+            result += (int) (Integer.parseInt(String.valueOf(sb.toString().charAt(i))) * Math.pow(2, power++));
         }
         return result;
     }

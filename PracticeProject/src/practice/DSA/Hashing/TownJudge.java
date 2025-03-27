@@ -60,7 +60,7 @@ public class TownJudge {
             townJudgelist.remove(entry.getKey());
         }
 
-        if (townJudgelist.size() == 0 || townJudgelist.size() > 1)
+        if (townJudgelist.size() != 1)
             return townJudge;
 
         boolean flag = true;

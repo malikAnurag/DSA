@@ -36,8 +36,6 @@ public class DailyTemperatures {
         Stack<Integer> st = new Stack();
 
         for(int i = 0 ; i < m ; i++) {
-
-
             while(!st.isEmpty() && temperatures[st.peek()] < temperatures[i]) {
                 result[st.peek()] = i - st.pop();
             }

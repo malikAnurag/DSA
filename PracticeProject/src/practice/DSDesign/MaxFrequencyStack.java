@@ -74,7 +74,7 @@ public class MaxFrequencyStack {
 
         numberToFrequencyMap.put(result, maxFreq - 1);
 
-        if(frequencyToStackMap.get(maxFreq).size() == 0) {
+        if(frequencyToStackMap.get(maxFreq).isEmpty()) {
             maxFreq--;
         }
         return result;

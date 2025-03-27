@@ -41,8 +41,8 @@ public class MinCostOfMSTUsingKruskalAlgorithm {
     }
 
     /*
-        Time Complexity: O(E log E)
-        Space Complexity: O(V)
+        Time Complexity: O(N^2 log(N))
+        Space Complexity: O(N^2)
     * */
     static int getMinCostUsingKruskal(int[][] points) {
 

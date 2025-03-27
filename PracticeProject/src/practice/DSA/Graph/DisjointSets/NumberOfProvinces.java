@@ -34,7 +34,7 @@ public class NumberOfProvinces {
 
         int size = isConnected.length;
 
-        UnionFind uf = new UnionFind(size);
+        UnionFindWithSize uf = new UnionFindWithSize(size);
 
         for(int i = 0; i < size; i++) {
             for(int j = 0; j < size; j++) {
