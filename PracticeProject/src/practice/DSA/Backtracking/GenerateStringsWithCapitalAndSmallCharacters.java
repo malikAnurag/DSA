@@ -16,7 +16,7 @@ public class GenerateStringsWithCapitalAndSmallCharacters {
         al.add("a1B2c");
 
         generate("a1B2c", al, 0);
-
+        System.out.println(al.size());
         for(String s: al) {
             System.out.println(s);
         }

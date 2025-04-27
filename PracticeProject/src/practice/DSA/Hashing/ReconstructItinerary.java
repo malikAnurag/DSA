@@ -46,27 +46,26 @@ public class ReconstructItinerary {
 
     public static List<String> getItinerary(List<List<String>> tickets) {
 
-        Map<String, PriorityQueue> hashMap = new HashMap<>();
+        Map<String, PriorityQueue<String>> graph = new HashMap<>();
 
         for(List<String> al : tickets) {
-            hashMap.computeIfAbsent(al.get(0), k -> new PriorityQueue<String>()).add(al.get(1));
+            graph.computeIfAbsent(al.get(0), k -> new PriorityQueue<String>()).add(al.get(1));
         }
 
         List<String> result = new ArrayList<>();
-        Stack<String> st = new Stack();
+        Stack<String> st = new Stack<>();
         st.push("JFK");
 
         while(!st.isEmpty()) {
             String src = st.peek();
 
-            if(hashMap.containsKey(src) && !hashMap.get(src).isEmpty()) {
-                st.push((String) hashMap.get(src).poll());
+            if(graph.containsKey(src) && !graph.get(src).isEmpty()) {
+                st.push(graph.get(src).poll());
             }
             else {
                 result.add(0, st.pop());
             }
         }
-
         return result;
     }
 }

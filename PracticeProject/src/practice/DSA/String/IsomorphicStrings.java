@@ -34,8 +34,8 @@ public class IsomorphicStrings {
         if(s.length() != t.length())
             return false;
 
-        Map<Character, Character> hm1 = new HashMap();
-        Map<Character, Character> hm2 = new HashMap();
+        Map<Character, Character> hm1 = new HashMap<>();
+        Map<Character, Character> hm2 = new HashMap<>();
 
         for(int i = 0; i < s.length(); i++) {
 

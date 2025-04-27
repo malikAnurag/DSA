@@ -51,17 +51,17 @@ public class ReverseNodesInKGroups {
 
     public static ListNode reverseLinkedList(ListNode head, int k) {
 
-        ListNode ptr = head;
+        ListNode curr = head;
         ListNode newHead = null;
         ListNode ktail = null;
 
-        while (ptr != null) {
+        while (curr != null) {
 
             int count = 0;
-            ptr = head;
+            curr = head;
 
-            while (count < k && ptr != null) {
-                ptr = ptr.next;
+            while (count < k && curr != null) {
+                curr = curr.next;
                 count++;
             }
 
@@ -77,7 +77,7 @@ public class ReverseNodesInKGroups {
                 }
 
                 ktail = head;
-                head = ptr;
+                head = curr;
             }
         }
 

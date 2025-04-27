@@ -46,7 +46,7 @@ public class Permutations {
     static void backtrack(List<Integer> numsList, int start, int n) {
 
         if(start == n) {
-            result.add(new ArrayList(numsList));
+            result.add(new ArrayList<>(numsList));
             return;
         }
 

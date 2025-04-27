@@ -1,15 +1,17 @@
 package practice.DSA.String.advanced;
 
+import java.util.Arrays;
+
 /**
  * You are given a string s of lowercase English letters and an integer array shifts of the same length.
- *
+ * <p>
  * Call the shift() of a letter, the next letter in the alphabet, (wrapping around so that 'z' becomes 'a').
- *
+ * <p>
  * For example, shift('a') = 'b', shift('t') = 'u', and shift('z') = 'a'.
  * Now for each shifts[i] = x, we want to shift the first i + 1 letters of s, x times.
- *
+ * <p>
  * Return the final string after all such shifts to s are applied.
- *
+ * <p>
  * Example 1:
  * Input: s = "abc", shifts = [3,5,9]
  * Output: "rpl"
@@ -17,11 +19,11 @@ package practice.DSA.String.advanced;
  * After shifting the first 1 letters of s by 3, we have "dbc".
  * After shifting the first 2 letters of s by 5, we have "igc".
  * After shifting the first 3 letters of s by 9, we have "rpl", the answer.
- *
+ * <p>
  * Example 2:
  * Input: s = "aaa", shifts = [1,2,3]
  * Output: "gfd"
- *
+ * <p>
  * Constraints:
  * 1 <= s.length <= 105
  * s consists of lowercase English letters.
@@ -31,18 +33,20 @@ package practice.DSA.String.advanced;
 public class ShiftingLetters {
 
     public static void main(String[] args) {
-        System.out.println(shiftingLetters("abc", new int[] {3, 5, 9}));
+        System.out.println(shiftingLetters("abc", new int[]{3, 5, 9}));
     }
 
     public static String shiftingLetters(String s, int[] shifts) {
 
-        for(int i = shifts.length - 2 ; i >= 0 ; i--) {
-            shifts[i] = (shifts[i] + shifts[i+1]) % 26 ;
+        for (int i = shifts.length - 2; i >= 0; i--) {
+            shifts[i] = (shifts[i] + shifts[i + 1]) % 26;
         }
+
+        System.out.println("Shifting: " + Arrays.toString(shifts));
 
         StringBuilder sb = new StringBuilder();
 
-        for(int i = 0 ; i < s.length() ; i++) {
+        for (int i = 0; i < s.length(); i++) {
 
             char c = s.charAt(i);
 

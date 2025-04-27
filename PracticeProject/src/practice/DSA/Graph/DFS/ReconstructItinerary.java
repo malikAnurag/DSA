@@ -34,7 +34,7 @@ public class ReconstructItinerary {
         return res;
     }
 
-    private static void dfs(Map<String, PriorityQueue<String>> graph, String source, List<String> res) {
+    private static void dfs(Map<String, PriorityQueue<String>> graph, String source, LinkedList<String> res) {
 
         PriorityQueue<String> airports = graph.get(source);
 

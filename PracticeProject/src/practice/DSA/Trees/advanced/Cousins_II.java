@@ -9,14 +9,15 @@ import java.util.Queue;
 
 /**
  * Given the root of a binary tree, replace the value of each node in the tree with the sum of all its cousins' values.
- *
+ * <p>
  * Two nodes of a binary tree are cousins if they have the same depth with different parents.
- *
+ * <p>
  * Return the root of the modified tree.
- *
+ * <p>
  * Note that the depth of a node is the number of edges in the path from the root node to it.
  */
 public class Cousins_II {
+
     public TreeNode replaceValueInTree(TreeNode root) {
 
         if (root == null) return null;
@@ -27,6 +28,7 @@ public class Cousins_II {
 
         // First BFS: Calculate sum of nodes at each level
         while (!nodeQueue.isEmpty()) {
+
             int levelSum = 0;
             int n = nodeQueue.size();
 

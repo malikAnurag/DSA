@@ -43,6 +43,7 @@ public class Diameter {
         int diameterL = diameter(root.left);
         int diameterR = diameter(root.right);
 
+        // Remove +1 from here as this height is the number of nodes in the tree but here we need path length
         return Math.max(lh + rh + 1, Math.max(diameterL, diameterR));
     }
 }

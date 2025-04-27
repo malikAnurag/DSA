@@ -24,8 +24,8 @@ public class LCAofBinaryTree {
         root.right.right = new TreeNode(7); 
         root.right.left.right = new TreeNode(8); 
         root.right.right.right = new TreeNode(9);
-        
-        int n1 = 5, n2 = 7; 
+
+        int n1 = 5, n2 = 7;
         TreeNode t = LCA(root, n1, n2); 
         System.out.println("LCA of " + n1 + " and " + n2 + " is " + t.key); 
    

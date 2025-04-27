@@ -1,7 +1,5 @@
 package adventOfCode;
 
-import java.util.Arrays;
-
 public class SafetyReports {
 
     public static void main(String[] args) {

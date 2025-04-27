@@ -1,8 +1,6 @@
 package practice.DSDesign;
 
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
+import java.util.Stack;
 
 /**
  * Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.
@@ -39,53 +37,33 @@ import java.util.List;
  * Methods pop, top and getMin operations will always be called on non-empty stacks.
  * At most 3 * 104 calls will be made to push, pop, top, and getMin.
  */
-public class MinStack {
+class MinStack {
 
-    /**
-     * initialize your data structure here.
-     */
-    List<Integer> listNums;
-    Integer min;
+    Stack<int[]> st;
 
     public MinStack() {
-        listNums = new ArrayList();
-        min = Integer.MAX_VALUE;
+        st = new Stack<int[]>();
     }
 
-    public void push(int x) {
+    public void push(int val) {
 
-        if(listNums != null) {
-            if(x < min) {
-                min = x;
-            }
-            listNums.add(x);
+        if(!st.isEmpty()) {
+            int min = st.peek()[1];
+            st.push(new int[]{val, Math.min(min, val)});
+        } else {
+            st.push(new int[]{val, val});
         }
     }
 
     public void pop() {
-
-        int num = top();
-        listNums.remove(listNums.size() - 1);
-
-        if(num == min) {
-            int n = Integer.MAX_VALUE;
-
-            for(int i : listNums) {
-                if(i < n)
-                    n = i;
-            }
-            min = n;
-        }
+        st.pop();
     }
 
     public int top() {
-
-        if(!listNums.isEmpty())
-            return listNums.get(listNums.size() - 1);
-        return -1;
+        return st.peek()[0];
     }
 
     public int getMin() {
-        return min;
+        return st.peek()[1];
     }
 }

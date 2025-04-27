@@ -70,14 +70,17 @@ public class JumpGame4 {
                 if(node < 0 || node >= arr.length || visited[node])
                     continue;
 
+                // jumps for i - 1
                 if(node - 1 > 0 && !visited[node - 1]) {
                     q.offer(node - 1);
                 }
 
+                // jumps for i + 1
                 if(node + 1 < arr.length && !visited[node + 1]) {
                     q.offer(node + 1);
                 }
 
+                // jumps for j where: arr[i] == arr[j] and i != j
                 if(graph.containsKey(arr[node])) {
                     for(int idx : graph.get(arr[node])) {
                         if(idx >= 0 && idx < arr.length && !visited[idx]) {

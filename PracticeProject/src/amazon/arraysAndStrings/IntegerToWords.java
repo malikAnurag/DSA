@@ -2,33 +2,25 @@ package amazon.arraysAndStrings;
 
 /**
  * Convert a non-negative integer num to its English words representation.
- *
+ * <p>
  * Example 1:
  * Input: num = 123
  * Output: "One Hundred Twenty Three"
- *
+ * <p>
  * Example 2:
  * Input: num = 12345
  * Output: "Twelve Thousand Three Hundred Forty Five"
- *
- *  Example 3:
+ * <p>
+ * Example 3:
  * Input: num = 1234567
  * Output: "One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven"
- *
- *  Example 4:
+ * <p>
+ * Example 4:
  * Input: num = 1234567891
  * Output: "One Billion Two Hundred Thirty Four Million Five Hundred Sixty Seven Thousand Eight Hundred Ninety One"
  */
 
 public class IntegerToWords {
-
-    private static final String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten",
-                                                      "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen",
-                                                      "Eighteen", "Nineteen", "Twenty"};
-
-    private static final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
-
-    private static final String[] THOUSANDS = {"", "Thousand", "Million", "Billion"};
 
     public static void main(String[] args) {
         System.out.println(getEnglishWords(1234567));
@@ -36,30 +28,54 @@ public class IntegerToWords {
     }
 
     public static String getEnglishWords(int num) {
-        if (num == 0)
-            return "Zero";
-        int i = 0;
-        String words = "";
+        // Handle the special case where the number is zero
+        if (num == 0) return "Zero";
 
+        // Arrays to store words for single digits, tens, and thousands
+        String[] ones = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
+        String[] tens = {"", "", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
+        String[] thousands = {"", "Thousand", "Million", "Billion"};
+
+        // StringBuilder to accumulate the result
+        StringBuilder result = new StringBuilder();
+        int groupIndex = 0;
+
+        // Process the number in chunks of 1000
         while (num > 0) {
-            if (num % 1000 != 0) {
-                words = helper(num % 1000) + " " + THOUSANDS[i] + " " + words;
-            }
-            i++;
-            num /= 1000;
-        }
-        return words;
-    }
 
-    public static String helper(int num) {
-        if (num <= 0)
-            return "";
-        else if (num < 20) {
-            return LESS_THAN_20[num];
-        } else if (num < 100) {
-            return TENS[num / 10] + " " + helper(num % 10);
-        } else {
-            return LESS_THAN_20[num / 100] + " Hundred " + helper(num % 100);
+            // Process the last three digits
+            if (num % 1000 != 0) {
+
+                StringBuilder groupResult = new StringBuilder();
+                int part = num % 1000;
+
+                // Handle hundreds
+                if (part >= 100) {
+                    groupResult.append(ones[part / 100]).append(" Hundred ");
+                    part %= 100;
+                }
+
+                // Handle tens and units
+                if (part >= 20) {
+                    groupResult.append(tens[part / 10]).append(" ");
+                    part %= 10;
+                }
+
+                // Handle units
+                if (part > 0) {
+                    groupResult.append(ones[part]).append(" ");
+                }
+
+                // Append the scale (thousand, million, billion) for the current group
+                groupResult.append(thousands[groupIndex]).append(" ");
+                // Insert the group result at the beginning of the final result
+                result.insert(0, groupResult);
+            }
+            // Move to the next chunk of 1000
+            num /= 1000;
+            groupIndex++;
         }
+
+        return result.toString().trim();
     }
 }

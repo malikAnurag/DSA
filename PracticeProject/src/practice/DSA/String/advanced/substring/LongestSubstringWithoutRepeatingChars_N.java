@@ -1,26 +1,28 @@
 package practice.DSA.String.advanced.substring;
 
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Given a string s, find the length of the longest substring without repeating characters.
- *
+ * <p>
  * Example 1:
  * Input: s = "abcabcbb"
  * Output: 3
  * Explanation: The answer is "abc", with the length of 3.
- *
+ * <p>
  * Example 2:
  * Input: s = "bbbbb"
  * Output: 1
  * Explanation: The answer is "b", with the length of 1.
- *
+ * <p>
  * Example 3:
  * Input: s = "pwwkew"
  * Output: 3
  * Explanation: The answer is "wke", with the length of 3.
  * Notice that the answer must be a substring, "pwke" is a subsequence and not a substring.
- *
+ * <p>
  * Example 4:
  * Input: s = ""
  * Output: 0
@@ -36,6 +38,7 @@ public class LongestSubstringWithoutRepeatingChars_N {
         System.out.println(getLongestSubstring(" "));
     }
 
+    // Optimized Sliding Window
     public static int getLongestSubstring(String s) {
 
         // last index of all characters is initialized as -1
@@ -43,11 +46,11 @@ public class LongestSubstringWithoutRepeatingChars_N {
         Arrays.fill(lastIndex, -1);
 
         // Initialize start of current window
-        int i = 0 ;
+        int i = 0;
         int res = 0;
 
         // Move end of current window
-        for(int j = 0 ; j < s.length() ; j++) {
+        for (int j = 0; j < s.length(); j++) {
 
             // Find the last index of str[j]
             // Update i (starting index of current window) as maximum of current value of i and last index plus 1
@@ -57,8 +60,29 @@ public class LongestSubstringWithoutRepeatingChars_N {
             res = Math.max(res, j - i + 1);
 
             // Update last index of j.
-            lastIndex[s.charAt(j)] = j ;
+            lastIndex[s.charAt(j)] = j;
         }
         return res;
+    }
+
+    // Sliding Window
+    public static int getLongestSubstring2(String s) {
+        Map<Character, Integer> hm = new HashMap();
+        int left = 0, right = 0, max = 0;
+
+        while (right < s.length()) {
+
+            char c = s.charAt(right);
+            hm.put(c, hm.getOrDefault(c, 0) + 1);
+
+            while (hm.get(c) > 1) {
+                char leftChar = s.charAt(left);
+                hm.put(leftChar, hm.get(leftChar) - 1);
+                left++;
+            }
+            max = Math.max(max, right - left + 1);
+            right++;
+        }
+        return max;
     }
 }

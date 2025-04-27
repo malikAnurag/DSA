@@ -1,7 +1,5 @@
 package practice.DP.JumpGames;
 
-import practice.DSA.LinkedList.LinkedListCycle_FloydAlgorithm;
-
 import java.util.LinkedList;
 import java.util.Queue;
 
@@ -40,7 +38,7 @@ public class JumpGame3 {
 
     static boolean canJump(int[] arr, int start) {
 
-        Queue<Integer> q = new LinkedList();
+        Queue<Integer> q = new LinkedList<>();
         q.add(start);
 
         while (!q.isEmpty()) {
