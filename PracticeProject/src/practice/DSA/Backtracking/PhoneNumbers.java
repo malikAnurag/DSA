@@ -39,7 +39,7 @@ public class PhoneNumbers {
 
         result = new ArrayList();
 
-        if(digits.length() == 0)
+        if(digits.isEmpty())
             return result;
 
         backtrack(0, digits, new StringBuilder());
