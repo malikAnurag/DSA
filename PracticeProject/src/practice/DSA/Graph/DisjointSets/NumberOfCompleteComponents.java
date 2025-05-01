@@ -41,6 +41,7 @@ public class NumberOfCompleteComponents {
             if (uf.find(vertex) == vertex) {
                 int nodeCount = uf.size[vertex];
 
+                // expected edges in a complete component with n vertices : n * (n - 1)/2
                 int expected = (nodeCount * (nodeCount - 1)) / 2;
                 int actualEdges = hm.getOrDefault(vertex, 0);
 
@@ -55,14 +56,12 @@ public class NumberOfCompleteComponents {
 
 class UnionFindWithSize {
 
-    Map<Integer, Integer> hm;
     int[] root;
     int[] size;
 
     UnionFindWithSize(int count) {
         root = new int[count];
         size = new int[count];
-        hm = new HashMap<>();
 
         for (int i = 0; i < count; i++) {
             root[i] = i;

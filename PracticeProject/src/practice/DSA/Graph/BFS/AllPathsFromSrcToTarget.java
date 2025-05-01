@@ -25,6 +25,7 @@ public class AllPathsFromSrcToTarget {
         q.add(path);
 
         while (!q.isEmpty()) {
+
             List<Integer> curr = q.poll();
             int lastNode = curr.get(curr.size() - 1);
 

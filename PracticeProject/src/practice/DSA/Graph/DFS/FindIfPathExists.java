@@ -17,6 +17,7 @@ public class FindIfPathExists {
     // Time complexity: O(n + m)
     // Space complexity: O(n + m)
     public boolean validPath(int n, int[][] edges, int source, int destination) {
+
         Map<Integer, List<Integer>> graph = new HashMap<>();
         boolean[] seen = new boolean[n];
 
@@ -30,9 +31,11 @@ public class FindIfPathExists {
     }
 
     private boolean dfs(Map<Integer, List<Integer>> graph, boolean[] seen, int currNode, int destination) {
+
         if (currNode == destination) {
             return true;
         }
+
         if (!seen[currNode]) {
             seen[currNode] = true;
             for (int nextNode : graph.get(currNode)) {
