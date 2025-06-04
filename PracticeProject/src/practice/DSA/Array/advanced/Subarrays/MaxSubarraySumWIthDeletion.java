@@ -33,10 +33,15 @@ public class MaxSubarraySumWIthDeletion {
         int prevWithoutDeleted = arr[0];
         int max = arr[0];
 
+        /*
+        * At each index i, two options are evaluated:
+            - With deletion: Either carry forward the previous sum with a deletion (prevWithDeleted + arr[i]) or delete the current element (prevWithoutDeleted) — meaning we skip arr[i].
+            - Without deletion: Extend the subarray or start a new one.
+        * */
         for(int i = 1 ; i < arr.length ; i++) {
 
-            prevWithDeleted = Math.max(prevWithoutDeleted, prevWithDeleted + arr[i]);
-            prevWithoutDeleted = Math.max(arr[i], prevWithoutDeleted + arr[i]);
+            prevWithDeleted = Math.max(prevWithoutDeleted, prevWithDeleted + arr[i]); // The maximum subarray sum ending at the previous index with one deletion already used.
+            prevWithoutDeleted = Math.max(arr[i], prevWithoutDeleted + arr[i]); // The maximum subarray sum ending at the previous index without any deletion.
             int currMax = Math.max(prevWithDeleted, prevWithoutDeleted);
             max = Math.max(max, currMax);
         }

@@ -6,15 +6,15 @@ import java.util.Queue;
 /**
  * Given an m x n binary matrix mat, return the distance of the nearest 0 for each cell.
  * The distance between two adjacent cells is 1.
- *
+ * <p>
  * Example 1:
  * Input: mat = [[0,0,0],[0,1,0],[0,0,0]]
  * Output: [[0,0,0],[0,1,0],[0,0,0]]
- *
- *  Example 2:
+ * <p>
+ * Example 2:
  * Input: mat = [[0,0,0],[0,1,0],[1,1,1]]
  * Output: [[0,0,0],[0,1,0],[1,2,1]]
- *
+ * <p>
  * Constraints:
  * m == mat.length
  * n == mat[i].length
@@ -30,11 +30,13 @@ public class _01_Matrix {
     private static class Point {
         int x;
         int y;
+
         Point(int x, int y) {
             this.x = x;
             this.y = y;
         }
     }
+
     // Soluton: use BFS starting from each 0 cell and mark new length for each 1 cell
     // Note: Need a way to differentiate original 1 and distance 1
     public static int[][] updateMatrix(int[][] matrix) {

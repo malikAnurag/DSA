@@ -6,30 +6,30 @@ import java.util.List;
 
 /**
  * Given an array of integers, A of length N, find out the maximum sum sub-array of non negative numbers from A.
- *
+ * <p>
  * The sub-array should be contiguous i.e., a sub-array created by choosing the second and fourth element
  * and skipping the third element is invalid.
- *
+ * <p>
  * Maximum sub-array is defined in terms of the sum of the elements in the sub-array.
  * Find and return the required subarray.
- *
+ * <p>
  * NOTE:
  * If there is a tie, then compare with segment's length and return segment which has maximum length.
  * If there is still a tie, then return the segment with minimum starting index.
- *
+ * <p>
  * Input 1:
- *  A = [1, 2, 5, -7, 2, 3]
- *
+ * A = [1, 2, 5, -7, 2, 3]
+ * <p>
  * Input 2:
- *  A = [10, -1, 2, 3, -4, 100]
- *
+ * A = [10, -1, 2, 3, -4, 100]
+ * <p>
  * Example Output
- *
- *  Output 1:
- *  [1, 2, 5]
- *
- *  Output 2:
- *  [100]
+ * <p>
+ * Output 1:
+ * [1, 2, 5]
+ * <p>
+ * Output 2:
+ * [100]
  */
 public class MaxNonNegativeSubArray {
     public static void main(String[] args) {
@@ -40,7 +40,7 @@ public class MaxNonNegativeSubArray {
 
         int[] B = new int[]{10, -1, 2, 3, -4, 100};
         result = maxSet(B);
-        System.out.println("\n"+ Arrays.toString(result));
+        System.out.println("\n" + Arrays.toString(result));
     }
 
     public static int[] maxSet(int[] A) {
@@ -55,8 +55,7 @@ public class MaxNonNegativeSubArray {
             if (i >= 0) {
                 curr += i;
                 newArray.add(i);
-            }
-            else {
+            } else {
                 newArray = new ArrayList<>();
                 curr = 0;
             }

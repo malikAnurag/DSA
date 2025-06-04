@@ -74,7 +74,7 @@ public class NetworkDelayTime_DijkstraAlgorithm {
             graph.get(time[0]).add(new int[]{time[1], time[2]}); //src -> [target, wt]
         }
 
-        int[] signalReceivedAt = new int[n + 1];
+        int[] signalReceivedAt = new int[n + 1]; // n + 1 because nodes are given from 1 to n
         Arrays.fill(signalReceivedAt, Integer.MAX_VALUE);
         signalReceivedAt[k] = 0;
         q.add(new int[]{k, 0}); // node, dist

@@ -9,23 +9,23 @@ import java.util.Queue;
  * 1 representing a fresh orange, or
  * 2 representing a rotten orange.
  * Every minute, any fresh orange that is 4-directionally adjacent to a rotten orange becomes rotten.
- *
+ * <p>
  * Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this is impossible, return -1.
- *
+ * <p>
  * Example 1:
  * Input: grid = [[2,1,1],[1,1,0],[0,1,1]]
  * Output: 4
- *
+ * <p>
  * Example 2:
  * Input: grid = [[2,1,1],[0,1,1],[1,0,1]]
  * Output: -1
  * Explanation: The orange in the bottom left corner (row 2, column 0) is never rotten, because rotting only happens 4-directionally.
- *
+ * <p>
  * Example 3:
  * Input: grid = [[0,2]]
  * Output: 0
  * Explanation: Since there are already no fresh oranges at minute 0, the answer is just 0.
- *
+ * <p>
  * Constraints:
  * m == grid.length
  * n == grid[i].length
@@ -36,7 +36,7 @@ import java.util.Queue;
 // Time and Space Complexity : O(N)
 public class RottingOranges {
 
-    static int[][] directions = new int[][] {{0,1}, {1,0}, {0,-1}, {-1,0}};
+    static int[][] directions = new int[][]{{0, 1}, {1, 0}, {0, -1}, {-1, 0}};
 
     public static void main(String[] args) {
         System.out.println(getMinimumTime(new int[][]{{2, 1, 1}, {1, 1, 0}, {0, 1, 1}}));
@@ -53,43 +53,41 @@ public class RottingOranges {
 
         Queue<Pair1> q = new LinkedList<>();
 
-        for(int i = 0 ; i < r ; i++) {
-            for(int j = 0 ; j < c ; j++) {
-                if(grid[i][j] == 2) {
+        for (int i = 0; i < r; i++) {
+            for (int j = 0; j < c; j++) {
+                if (grid[i][j] == 2) {
                     q.add(new Pair1(i, j));
-                }
-                else if(grid[i][j] == 1)
+                } else if (grid[i][j] == 1)
                     freshOranges++;
             }
         }
 
         q.add(new Pair1(-1, -1));
 
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
 
             Pair1 pair = q.poll();
             int x = pair.x;
             int y = pair.y;
 
-            if(x == -1) {
+            if (x == -1) {
 
                 timeElapsed++;
 
-                if(!q.isEmpty()) {
+                if (!q.isEmpty()) {
                     q.add(new Pair1(-1, -1));
                 }
-            }
-            else {
+            } else {
 
-                for(int[] dir : directions) {
+                for (int[] dir : directions) {
 
                     int newX = x + dir[0];
                     int newY = y + dir[1];
 
-                    if(newX < 0 || newX >= r || newY < 0 || newY >= c)
+                    if (newX < 0 || newX >= r || newY < 0 || newY >= c)
                         continue;
 
-                    if(grid[newX][newY] == 1) {
+                    if (grid[newX][newY] == 1) {
                         grid[newX][newY] = 2;
                         freshOranges--;
                         q.add(new Pair1(newX, newY));
@@ -100,6 +98,7 @@ public class RottingOranges {
         return freshOranges == 0 ? timeElapsed : -1;
     }
 }
+
 class Pair1 {
 
     int x;

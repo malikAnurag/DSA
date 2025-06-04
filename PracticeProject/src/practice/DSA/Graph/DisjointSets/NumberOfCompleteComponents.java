@@ -16,6 +16,7 @@ import java.util.Map;
  * Example:
  * Input: n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]
  * Output: 1
+ * <p>
  * Explanation: The component containing vertices 0, 1, and 2 is complete since there is an edge between every pair of two vertices.
  * On the other hand, the component containing vertices 3, 4, and 5 is not complete since there is no edge between vertices 4 and 5.
  * Thus, the number of complete components in this graph is 1.
@@ -26,7 +27,7 @@ public class NumberOfCompleteComponents {
 
         UnionFindWithSize uf = new UnionFindWithSize(n);
         int ans = 0;
-        Map<Integer, Integer> hm = new HashMap<>();
+        Map<Integer, Integer> rootToEdgesMap = new HashMap<>();
 
         for (int[] edge : edges) {
             uf.union(edge[0], edge[1]);
@@ -34,7 +35,7 @@ public class NumberOfCompleteComponents {
 
         for (int[] edge : edges) {
             int root = uf.find(edge[0]);
-            hm.put(root, hm.getOrDefault(root, 0) + 1);
+            rootToEdgesMap.put(root, rootToEdgesMap.getOrDefault(root, 0) + 1);
         }
 
         for (int vertex = 0; vertex < n; vertex++) {
@@ -43,7 +44,7 @@ public class NumberOfCompleteComponents {
 
                 // expected edges in a complete component with n vertices : n * (n - 1)/2
                 int expected = (nodeCount * (nodeCount - 1)) / 2;
-                int actualEdges = hm.getOrDefault(vertex, 0);
+                int actualEdges = rootToEdgesMap.getOrDefault(vertex, 0);
 
                 if (expected == actualEdges) {
                     ans++;

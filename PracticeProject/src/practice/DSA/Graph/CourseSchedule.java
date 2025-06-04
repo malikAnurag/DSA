@@ -37,7 +37,6 @@ public class CourseSchedule {
         }
 
         for(int i  = 0 ; i < courses ; i++) {
-
             if(!visited[i]) {
                 if(isCyclic(adj, visited, marked, i)) {
                     return false;

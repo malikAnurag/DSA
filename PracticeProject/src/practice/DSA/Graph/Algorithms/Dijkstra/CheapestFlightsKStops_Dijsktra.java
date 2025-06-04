@@ -60,6 +60,7 @@ public class CheapestFlightsKStops_Dijsktra {
     static int getCheapestPrice(int n, int[][] flights, int src, int dst, int k) {
 
         Map<Integer, List<int[]>> adj = new HashMap<>();
+
         for (int[] i : flights)
             adj.computeIfAbsent(i[0], value -> new ArrayList<>()).add(new int[]{i[1], i[2]});
 

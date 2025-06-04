@@ -5,13 +5,13 @@ package practice.DSA.Graph;
  * You may assume all four edges of the grid are surrounded by water.
  * The area of an island is the number of cells with a value 1 in the island.
  * Return the maximum area of an island in grid. If there is no island, return 0.
- *
+ * <p>
  * Example 1:
  * Input: grid = [[0,0,1,0,0,0,0,1,0,0,0,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,1,1,0,1,0,0,0,0,0,0,0,0],[0,1,0,0,1,1,0,0,1,0,1,0,0],[0,1,0,0,1,1,0,0,1,1,1,0,0],[0,0,0,0,0,0,0,0,0,0,1,0,0],[0,0,0,0,0,0,0,1,1,1,0,0,0],[0,0,0,0,0,0,0,1,1,0,0,0,0]]
  * Output: 6
- *  Explanation: The answer is not 11, because the island must be connected 4-directionally.
- *
- *  Example 2:
+ * Explanation: The answer is not 11, because the island must be connected 4-directionally.
+ * <p>
+ * Example 2:
  * Input: grid = [[0,0,0,0,0,0,0,0]]
  * Output: 0
  */
@@ -33,9 +33,9 @@ public class MaxAreaOfIsland {
 
         int maxArea = 0;
 
-        for(int i = 0; i < grid.length; i++) {
-            for(int j = 0; j < grid[0].length; j++) {
-                if(grid[i][j] == 1) {
+        for (int i = 0; i < grid.length; i++) {
+            for (int j = 0; j < grid[0].length; j++) {
+                if (grid[i][j] == 1) {
                     Res res = new Res(0);
                     checkArea(grid, i, j, res);
                     maxArea = Math.max(res.val, maxArea);
@@ -48,7 +48,7 @@ public class MaxAreaOfIsland {
 
     static void checkArea(int[][] grid, int i, int j, Res res) {
 
-        if(i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0) {
+        if (i < 0 || i >= grid.length || j < 0 || j >= grid[0].length || grid[i][j] == 0) {
             return;
         }
 
@@ -64,6 +64,7 @@ public class MaxAreaOfIsland {
 
 class Res {
     int val;
+
     Res(int val) {
         this.val = val;
     }

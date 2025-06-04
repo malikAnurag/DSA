@@ -67,7 +67,7 @@ public class CheapestFlightsKStops_BFS {
         }
 
         dist[src] = 0;
-        q.add(new int[]{src, 0});
+        q.add(new int[]{src, 0}); // city, price
         int stops = 0;
 
         while (!q.isEmpty() && stops <= k) {

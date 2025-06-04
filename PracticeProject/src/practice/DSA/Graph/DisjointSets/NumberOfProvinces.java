@@ -3,19 +3,19 @@ package practice.DSA.Graph.DisjointSets;
 /**
  * There are n cities. Some of them are connected, while some are not. If city a is connected directly with city b, and city b is connected directly with city c,
  * then city a is connected indirectly with city c.
- *
+ * <p>
  * A province is a group of directly or indirectly connected cities and no other cities outside of the group.
- *
+ * <p>
  * You are given an n x n matrix isConnected where isConnected[i][j] = 1 if the ith city and the jth city are directly connected, and isConnected[i][j] = 0 otherwise.
- *
+ * <p>
  * Return the total number of provinces.
- *
+ * <p>
  * Example 1:
  * Input: isConnected = [[1,1,0],
- *                       [1,1,0],
- *                       [0,0,1]]
+ * [1,1,0],
+ * [0,0,1]]
  * Output: 2
- *
+ * <p>
  * Example 2:
  * Input: isConnected = [[1,0,0],[0,1,0],[0,0,1]]
  * Output: 3
@@ -29,16 +29,16 @@ public class NumberOfProvinces {
 
     static int findProvinces(int[][] isConnected) {
 
-        if(isConnected == null || isConnected.length == 0)
+        if (isConnected == null || isConnected.length == 0)
             return 0;
 
         int size = isConnected.length;
 
         UnionFind uf = new UnionFind(size);
 
-        for(int i = 0; i < size; i++) {
-            for(int j = 0; j < size; j++) {
-                if(isConnected[i][j] == 1) {
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                if (isConnected[i][j] == 1) {
                     uf.union(i, j);
                 }
             }
@@ -58,7 +58,7 @@ class UnionFind {
         rank = new int[size];
         count = size;
 
-        for(int i = 0 ; i < size ; i++) {
+        for (int i = 0; i < size; i++) {
             root[i] = i;
             rank[i] = 1;
         }
@@ -66,7 +66,7 @@ class UnionFind {
 
     int find(int x) {
 
-        if(x == root[x]) {
+        if (x == root[x]) {
             return x;
         }
         return root[x] = find(root[x]); // Path compression
@@ -77,15 +77,13 @@ class UnionFind {
         int rootX = find(x);
         int rootY = find(y);
 
-        if(rootX != rootY) { // Union by rank
+        if (rootX != rootY) { // Union by rank
 
-            if(rank[rootX] < rank[rootY]) {
+            if (rank[rootX] < rank[rootY]) {
                 root[rootX] = rootY;
-            }
-            else if(rank[rootX] > rank[rootY]) {
+            } else if (rank[rootX] > rank[rootY]) {
                 root[rootY] = rootX;
-            }
-            else {
+            } else {
                 root[rootX] = rootY;
                 rank[rootY]++;
             }

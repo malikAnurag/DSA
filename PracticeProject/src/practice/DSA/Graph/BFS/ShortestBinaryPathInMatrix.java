@@ -11,19 +11,19 @@ import java.util.Queue;
  * All the visited cells of the path are 0.
  * All the adjacent cells of the path are 8-directionally connected (i.e., they are different and they share an edge or a corner).
  * The length of a clear path is the number of visited cells of this path.
- *
+ * <p>
  * Example 1:
  * Input: grid = [[0,1],[1,0]]
  * Output: 2
- *
+ * <p>
  * Example 2:
  * Input: grid = [[0,0,0],[1,1,0],[1,1,0]]
  * Output: 4
- *
+ * <p>
  * Example 3:
  * Input: grid = [[1,0,0],[1,1,0],[1,1,0]]
  * Output: -1
- *
+ * <p>
  * Constraints:
  * n == grid.length
  * n == grid[i].length
@@ -32,36 +32,36 @@ import java.util.Queue;
  */
 public class ShortestBinaryPathInMatrix {
 
-    static int[][] directions = new int[][] {{0, 1}, {0, -1}, {1, 0}, {-1, 0}, {1, 1}, {-1, -1}, {-1, 1}, {1, -1}};
+    static int[][] directions = new int[][]{{0, 1}, {0, -1}, {1, 0}, {-1, 0}, {1, 1}, {-1, -1}, {-1, 1}, {1, -1}};
 
     public static void main(String[] args) {
-        System.out.println(getShortestPathBinaryMatrix(new int[][]{{0,1},{1,0}}));
-        System.out.println(getShortestPathBinaryMatrix(new int[][]{{0,0,0},{1,1,0},{1,1,0}}));
-        System.out.println(getShortestPathBinaryMatrix(new int[][]{{1,0,0},{1,1,0},{1,1,0}}));
+        System.out.println(getShortestPathBinaryMatrix(new int[][]{{0, 1}, {1, 0}}));
+        System.out.println(getShortestPathBinaryMatrix(new int[][]{{0, 0, 0}, {1, 1, 0}, {1, 1, 0}}));
+        System.out.println(getShortestPathBinaryMatrix(new int[][]{{1, 0, 0}, {1, 1, 0}, {1, 1, 0}}));
     }
 
     static int getShortestPathBinaryMatrix(int[][] grid) {
 
         int m = grid.length;
 
-        if(grid[0][0] != 0 || grid[m -1][m - 1] != 0)
+        if (grid[0][0] != 0 || grid[m - 1][m - 1] != 0)
             return -1;
 
         grid[0][0] = 1;
         Queue<int[]> q = new LinkedList<>();
         q.add(new int[]{0, 0});
 
-        while(!q.isEmpty()) {
+        while (!q.isEmpty()) {
 
             int[] curr = q.remove();
             int x = curr[0];
             int y = curr[1];
             int dist = grid[x][y];
 
-            if(x == m - 1 && y == m - 1)
+            if (x == m - 1 && y == m - 1)
                 return dist;
 
-            for(int[] neighbor : getNeighbors(x, y, grid)) {
+            for (int[] neighbor : getNeighbors(x, y, grid)) {
                 int nx = neighbor[0];
                 int ny = neighbor[1];
 
@@ -76,12 +76,12 @@ public class ShortestBinaryPathInMatrix {
 
         List<int[]> al = new ArrayList<>();
 
-        for(int[] dir : directions) {
+        for (int[] dir : directions) {
 
             int newX = x + dir[0];
             int newY = y + dir[1];
 
-            if(newX < 0 || newX >= grid.length || newY < 0 || newY >= grid.length || grid[newX][newY] != 0) {
+            if (newX < 0 || newX >= grid.length || newY < 0 || newY >= grid.length || grid[newX][newY] != 0) {
                 continue;
             }
 

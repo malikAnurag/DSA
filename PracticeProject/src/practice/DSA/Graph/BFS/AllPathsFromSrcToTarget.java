@@ -17,6 +17,7 @@ public class AllPathsFromSrcToTarget {
     public static List<List<Integer>> findAllPaths(int[][] graph) {
 
         List<List<Integer>> ans = new ArrayList<>();
+
         Queue<List<Integer>> q = new LinkedList<>();
         List<Integer> path = new ArrayList<>();
         int n = graph.length - 1;
