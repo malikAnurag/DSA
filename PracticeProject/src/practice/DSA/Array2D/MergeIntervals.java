@@ -68,13 +68,6 @@ public class MergeIntervals {
                 al.add(intervals[i]);
             }
         }
-
-        int[][] result = new int[al.size()][2];
-        int count = 0;
-
-        for(int[] arr : al) {
-            result[count++] = arr;
-        }
-        return result;
+        return al.toArray(new int[0][0]);
     }
 }

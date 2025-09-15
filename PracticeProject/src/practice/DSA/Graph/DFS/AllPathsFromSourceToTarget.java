@@ -42,6 +42,7 @@ public class AllPathsFromSourceToTarget {
         System.out.println(getAllPaths(new int[][]{{1, 2}, {3}, {3}, {}}));
         System.out.println(getAllPaths(new int[][]{{4, 3, 1}, {3, 2, 4}, {3}, {4}, {}}));
         System.out.println(getAllPaths(new int[][]{{1, 2, 3}, {2}, {3}, {}}));
+        System.out.println(getAllPaths(new int[][] {{4,3,1},{3,2,4},{3},{4},{}}));
     }
 
     static List<List<Integer>> getAllPaths(int[][] graph) {

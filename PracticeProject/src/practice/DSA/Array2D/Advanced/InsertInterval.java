@@ -33,7 +33,7 @@ public class InsertInterval {
 
     public static int[][] insert(int[][] intervals, int[] newInterval) {
 
-        List<int[]> result = new ArrayList();
+        List<int[]> result = new ArrayList<>();
 
         for(int[] element : intervals) {
 

@@ -54,7 +54,9 @@ public class PathWithMinEffort {
     public int minimumEffortPath(int[][] heights) {
 
         Queue<int[]> q = new PriorityQueue<int[]>((a, b) -> a[2] - b[2]);
-        q.add(new int[]{0, 0, 0});
+
+        q.add(new int[]{0, 0, 0}); // x, y, effort
+
         boolean[][] visited = new boolean[heights.length][heights[0].length];
         int[][] diff = new int[heights.length][heights[0].length];
 

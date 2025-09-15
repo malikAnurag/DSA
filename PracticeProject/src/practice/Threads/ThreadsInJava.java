@@ -9,7 +9,12 @@ package practice.Threads;
 class UserThread extends Thread {
     @Override
     public void run() {
-        System.out.println("This is a user thread.....");
+        try {
+            Thread.sleep(10);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("-------------------------This is a user thread.....");
     }
 }
 

@@ -53,7 +53,8 @@ public class DecodeWays {
         }
 
         int n = s.length();
-        int oneBack = 1, twoBack = 1;
+        int oneBack = 1; // number of ways to decode up to the previous character (i−1)
+        int twoBack = 1; // number of ways to decode up to two characters back (i−2)
 
         for(int i = 1 ; i < n ; i++) {
 

@@ -30,10 +30,11 @@ public class SearchInRotated {
             return search(arr, mid + 1, right, key);
         }
 
-        if(arr[mid] <= key && key <= arr[right]) {
-            return search(arr, mid + 1, right, key);
+        else if(arr[mid] <= arr[right]) {
+            if(arr[mid] <= key && key <= arr[right]) {
+                return search(arr, mid + 1, right, key);
+            }
         }
-
         return search(arr, left, mid - 1, key);
     }
 }

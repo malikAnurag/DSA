@@ -21,7 +21,26 @@ import java.util.*;
  */
 public class ReconstructItinerary {
 
-    public List<String> findItinerary(List<List<String>> tickets) {
+    public static void main(String[] args) {
+        List<List<String>> tickets1 = Arrays.asList(
+                Arrays.asList("MUC", "LHR"),
+                Arrays.asList("JFK", "MUC"),
+                Arrays.asList("SFO", "SJC"),
+                Arrays.asList("LHR", "SFO")
+        );
+        System.out.println(findItinerary(tickets1)); // Output: ["JFK","MUC","LHR","SFO","SJC"]
+
+//        List<List<String>> tickets2 = Arrays.asList(
+//                Arrays.asList("JFK", "SFO"),
+//                Arrays.asList("JFK", "ATL"),
+//                Arrays.asList("SFO", "ATL"),
+//                Arrays.asList("ATL", "JFK"),
+//                Arrays.asList("ATL", "SFO")
+//        );
+//        System.out.println(findItinerary(tickets2)); // Output: ["JFK","ATL","JFK","SFO","ATL","SFO"]
+    }
+
+    public static List<String> findItinerary(List<List<String>> tickets) {
 
         Map<String, PriorityQueue<String>> graph = new HashMap<>();
         LinkedList<String> res = new LinkedList<>();
@@ -41,6 +60,7 @@ public class ReconstructItinerary {
         while(airports != null && !airports.isEmpty()) {
             dfs(graph, airports.poll(), res);
         }
+        System.out.println(res);
         res.addFirst(source);
     }
 }

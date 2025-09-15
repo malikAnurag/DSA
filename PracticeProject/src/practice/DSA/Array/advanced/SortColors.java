@@ -5,10 +5,9 @@ import java.util.Arrays;
 /**
  * Given an array with n objects colored red, white or blue, sort them in-place so that objects of the same color are adjacent,
  * with the colors in the order red, white and blue.
- *
  * Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively.
  *
- * Note: You are not suppose to use the library's sort function for this problem.
+ * Note: You are not supposed to use the library's sort function for this problem.
  *
  * Example:
  * Input: [2,0,2,1,1,0]
@@ -23,24 +22,22 @@ import java.util.Arrays;
 public class SortColors {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(sortColors(new int[]{2,0,2,1,1,0})));
+        System.out.println(Arrays.toString(sortColors(new int[]{2, 0, 2, 1, 1, 0})));
     }
 
     public static int[] sortColors(int[] arr) {
 
-        int low = 0 ;
+        int low = 0;
         int mid = 0;
         int high = arr.length - 1;
 
-        while(mid <= high) { // 2 0 2 1 1 0
+        while (mid <= high) { // 2 0 2 1 1 0
 
-            if(arr[mid] == 0) {
+            if (arr[mid] == 0) {
                 swap(arr, low++, mid++);
-            }
-            else if(arr[mid] == 1) {
+            } else if (arr[mid] == 1) {
                 mid++;
-            }
-            else {
+            } else {
                 swap(arr, mid, high--);
             }
         }

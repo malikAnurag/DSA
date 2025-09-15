@@ -22,6 +22,10 @@ public class SubarraySumLessThanK {
 
             prefixSum += j;
 
+            // We want the smallest prefix sum s in the set such that:
+            //  prefixSum - s ≤ k
+            //  → s ≥ prefixSum - k
+            // This gives us the largest possible subarray sum ≤ k ending at the current index.
             Integer target = ts.ceiling(prefixSum - k);
 
             if (target != null) {

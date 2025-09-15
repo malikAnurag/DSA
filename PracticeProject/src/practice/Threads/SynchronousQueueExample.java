@@ -5,6 +5,15 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.SynchronousQueue;
 import java.util.concurrent.TimeUnit;
 
+/*
+* Synchronous Queue :
+*                   - no capacity
+*                   - each put must wait for a corresponding take
+*                   - has no internal buffer and doesn't store any elements
+*                   - used for direct handoff between threads
+*                   - requires both threads to meet at the same time
+* */
+
 public class SynchronousQueueExample {
 
     public static void main(String[] args) {

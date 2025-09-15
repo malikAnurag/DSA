@@ -64,6 +64,10 @@ public class RankTeamsByVotes {
             }
         }
 
+        for(Map.Entry<Character, int[]> entry : hm.entrySet()) {
+            System.out.println(entry.getKey() + " : " + Arrays.toString(entry.getValue()));
+        }
+
         List<Character> res = new ArrayList(hm.keySet());
 
         Collections.sort(res, (a, b) -> {

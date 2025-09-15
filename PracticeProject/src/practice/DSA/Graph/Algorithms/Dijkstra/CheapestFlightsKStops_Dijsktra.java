@@ -66,8 +66,7 @@ public class CheapestFlightsKStops_Dijsktra {
 
         int[] stops = new int[n];
         Arrays.fill(stops, Integer.MAX_VALUE);
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
-        // {dist_from_src_node, node, number_of_stops_from_src_node}
+        Queue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]); // {dist_from_src_node, node, number_of_stops_from_src_node}
         pq.offer(new int[]{0, src, 0});
 
         while (!pq.isEmpty()) {

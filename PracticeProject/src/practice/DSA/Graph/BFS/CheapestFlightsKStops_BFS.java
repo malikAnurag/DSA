@@ -63,7 +63,7 @@ public class CheapestFlightsKStops_BFS {
         Map<Integer, List<int[]>> graph = new HashMap<>();
 
         for (int[] flight : flights) {
-            graph.computeIfAbsent(flight[0], t -> new ArrayList<>()).add(new int[]{flight[1], flight[2]}); // src -> dst, price
+            graph.computeIfAbsent(flight[0], t -> new ArrayList<>()).add(new int[]{flight[1], flight[2]}); // src -> [dst, price]
         }
 
         dist[src] = 0;

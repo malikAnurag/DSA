@@ -2,22 +2,24 @@ package practice.DSA.Trees.BST;
 
 import practice.DSA.Trees.TreeNode;
 
+import java.util.PriorityQueue;
+
 /**
  * Design a class to find the kth largest element in a stream. Note that it is the kth largest element in the sorted order, not the kth distinct element.
- *
+ * <p>
  * Implement KthLargest class:
- *
+ * <p>
  * KthLargest(int k, int[] nums) Initializes the object with the integer k and the stream of integers nums.
  * int add(int val) Returns the element representing the kth largest element in the stream.
- *
- *
+ * <p>
+ * <p>
  * Example 1:
  * Input
  * ["KthLargest", "add", "add", "add", "add", "add"]
  * [[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]
  * Output
  * [null, 4, 5, 5, 8, 8]
- *
+ * <p>
  * Explanation
  * KthLargest kthLargest = new KthLargest(3, [4, 5, 8, 2]);
  * kthLargest.add(3);   // return 4
@@ -25,7 +27,7 @@ import practice.DSA.Trees.TreeNode;
  * kthLargest.add(10);  // return 5
  * kthLargest.add(9);   // return 8
  * kthLargest.add(4);   // return 8
- *
+ * <p>
  * Constraints:
  * 1 <= k <= 104
  * 0 <= nums.length <= 104
@@ -51,13 +53,12 @@ public class KthLargestElementInStream {
 
     private TreeNode insertNode(TreeNode root, int num) {
 
-        if(root == null) {
+        if (root == null) {
             return new TreeNode(num, 1);
         }
-        if(root.key > num) {
+        if (root.key > num) {
             root.left = insertNode(root.left, num);
-        }
-        else {
+        } else {
             root.right = insertNode(root.right, num);
         }
         root.count++;
@@ -73,14 +74,42 @@ public class KthLargestElementInStream {
 
         int m = root.right != null ? root.right.count : 0;
 
-        if(k == m + 1) {
+        if (k == m + 1) {
             return root.key;
         }
-        if(k <= m) {
+        if (k <= m) {
             return searchKth(root.right, k);
-        }
-        else {
+        } else {
             return searchKth(root.left, k - m - 1); // Number of nodes in the left sub-tree = Nodes other than the root and the right sub-tree = k - (m + 1)
         }
+    }
+}
+
+class KthLargestWithPQ {
+
+    PriorityQueue<Integer> minHeap;
+    int k;
+
+    public KthLargestWithPQ(int k, int[] nums) {
+        minHeap = new PriorityQueue<>();
+        this.k = k;
+
+        for (int num : nums) {
+            add(num);
+        }
+    }
+
+    public int add(int val) {
+        // Add to our minHeap if we haven't processed k elements yet
+        // or if val is greater than the top element (the k-th largest)
+        if (minHeap.size() < k || minHeap.peek() < val) {
+
+            minHeap.add(val);
+
+            if (minHeap.size() > k) {
+                minHeap.remove();
+            }
+        }
+        return minHeap.peek();
     }
 }

@@ -33,6 +33,7 @@ import practice.DSA.Trees.TreeNode;
 public class InsertNodeInBST {
 
     public static void main(String[] args) {
+
         TreeNode root = new TreeNode(4);
         root.left = new TreeNode(2);
         root.left.left = new TreeNode(1);

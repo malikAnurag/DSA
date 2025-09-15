@@ -41,7 +41,7 @@ public class UnboundedKnapsack {
         for (int i = 1; i <= n; i++) { // no of items
             for (int j = 1; j <= W; j++) {// weight
                 if (wt[i - 1] <= j) {
-                    // just replace i - 1 with i in the following at one place
+                    // just replace i - 1 with i in the following at ONE place
                     // it will mean that we don't want to skip the current item in our next iterations and DON'T mark it as processed
                     // so that the same can be reconsidered in the later iterations again
                     dp[i][j] = Math.max(val[i - 1] + dp[i][j - wt[i - 1]], dp[i - 1][j]);
