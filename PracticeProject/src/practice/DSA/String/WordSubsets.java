@@ -36,7 +36,7 @@ import java.util.List;
 public class WordSubsets {
 
     public static void main(String[] args) {
-        System.out.println(wordSubsets(new String[]{"amazon", "apple", "facebook", "google", "leetcode"}, new String[]{"lo", "eo"}).toString());
+        System.out.println(wordSubsets(new String[]{"companies/amazon", "apple", "facebook", "companies/google", "leetcode"}, new String[]{"lo", "eo"}).toString());
     }
 
     public static List<String> wordSubsets(String[] A, String[] B) {

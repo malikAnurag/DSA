@@ -1,4 +1,4 @@
-package amazon.arraysAndStrings;
+package companies.amazon.arraysAndStrings;
 
 /**
  * Given a string s, return the length of the longest repeating substrings. If no repeating substring exists, return 0.

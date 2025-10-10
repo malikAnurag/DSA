@@ -1,4 +1,4 @@
-package amazon.linkedList;
+package companies.amazon.linkedList;
 
 import practice.DSA.LinkedList.ListNode;
 

@@ -1,4 +1,4 @@
-package amazon.arraysAndStrings;
+package companies.amazon.arraysAndStrings;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,4 +1,4 @@
-package google;
+package companies.google;
 
 import practice.DSA.Trees.TreeNode;
 
@@ -56,12 +56,12 @@ public class FindLeavesOfBinaryTree {
         int lh = findLeavesHelper(root.left);
         int rh = findLeavesHelper(root.right);
 
-        int current = Math.max(lh, rh) + 1;
+        int current = Math.max(lh, rh) + 1; // node’s height = 1 + max child height
 
         if(al.size() == current) {
-            al.add(new ArrayList<>());
+            al.add(new ArrayList<>()); // first time we see this height → make a bucket
         }
-        al.get(current).add(root.key);
-        return current;
+        al.get(current).add(root.key); // drop this node into its height bucket
+        return current;               // bubble height up to parent
     }
 }

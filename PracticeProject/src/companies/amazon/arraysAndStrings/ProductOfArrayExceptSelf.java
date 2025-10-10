@@ -1,4 +1,4 @@
-package amazon.arraysAndStrings;
+package companies.amazon.arraysAndStrings;
 
 /**
  * Given an array nums of n integers where n > 1,  return an array output such that output[i] is equal to the
